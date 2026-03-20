@@ -1,0 +1,30 @@
+using UnityEngine;
+
+public class Player_GroundedState : EntityState
+{
+    public Player_GroundedState(Player player, StateMachine stateMachine, string animBoolName) : base(player, stateMachine, animBoolName)
+    {
+        
+    }
+
+    public override void Update()
+    {
+        base.Update();
+
+        if (rb.linearVelocity.y < 0 && player.groundDetected == false)
+        {
+            // change to fall state
+        }
+
+        //if (input.Player.Jump.WasPerformedThisFrame())
+        //{
+            // stateMachine.ChangeState(player.jumpState);
+        //}
+
+        //if (input.Player.Attack.WasPerformedThisFrame())
+        //{
+            // change to attack state
+        //}
+    }
+
+}
