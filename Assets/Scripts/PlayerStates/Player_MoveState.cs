@@ -1,7 +1,7 @@
 using UnityEngine;
 
 // Responsible for the player's move state behavior
-public class Player_MoveState : Player_GroundedState
+public class Player_MoveState : EntityState
 {
     public Player_MoveState(Player player, StateMachine stateMachine, string stateName) : base(player, stateMachine, stateName)
     {
@@ -11,13 +11,25 @@ public class Player_MoveState : Player_GroundedState
     public override void Update()
     {
         base.Update();
+
+        Vector2 move = player.moveInput;
         
-        // someone stopped trying to move character, so we want to switch to idle state
-        if (player.moveInput.x == 0) {
+        // If player is not moving at all, switch to idle
+        if (move.x == 0 && move.y == 0)
+        {
+            player.SetVelocity(0, 0);
             stateMachine.ChangeState(player.idleState);
+            return;
         }
 
-        player.SetVelocity(player.moveInput.x * player.moveSpeed, rb.linearVelocity.y);
+        player.UpdateAnimation(move);
+        
+        move = move.normalized;
+
+        bool sprintingNow = player.isSprintHeld && player.canSprint;
+        float currentSpeed = sprintingNow ? player.sprintSpeed : player.moveSpeed;
+
+        player.SetVelocity(move.x * currentSpeed, move.y * currentSpeed);
     }
 
 }

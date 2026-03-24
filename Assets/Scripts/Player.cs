@@ -20,17 +20,16 @@ public class Player : MonoBehaviour
 
 
     [Header ("Movement details")]
-    public float moveSpeed;
-    public float dashDuration = .25f;
-    public float dashSpeed = 20;
+    public float moveSpeed = 2.5f;
+    public float sprintSpeed = 4f;
+    public float maxSprintTime = 5f;
+    public float sprintCooldown = 4f;
 
+    public bool isSprintHeld { get; private set; }
+    public bool canSprint => sprintCooldownTimer <= 0f && sprintTimeRemaining > 0f;
 
-    [Header ("Collision detection")]
-    [SerializeField] private float groundCheckDistance;
-    [SerializeField] private LayerMask whatIsGround;
-
-    public bool groundDetected { get; private set; } // property to get the ground detected;
-
+    private float sprintCooldownTimer;
+    private float sprintTimeRemaining;
 
     private void Awake()
     {
@@ -42,6 +41,8 @@ public class Player : MonoBehaviour
 
         idleState = new Player_IdleState(this, stateMachine, "idle");
         moveState = new Player_MoveState(this, stateMachine, "move");
+
+        sprintTimeRemaining = maxSprintTime;
     }
 
 
@@ -53,6 +54,9 @@ public class Player : MonoBehaviour
 
         input.Player.Movement.performed += ctx => moveInput = ctx.ReadValue<Vector2>();
         input.Player.Movement.canceled += ctx => moveInput = Vector2.zero;
+        
+        input.Player.Sprint.performed += ctx => isSprintHeld = true;
+        input.Player.Sprint.canceled += ctx => isSprintHeld = false;
     }
 
 
@@ -70,6 +74,17 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
+        bool wantsToSprint = isSprintHeld && moveInput != Vector2.zero;
+
+        if (IsSprinting(wantsToSprint))
+        {
+            HandleSprint();
+        }
+        else
+        {
+            HandleCooldown();
+        }
+
         stateMachine.UpdateActiveState();
     }
 
@@ -78,13 +93,14 @@ public class Player : MonoBehaviour
     {
         stateMachine.currentState.CallAnimationTrigger();
     }
+    
 
 
     public void SetVelocity(float xVelocity, float yVelocity)
     {
         rb.linearVelocity = new Vector2(xVelocity, yVelocity);
         HandleFlip(xVelocity);
-        Debug.Log("xVelocity: " + xVelocity);
+        Debug.Log("SetVelocity called: " + rb.linearVelocity);
     }
 
 
@@ -110,6 +126,66 @@ public class Player : MonoBehaviour
     }
     
 
-    
+
+    private bool IsSprinting(bool wantsToSprint)
+    {
+        return wantsToSprint && sprintCooldownTimer <= 0f && sprintTimeRemaining > 0f;
+    }
+
+
+    private void HandleSprint()
+    {
+        sprintTimeRemaining -= Time.deltaTime;
+
+        if (sprintTimeRemaining <= 0f)
+        {
+            sprintTimeRemaining = 0f;
+            StartSprintCooldown();
+        }
+    }
+
+
+    private void HandleCooldown()
+    {
+        if (sprintCooldownTimer > 0f)
+        {
+            sprintCooldownTimer -= Time.deltaTime;
+
+            if (sprintCooldownTimer <= 0f)
+            {
+                sprintCooldownTimer = 0f;
+                sprintTimeRemaining = maxSprintTime;
+            }
+        }
+    }
+
+    private void StartSprintCooldown()
+    {
+        sprintCooldownTimer = sprintCooldown;
+    }
+
+
+    public void UpdateAnimation(Vector2 move)
+    {
+        bool isMoving = move != Vector2.zero;
+        anim.SetBool("isMoving", isMoving);
+
+        if (!isMoving)
+            return;
+
+        // prioritize up/down over side
+        if (move.y > 0)
+        {
+            anim.SetInteger("direction", 2); // up
+        }
+        else if (move.y < 0)
+        {
+            anim.SetInteger("direction", 0); // down
+        }
+        else
+        {
+            anim.SetInteger("direction", 1); // side
+        }
+    }
 
 }

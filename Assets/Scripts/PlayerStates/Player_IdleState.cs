@@ -1,7 +1,7 @@
 using UnityEngine;
 
 // Responsible for the player's idle state behavior
-public class Player_IdleState : Player_GroundedState
+public class Player_IdleState : EntityState
 {
     public Player_IdleState(Player player, StateMachine stateMachine, string stateName) : base(player, stateMachine, stateName)
     {
@@ -19,7 +19,10 @@ public class Player_IdleState : Player_GroundedState
     {
         base.Update();
 
-        if (player.moveInput.x != 0)
+        player.SetVelocity(0, 0);
+        player.UpdateAnimation(player.moveInput);
+
+        if (player.moveInput.x != 0 || player.moveInput.y != 0)
         {
             stateMachine.ChangeState(player.moveState);
         }

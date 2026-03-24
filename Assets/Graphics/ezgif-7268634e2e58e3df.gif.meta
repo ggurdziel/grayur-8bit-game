@@ -103,10 +103,10 @@ TextureImporter:
       name: ezgif-7268634e2e58e3df_0
       rect:
         serializedVersion: 2
-        x: 220
+        x: 217
         y: 72
-        width: 75
-        height: 99
+        width: 79
+        height: 103
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -117,6 +117,138 @@ TextureImporter:
       bones: []
       spriteID: 3720202f64bc15e30800000000000000
       internalID: 4490593809033462387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ezgif-7268634e2e58e3df_1
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 91
+        width: 75
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a7ec9eb1798d6c41940120aaad780b8
+      internalID: 637932779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ezgif-7268634e2e58e3df_2
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 91
+        width: 75
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51680a72bde4b8e458c04005c16051bd
+      internalID: 1967682055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ezgif-7268634e2e58e3df_3
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 134
+        width: 75
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5a4be58ac352ca489d2c040d5834c20
+      internalID: 1263881444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ezgif-7268634e2e58e3df_4
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 32
+        width: 75
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccadad8552e662d4d8e34f6e16b7c016
+      internalID: 1630119017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ezgif-7268634e2e58e3df_5
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 33
+        width: 75
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 241be0602c35e014093cabbffb6fd3d6
+      internalID: -79986505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ezgif-7268634e2e58e3df_6
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 137
+        width: 76
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65a32108665998146888bb2862a03e82
+      internalID: -1850342432
       vertices: []
       indices: 
       edges: []
@@ -136,6 +268,12 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       ezgif-7268634e2e58e3df_0: 4490593809033462387
+      ezgif-7268634e2e58e3df_1: 637932779
+      ezgif-7268634e2e58e3df_2: 1967682055
+      ezgif-7268634e2e58e3df_3: 1263881444
+      ezgif-7268634e2e58e3df_4: 1630119017
+      ezgif-7268634e2e58e3df_5: -79986505
+      ezgif-7268634e2e58e3df_6: -1850342432
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
