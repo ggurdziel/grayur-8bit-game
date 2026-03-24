@@ -11,13 +11,18 @@ public class Player_MoveState : Player_GroundedState
     public override void Update()
     {
         base.Update();
+
+        Vector2 move = player.moveInput;
         
-        // someone stopped trying to move character, so we want to switch to idle state
-        if (player.moveInput.x == 0) {
+        // If player is not moving at all, switch to idle
+        if (move.x == 0 && move.y == 0)
+        {
             stateMachine.ChangeState(player.idleState);
+            return;
         }
 
-        player.SetVelocity(player.moveInput.x * player.moveSpeed, rb.linearVelocity.y);
+        move = move.normalized; // Normalize so diagonal movement is not faster
+        player.SetVelocity(move.x * player.moveSpeed, move.y * player.moveSpeed);
     }
 
 }

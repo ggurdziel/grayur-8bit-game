@@ -78,6 +78,7 @@ public class Player : MonoBehaviour
     {
         stateMachine.currentState.CallAnimationTrigger();
     }
+    
 
 
     public void SetVelocity(float xVelocity, float yVelocity)

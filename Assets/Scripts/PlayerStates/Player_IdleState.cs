@@ -19,7 +19,9 @@ public class Player_IdleState : Player_GroundedState
     {
         base.Update();
 
-        if (player.moveInput.x != 0)
+        player.SetVelocity(0, 0);
+
+        if (player.moveInput.x != 0 || player.moveInput.y != 0)
         {
             stateMachine.ChangeState(player.moveState);
         }
