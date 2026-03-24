@@ -150,9 +150,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b881b2caa292b542940ea069d5a0216, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 8
-  dashDuration: 0.25
-  dashSpeed: 20
+  moveSpeed: 2.5
+  sprintSpeed: 5
+  maxSprintTime: 5
+  sprintCooldown: 4
   groundCheckDistance: 1.54
   whatIsGround:
     serializedVersion: 2
@@ -558,12 +559,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -535030084, guid: 6de98e62b56df4d40a1ff09e56a45d88, type: 3}
+  m_Sprite: {fileID: 1967682055, guid: 70566e5ed3fe6e24fb7af73bd101ea3e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.8, y: 1.13}
+  m_Size: {x: 0.75, y: 0.99}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

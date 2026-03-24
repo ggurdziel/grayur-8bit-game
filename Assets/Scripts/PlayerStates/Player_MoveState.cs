@@ -17,12 +17,17 @@ public class Player_MoveState : Player_GroundedState
         // If player is not moving at all, switch to idle
         if (move.x == 0 && move.y == 0)
         {
+            player.SetVelocity(0, 0);
             stateMachine.ChangeState(player.idleState);
             return;
         }
 
-        move = move.normalized; // Normalize so diagonal movement is not faster
-        player.SetVelocity(move.x * player.moveSpeed, move.y * player.moveSpeed);
+        move = move.normalized;
+
+        bool sprintingNow = player.isSprintHeld && player.canSprint;
+        float currentSpeed = sprintingNow ? player.sprintSpeed : player.moveSpeed;
+
+        player.SetVelocity(move.x * currentSpeed, move.y * currentSpeed);
     }
 
 }
