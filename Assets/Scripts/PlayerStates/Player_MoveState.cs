@@ -1,7 +1,7 @@
 using UnityEngine;
 
 // Responsible for the player's move state behavior
-public class Player_MoveState : Player_GroundedState
+public class Player_MoveState : EntityState
 {
     public Player_MoveState(Player player, StateMachine stateMachine, string stateName) : base(player, stateMachine, stateName)
     {
@@ -22,6 +22,8 @@ public class Player_MoveState : Player_GroundedState
             return;
         }
 
+        player.UpdateAnimation(move);
+        
         move = move.normalized;
 
         bool sprintingNow = player.isSprintHeld && player.canSprint;

@@ -31,14 +31,6 @@ public class Player : MonoBehaviour
     private float sprintCooldownTimer;
     private float sprintTimeRemaining;
 
-
-    [Header ("Collision detection")]
-    [SerializeField] private float groundCheckDistance;
-    [SerializeField] private LayerMask whatIsGround;
-
-    public bool groundDetected { get; private set; } // property to get the ground detected;
-
-
     private void Awake()
     {
         anim = GetComponentInChildren<Animator>();
@@ -170,6 +162,30 @@ public class Player : MonoBehaviour
     private void StartSprintCooldown()
     {
         sprintCooldownTimer = sprintCooldown;
+    }
+
+
+    public void UpdateAnimation(Vector2 move)
+    {
+        bool isMoving = move != Vector2.zero;
+        anim.SetBool("isMoving", isMoving);
+
+        if (!isMoving)
+            return;
+
+        // prioritize up/down over side
+        if (move.y > 0)
+        {
+            anim.SetInteger("direction", 2); // up
+        }
+        else if (move.y < 0)
+        {
+            anim.SetInteger("direction", 0); // down
+        }
+        else
+        {
+            anim.SetInteger("direction", 1); // side
+        }
     }
 
 }
