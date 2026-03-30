@@ -31,6 +31,7 @@ public class Player : MonoBehaviour
     private float sprintCooldownTimer;
     private float sprintTimeRemaining;
 
+
     private void Awake()
     {
         anim = GetComponentInChildren<Animator>();
@@ -100,7 +101,6 @@ public class Player : MonoBehaviour
     {
         rb.linearVelocity = new Vector2(xVelocity, yVelocity);
         HandleFlip(xVelocity);
-        Debug.Log("SetVelocity called: " + rb.linearVelocity);
     }
 
 
@@ -122,7 +122,6 @@ public class Player : MonoBehaviour
         transform.Rotate(0, 180, 0);
         facingRight = !facingRight;
         facingDir *= -1;
-        Debug.Log("Flipped. facingRight = " + facingRight);
     }
     
 
@@ -168,7 +167,7 @@ public class Player : MonoBehaviour
     public void UpdateAnimation(Vector2 move)
     {
         bool isMoving = move != Vector2.zero;
-        anim.SetBool("isMoving", isMoving);
+        anim.SetBool("move", isMoving);
 
         if (!isMoving)
             return;
@@ -187,5 +186,6 @@ public class Player : MonoBehaviour
             anim.SetInteger("direction", 1); // side
         }
     }
+
 
 }
