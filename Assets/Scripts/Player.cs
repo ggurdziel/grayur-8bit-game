@@ -31,6 +31,8 @@ public class Player : MonoBehaviour
     private float sprintCooldownTimer;
     private float sprintTimeRemaining;
 
+    private IInteractable currentInteractable;
+
 
     private void Awake()
     {
@@ -58,6 +60,14 @@ public class Player : MonoBehaviour
         
         input.Player.Sprint.performed += ctx => isSprintHeld = true;
         input.Player.Sprint.canceled += ctx => isSprintHeld = false;
+
+        input.Player.Interact.performed += ctx =>
+        {
+            if (currentInteractable != null)
+            {
+                currentInteractable.Interact(this);
+            }
+        };
     }
 
 
@@ -188,4 +198,22 @@ public class Player : MonoBehaviour
     }
 
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        IInteractable interactable = collision.GetComponent<IInteractable>();
+        if (interactable != null)
+        {
+            currentInteractable = interactable;
+        }
+    }
+
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        IInteractable interactable = collision.GetComponent<IInteractable>();
+        if (interactable != null && currentInteractable == interactable)
+        {
+            currentInteractable = null;
+        }
+    }
 }

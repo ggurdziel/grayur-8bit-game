@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Object_ItemPickup : MonoBehaviour
+public class Object_ItemPickup : MonoBehaviour, IInteractable
 {
     private SpriteRenderer sr;
 
@@ -14,7 +14,6 @@ public class Object_ItemPickup : MonoBehaviour
         itemToAdd = new Inventory_Item(itemData);
     }
 
-
     private void OnValidate()
     {
         if (itemData == null)
@@ -25,10 +24,19 @@ public class Object_ItemPickup : MonoBehaviour
         gameObject.name = "Object_ItemPickup - " + itemData.itemName;
     }
 
-
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void Interact(Player player)
     {
-        playerInventory = collision.GetComponent<Inventory_Base>();
+        Inventory_Base inventory = player.GetComponent<Inventory_Base>();
+
+        if (inventory != null && inventory.CanAddItem())
+        {
+            inventory.AddItem(itemToAdd);
+            Destroy(gameObject);
+        }
+    }
+
+    public void TryPickup()
+    {
         if (playerInventory != null && playerInventory.CanAddItem())
         {
             playerInventory.AddItem(itemToAdd);
