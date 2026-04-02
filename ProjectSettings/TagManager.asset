@@ -13,9 +13,9 @@ TagManager:
   - UI
   - Ground
   - NPC
+  - PlayerPickup
   - Player
   - Buildings
-  - PlayerPickup
   - 
   - 
   - 
@@ -47,10 +47,10 @@ TagManager:
   - name: NPC
     uniqueID: 1765169005
     locked: 0
-  - name: Player
+  - name: PlayerPickup
     uniqueID: 3412301049
     locked: 0
-  - name: PlayerPickup
+  - name: Player
     uniqueID: 1812865157
     locked: 0
   m_RenderingLayers:
