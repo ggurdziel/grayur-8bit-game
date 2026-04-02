@@ -12,10 +12,10 @@ TagManager:
   - Water
   - UI
   - Ground
+  - NPC
+  - PlayerPickup
   - Player
   - Buildings
-  - PlayerPickup
-  - 
   - 
   - 
   - 
@@ -41,11 +41,17 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Player
+  - name: Buildings
+    uniqueID: 3107257659
+    locked: 0
+  - name: NPC
     uniqueID: 1765169005
     locked: 0
-  - name: Foreground
+  - name: PlayerPickup
     uniqueID: 3412301049
+    locked: 0
+  - name: Player
+    uniqueID: 1812865157
     locked: 0
   m_RenderingLayers:
   - Default
