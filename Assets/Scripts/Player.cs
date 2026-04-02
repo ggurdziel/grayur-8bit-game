@@ -32,7 +32,9 @@ public class Player : MonoBehaviour
     private float sprintCooldownTimer;
     private float sprintTimeRemaining;
 
+
     private IInteractable currentInteractable;
+    private Inventory_Base inventory;
 
 
     private void Awake()
@@ -42,6 +44,7 @@ public class Player : MonoBehaviour
 
         input = new PlayerInputSet();
         stateMachine = new StateMachine();
+        inventory = GetComponent<Inventory_Base>();
 
         idleState = new Player_IdleState(this, stateMachine, "idle");
         moveState = new Player_MoveState(this, stateMachine, "move");
@@ -72,6 +75,14 @@ public class Player : MonoBehaviour
         };
 
         input.Player.Attack.performed += ctx => stateMachine.ChangeState(basicAttackState);
+
+        input.Player.Hotbar1.performed += ctx => inventory.SelectHotbarSlot(0);
+        input.Player.Hotbar2.performed += ctx => inventory.SelectHotbarSlot(1);
+        input.Player.Hotbar3.performed += ctx => inventory.SelectHotbarSlot(2);
+        input.Player.Hotbar4.performed += ctx => inventory.SelectHotbarSlot(3);
+        input.Player.Hotbar5.performed += ctx => inventory.SelectHotbarSlot(4);
+
+        input.Player.DropItem.performed += ctx => DropSelectedItem();
     }
 
 
@@ -219,5 +230,44 @@ public class Player : MonoBehaviour
         {
             currentInteractable = null;
         }
+    }
+
+
+
+    private void DropSelectedItem()
+    {
+        if (inventory == null)
+            return;
+
+        Inventory_Item selectedItem = inventory.GetSelectedItem();
+
+        if (selectedItem == null || selectedItem.itemData == null)
+        {
+            Debug.Log("No item selected to drop.");
+            return;
+        }
+
+        if (selectedItem.itemData.worldPrefab == null)
+        {
+            Debug.LogWarning("Selected item has no world prefab assigned.");
+            return;
+        }
+
+        Vector3 spawnOffset = new Vector3(facingDir * 0.75f, 0.2f, 0f);
+
+        GameObject droppedObject = Instantiate(
+            selectedItem.itemData.worldPrefab,
+            transform.position + spawnOffset,
+            Quaternion.identity
+        );
+
+        Rigidbody2D droppedRb = droppedObject.GetComponent<Rigidbody2D>();
+        if (droppedRb != null)
+        {
+            Vector2 throwDirection = new Vector2(facingDir, 0.25f).normalized;
+            droppedRb.AddForce(throwDirection * 4f, ForceMode2D.Impulse);
+        }
+
+        inventory.RemoveSelectedItem();
     }
 }
