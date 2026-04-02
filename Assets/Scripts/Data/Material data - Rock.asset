@@ -15,3 +15,4 @@ MonoBehaviour:
   itemName: Rock
   itemIcon: {fileID: -7957652584325686945, guid: 0596f3c6f19d7444db8da1138713e035, type: 3}
   itemType: 0
+  worldPrefab: {fileID: 8990673208064962239, guid: 6a49783e39e34ff488b69dfa03188532, type: 3}
