@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
 
     public Player_IdleState idleState { get; private set; }
     public Player_MoveState moveState { get; private set; }
+    public Player_BasicAttackState basicAttackState { get; private set; }
 
 
     private bool facingRight = false; // to keep track of which direction the player is facing
@@ -44,6 +45,7 @@ public class Player : MonoBehaviour
 
         idleState = new Player_IdleState(this, stateMachine, "idle");
         moveState = new Player_MoveState(this, stateMachine, "move");
+        basicAttackState = new Player_BasicAttackState(this, stateMachine, "attack");
 
         sprintTimeRemaining = maxSprintTime;
     }
@@ -68,6 +70,8 @@ public class Player : MonoBehaviour
                 currentInteractable.Interact(this);
             }
         };
+
+        input.Player.Attack.performed += ctx => stateMachine.ChangeState(basicAttackState);
     }
 
 
