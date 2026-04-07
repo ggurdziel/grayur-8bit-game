@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a5a34766a78d33449e5cc2f4dcdca24, type: 3}
-  m_Name: Line - Brother1
+  m_Name: Line - BrotherQ1C
   m_EditorClassIdentifier: 
   dialogueGroupName: Brother
   speaker: {fileID: 11400000, guid: d85f96c7340b8c548b7980d259b80dfb, type: 2}
   textLine:
-  - Hey there!
+  - Thanks so much! Now I can get to working on that-
   playCanAnswer: 0
   answerLine: []
