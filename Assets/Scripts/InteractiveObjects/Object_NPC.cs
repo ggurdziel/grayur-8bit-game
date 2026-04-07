@@ -4,16 +4,16 @@ public class Object_NPC : MonoBehaviour, IInteractable
 {
     [SerializeField] private DialogueLineSO firstDialogueLine;
 
-    private UI ui;
-    private Inventory_NPC npcInventory;
+    protected UI ui;
+    protected Inventory_NPC npcInventory;
 
-    private void Awake()
+    protected virtual void Awake()
     {
         ui = FindFirstObjectByType<UI>();
         npcInventory = GetComponent<Inventory_NPC>();
     }
 
-    public void Interact(Player player)
+    public virtual void Interact(Player player)
     {
         Debug.Log("NPC interacted");
 
@@ -40,7 +40,6 @@ public class Object_NPC : MonoBehaviour, IInteractable
             }
         }
 
-        // No selected item -> normal dialogue
         if (ui == null)
         {
             Debug.LogError("UI not found in scene.");

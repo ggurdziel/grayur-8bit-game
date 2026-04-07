@@ -9,12 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a5a34766a78d33449e5cc2f4dcdca24, type: 3}
-  m_Name: Line - Brother1
+  m_Script: {fileID: 11500000, guid: 3a0c3ec99d46b8c439043ba67b0fae28, type: 3}
+  m_Name: QUEST DATABASE
   m_EditorClassIdentifier: 
-  dialogueGroupName: Brother
-  speaker: {fileID: 11400000, guid: d85f96c7340b8c548b7980d259b80dfb, type: 2}
-  textLine:
-  - Hey there!
-  playCanAnswer: 0
-  answerLine: []
+  allQuests:
+  - {fileID: 11400000, guid: 509052a03cb40ea42863c9bda24404d0, type: 2}
