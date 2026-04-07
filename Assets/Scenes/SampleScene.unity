@@ -3408,7 +3408,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 345438282}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50674e3bdced8a8489b8d12e0f92ed71, type: 3}
+  m_Script: {fileID: 11500000, guid: bc094bcc07c2e00478cd51ccc28b1ce2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxInventorySize: 10
@@ -10777,9 +10777,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1278507654}
-  - component: {fileID: 1278507655}
+  - component: {fileID: 1278507659}
   - component: {fileID: 1278507657}
-  - component: {fileID: 1278507658}
   m_Layer: 5
   m_Name: UI_Character
   m_TagString: Untagged
@@ -10804,10 +10803,18 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.0026855469, y: -0.018188477}
+  m_AnchoredPosition: {x: 0.0026855469, y: -0.018066406}
   m_SizeDelta: {x: 0.0013428, y: -2105.9}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1278507655
+--- !u!222 &1278507657
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278507653}
+  m_CullTransparentMesh: 1
+--- !u!114 &1278507659
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10819,44 +10826,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b03e05706adae6e41b01bd0890e237ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!222 &1278507657
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1278507653}
-  m_CullTransparentMesh: 1
---- !u!114 &1278507658
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1278507653}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: -3658762254858312073, guid: 21e2438fd0b789a4591736e237ceefe6, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  inventory: {fileID: 345438287}
 --- !u!1 &1300015775
 GameObject:
   m_ObjectHideFlags: 0
@@ -10914,8 +10884,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: We don't have much time. Bring me the pile of wood behind the shed and
-    meet me at the docks.
+  m_text: Would you bring me a stone for a project i'm working on?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -11007,8 +10976,9 @@ GameObject:
   - component: {fileID: 1316388220}
   - component: {fileID: 1316388219}
   - component: {fileID: 1316388222}
+  - component: {fileID: 1316388223}
   m_Layer: 7
-  m_Name: Brother
+  m_Name: Object_BrotherNPC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11107,6 +11077,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstDialogueLine: {fileID: 11400000, guid: e8ee53282ea2cba4ca092f2063a66b45, type: 2}
+--- !u!114 &1316388223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1316388218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2ef384335b8ec14d96be7b8496763b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxInventorySize: 10
+  itemList: []
+  hotbarSize: 5
+  acceptedItemType: 0
 --- !u!1 &1328337829
 GameObject:
   m_ObjectHideFlags: 0

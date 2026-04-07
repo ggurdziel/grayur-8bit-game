@@ -20,6 +20,7 @@ public class Inventory_Base : MonoBehaviour
             return;
 
         itemList.Add(item);
+        Debug.Log("Added item to inventory: " + item.itemData.itemName + " | Count: " + itemList.Count);
         OnInventoryChange?.Invoke();
     }
 
@@ -37,6 +38,7 @@ public class Inventory_Base : MonoBehaviour
         if (SelectedHotbarIndex < 0 || SelectedHotbarIndex >= itemList.Count)
             return null;
 
+        Debug.Log("Selected slot " + SelectedHotbarIndex + " contains: " + itemList[SelectedHotbarIndex].itemData.itemName);
         return itemList[SelectedHotbarIndex];
     }
 
@@ -45,6 +47,7 @@ public class Inventory_Base : MonoBehaviour
         if (SelectedHotbarIndex < 0 || SelectedHotbarIndex >= itemList.Count)
             return;
 
+        Debug.Log("Removed item from slot " + SelectedHotbarIndex + ": " + itemList[SelectedHotbarIndex].itemData.itemName);
         itemList.RemoveAt(SelectedHotbarIndex);
 
         if (SelectedHotbarIndex >= itemList.Count && SelectedHotbarIndex > 0)
@@ -57,4 +60,6 @@ public class Inventory_Base : MonoBehaviour
     {
         return hotbarSize;
     }
+
+    
 }

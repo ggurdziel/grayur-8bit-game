@@ -15,6 +15,8 @@ MonoBehaviour:
   dialogueGroupName: Brother
   speaker: {fileID: 11400000, guid: d85f96c7340b8c548b7980d259b80dfb, type: 2}
   textLine:
-  - Pick up a rock and throw it.
+  - Hey kid, how's it going?
+  - Would you bring me a stone for a project I'm working on?
+  - Don't ask why...it's a surprise!
   playCanAnswer: 0
   answerLine: []

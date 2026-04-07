@@ -34,7 +34,7 @@ public class Player : MonoBehaviour
 
 
     private IInteractable currentInteractable;
-    private Inventory_Base inventory;
+    private Inventory_Player inventory;
 
 
     private void Awake()
@@ -44,7 +44,7 @@ public class Player : MonoBehaviour
 
         input = new PlayerInputSet();
         stateMachine = new StateMachine();
-        inventory = GetComponent<Inventory_Base>();
+        inventory = GetComponent<Inventory_Player>();
 
         idleState = new Player_IdleState(this, stateMachine, "idle");
         moveState = new Player_MoveState(this, stateMachine, "move");
