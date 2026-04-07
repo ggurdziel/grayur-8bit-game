@@ -6,21 +6,20 @@ public class Object_ItemPickup : MonoBehaviour, IInteractable
 
     [SerializeField] private ItemDataSO itemData;
 
-    private Inventory_Item itemToAdd;
-    private Inventory_Base playerInventory;
-
     private void Awake()
     {
-        itemToAdd = new Inventory_Item(itemData);
+        sr = GetComponent<SpriteRenderer>();
     }
 
     private void OnValidate()
     {
         if (itemData == null)
             return;
-            
+
         sr = GetComponent<SpriteRenderer>();
-        sr.sprite = itemData.itemIcon;
+        if (sr != null)
+            sr.sprite = itemData.itemIcon;
+
         gameObject.name = "Object_ItemPickup - " + itemData.itemName;
     }
 
@@ -30,16 +29,8 @@ public class Object_ItemPickup : MonoBehaviour, IInteractable
 
         if (inventory != null && inventory.CanAddItem())
         {
-            inventory.AddItem(itemToAdd);
-            Destroy(gameObject);
-        }
-    }
-
-    public void TryPickup()
-    {
-        if (playerInventory != null && playerInventory.CanAddItem())
-        {
-            playerInventory.AddItem(itemToAdd);
+            inventory.AddItem(new Inventory_Item(itemData));
+            Debug.Log("Picked up: " + itemData.itemName);
             Destroy(gameObject);
         }
     }

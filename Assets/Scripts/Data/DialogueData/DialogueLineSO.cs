@@ -15,8 +15,4 @@ public class DialogueLineSO : ScriptableObject
     public bool playCanAnswer; // should be true, if player can make a choice
     public DialogueLineSO[] answerLine; 
 
-    public string GetRandomLine()
-    {
-        return textLine[Random.Range(0, textLine.Length)];
-    }
 }
