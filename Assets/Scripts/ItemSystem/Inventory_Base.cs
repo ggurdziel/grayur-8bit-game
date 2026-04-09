@@ -61,5 +61,10 @@ public class Inventory_Base : MonoBehaviour
         return hotbarSize;
     }
 
+
+    protected void NotifyInventoryChanged()
+    {
+        OnInventoryChange?.Invoke();
+    }
     
 }
