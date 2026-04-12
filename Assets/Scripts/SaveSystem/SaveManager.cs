@@ -1,16 +1,23 @@
 using System.Collections;
+using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
 public class SaveManager : MonoBehaviour
 {
+    public static SaveManager instance;
+
     private FileDataHandler dataHandler;
     private GameData gameData;
     private List<ISaveable> allSaveables;
 
     [SerializeField] private string fileName = "8-bit-game.json";
     [SerializeField] private bool encryptData = true;
+
+    private void Awake() {
+        instance = this;
+    }
 
     private IEnumerator Start()
     {
@@ -79,4 +86,26 @@ public class SaveManager : MonoBehaviour
             .OfType<ISaveable>()
             .ToList();
     }
+
+
+    public static void LoadScene(string sceneName)
+    {
+        if (instance == null)
+        {
+            Debug.LogError("SaveManager instance is missing.");
+            return;
+        }
+
+        instance.StartCoroutine(instance.LoadSceneCoroutine(sceneName));
+    }
+
+    private IEnumerator LoadSceneCoroutine(string sceneName)
+    {
+        // fade effect and sound effect
+
+        yield return new WaitForSeconds(1f);
+
+        SceneManager.LoadScene(sceneName);
+    }
+    
 }
