@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Player : MonoBehaviour
 {
+    public static Player instance;
+
     public Animator anim {get; private set; }
 
     public Rigidbody2D rb { get; private set; }
@@ -39,6 +41,7 @@ public class Player : MonoBehaviour
 
     private void Awake()
     {
+        instance = this;
         anim = GetComponentInChildren<Animator>();
         rb = GetComponent<Rigidbody2D>();
 
