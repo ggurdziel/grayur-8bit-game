@@ -1,0 +1,1470 @@
+fileFormatVersion: 2
+guid: b4fc95c5171c59c43bf32fb0be389a9b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -398419577931508071
+    second: MCHouseInterior_0
+  - first:
+      213: 7113679221766312881
+    second: MCHouseInterior_1
+  - first:
+      213: 1980099412057783804
+    second: MCHouseInterior_2
+  - first:
+      213: 3085114678467495158
+    second: MCHouseInterior_3
+  - first:
+      213: 2665370431973178237
+    second: MCHouseInterior_4
+  - first:
+      213: -8407822786479923752
+    second: MCHouseInterior_5
+  - first:
+      213: 8739008650681665892
+    second: MCHouseInterior_6
+  - first:
+      213: -6841231983917842650
+    second: MCHouseInterior_7
+  - first:
+      213: 3899080226619480073
+    second: MCHouseInterior_8
+  - first:
+      213: 4125340352686531786
+    second: MCHouseInterior_9
+  - first:
+      213: -495587760160412480
+    second: MCHouseInterior_10
+  - first:
+      213: 8246213062596042849
+    second: MCHouseInterior_11
+  - first:
+      213: 5375296000776927891
+    second: MCHouseInterior_12
+  - first:
+      213: 5702842640520313967
+    second: MCHouseInterior_13
+  - first:
+      213: 7613577421134391050
+    second: MCHouseInterior_14
+  - first:
+      213: -7205372752892155124
+    second: MCHouseInterior_15
+  - first:
+      213: -556914090864423372
+    second: MCHouseInterior_16
+  - first:
+      213: 4577175474269262341
+    second: MCHouseInterior_17
+  - first:
+      213: 3984394612674214537
+    second: MCHouseInterior_18
+  - first:
+      213: 8274823004215535917
+    second: MCHouseInterior_19
+  - first:
+      213: -5764021888158698280
+    second: MCHouseInterior_20
+  - first:
+      213: -4778916720231334448
+    second: MCHouseInterior_21
+  - first:
+      213: 7676385570653996748
+    second: MCHouseInterior_22
+  - first:
+      213: 6230713316741401641
+    second: MCHouseInterior_23
+  - first:
+      213: -6434487761103448249
+    second: MCHouseInterior_24
+  - first:
+      213: -3174662848974792888
+    second: MCHouseInterior_25
+  - first:
+      213: -8289449742173145208
+    second: MCHouseInterior_26
+  - first:
+      213: -6341082971711902529
+    second: MCHouseInterior_27
+  - first:
+      213: 2477050948507196134
+    second: MCHouseInterior_28
+  - first:
+      213: -8335725276720978834
+    second: MCHouseInterior_29
+  - first:
+      213: 7277643783009520451
+    second: MCHouseInterior_30
+  - first:
+      213: -3386736448473195006
+    second: MCHouseInterior_31
+  - first:
+      213: 9007613925411614564
+    second: MCHouseInterior_32
+  - first:
+      213: 7863340603407254430
+    second: MCHouseInterior_33
+  - first:
+      213: 3271996616233862424
+    second: MCHouseInterior_34
+  - first:
+      213: -3090955143814401232
+    second: MCHouseInterior_35
+  - first:
+      213: 725879149680992305
+    second: MCHouseInterior_36
+  - first:
+      213: 96409009613000159
+    second: MCHouseInterior_37
+  - first:
+      213: -448146572588540228
+    second: MCHouseInterior_38
+  - first:
+      213: -8913104823160862011
+    second: MCHouseInterior_39
+  - first:
+      213: 8361960655259798104
+    second: MCHouseInterior_40
+  - first:
+      213: -6612259441310757161
+    second: MCHouseInterior_41
+  - first:
+      213: 4404608362630622540
+    second: MCHouseInterior_42
+  - first:
+      213: 5959742394662287052
+    second: MCHouseInterior_43
+  - first:
+      213: 4196570538236117192
+    second: MCHouseInterior_44
+  - first:
+      213: 5785068860076782086
+    second: MCHouseInterior_45
+  - first:
+      213: 2851494333512061760
+    second: MCHouseInterior_46
+  - first:
+      213: 3540592582157670641
+    second: MCHouseInterior_47
+  - first:
+      213: 5138829761345091427
+    second: MCHouseInterior_48
+  - first:
+      213: -1442488066266370829
+    second: MCHouseInterior_49
+  - first:
+      213: 6497917761979594173
+    second: MCHouseInterior_50
+  - first:
+      213: 3029180432974833917
+    second: MCHouseInterior_51
+  - first:
+      213: -7382927760617674781
+    second: MCHouseInterior_52
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 160
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MCHouseInterior_7
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 7929
+        width: 212
+        height: 452
+      alignment: 9
+      pivot: {x: 0.7, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62f398cc1cf0f01a0800000000000000
+      internalID: -6841231983917842650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCHouseInterior_8
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 7919
+        width: 102
+        height: 372
+      alignment: 9
+      pivot: {x: 0.6, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9085762dec05c1630800000000000000
+      internalID: 3899080226619480073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCHouseInterior_9
+      rect:
+        serializedVersion: 2
+        x: 1349
+        y: 7769
+        width: 482
+        height: 632
+      alignment: 9
+      pivot: {x: 0.37, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac4277b9137204930800000000000000
+      internalID: 4125340352686531786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCHouseInterior_10
+      rect:
+        serializedVersion: 2
+        x: 2399
+        y: 8240
+        width: 160
+        height: 140
+      alignment: 9
+      pivot: {x: 0.5, y: 0.57}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cc6b90de815f19f0800000000000000
+      internalID: -495587760160412480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCHouseInterior_12
+      rect:
+        serializedVersion: 2
+        x: 2299
+        y: 7749
+        width: 160
+        height: 171
+      alignment: 9
+      pivot: {x: 0.9, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39af2e0bb33e89a40800000000000000
+      internalID: 5375296000776927891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCHouseInterior_13
+      rect:
+        serializedVersion: 2
+        x: 2589
+        y: 7359
+        width: 92
+        height: 592
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6cf926aa21942f40800000000000000
+      internalID: 5702842640520313967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCHouseInterior_14
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 7319
+        width: 442
+        height: 252
+      alignment: 9
+      pivot: {x: 0.325, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0766a8735cd8a960800000000000000
+      internalID: 7613577421134391050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCHouseInterior_15
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 7369
+        width: 162
+        height: 252
+      alignment: 9
+      pivot: {x: 0.9, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0ba59d28af510c90800000000000000
+      internalID: -7205372752892155124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCHouseInterior_16
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 7299
+        width: 122
+        height: 272
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43ecd93c5917548f0800000000000000
+      internalID: -556914090864423372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCHouseInterior_17
+      rect:
+        serializedVersion: 2
+        x: 1559
+        y: 7379
+        width: 182
+        height: 192
+      alignment: 9
+      pivot: {x: 0.1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 502137ac7d4658f30800000000000000
+      internalID: 4577175474269262341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCHouseInterior_18
+      rect:
+        serializedVersion: 2
+        x: 1849
+        y: 7139
+        width: 382
+        height: 492
+      alignment: 9
+      pivot: {x: 0.67, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98a3d6d3ac96b4730800000000000000
+      internalID: 3984394612674214537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCHouseInterior_19
+      rect:
+        serializedVersion: 2
+        x: 2319
+        y: 7379
+        width: 92
+        height: 222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d296f713ea316d270800000000000000
+      internalID: 8274823004215535917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCHouseInterior_20
+      rect:
+        serializedVersion: 2
+        x: 1419
+        y: 7269
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d479beb1a41200b0800000000000000
+      internalID: -5764021888158698280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCHouseInterior_21
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 6629
+        width: 192
+        height: 432
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ddbf6f0090edadb0800000000000000
+      internalID: -4778916720231334448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCHouseInterior_22
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 6639
+        width: 192
+        height: 552
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc604c95100088a60800000000000000
+      internalID: 7676385570653996748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCHouseInterior_23
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 6119
+        width: 1182
+        height: 922
+      alignment: 9
+      pivot: {x: 0.5, y: 0.47}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92ccaa5ffb0f77650800000000000000
+      internalID: 6230713316741401641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCHouseInterior_24
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 5919
+        width: 172
+        height: 532
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74794dff87b14b6a0800000000000000
+      internalID: -6434487761103448249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCHouseInterior_25
+      rect:
+        serializedVersion: 2
+        x: 3499
+        y: 6219
+        width: 252
+        height: 132
+      alignment: 9
+      pivot: {x: 0.4, y: 0.85}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8475a3d75f451f3d0800000000000000
+      internalID: -3174662848974792888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCHouseInterior_26
+      rect:
+        serializedVersion: 2
+        x: 3949
+        y: 6329
+        width: 162
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 887f05ef065f5fc80800000000000000
+      internalID: -8289449742173145208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCHouseInterior_27
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 6049
+        width: 172
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbc65db32a2fff7a0800000000000000
+      internalID: -6341082971711902529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCHouseInterior_28
+      rect:
+        serializedVersion: 2
+        x: 4239
+        y: 6169
+        width: 142
+        height: 132
+      alignment: 9
+      pivot: {x: 1, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ead054b6b0406220800000000000000
+      internalID: 2477050948507196134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCHouseInterior_30
+      rect:
+        serializedVersion: 2
+        x: 2089
+        y: 5519
+        width: 212
+        height: 552
+      alignment: 9
+      pivot: {x: 0.5, y: 0.68}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34bcc1846726ff460800000000000000
+      internalID: 7277643783009520451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCHouseInterior_32
+      rect:
+        serializedVersion: 2
+        x: 2949
+        y: 5519
+        width: 212
+        height: 552
+      alignment: 9
+      pivot: {x: 0.5, y: 0.68}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46f650a0429710d70800000000000000
+      internalID: 9007613925411614564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCHouseInterior_33
+      rect:
+        serializedVersion: 2
+        x: 3399
+        y: 5869
+        width: 92
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e93cef5fd92302d60800000000000000
+      internalID: 7863340603407254430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCHouseInterior_34
+      rect:
+        serializedVersion: 2
+        x: 3719
+        y: 5759
+        width: 352
+        height: 352
+      alignment: 9
+      pivot: {x: 0.28, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81546e03697786d20800000000000000
+      internalID: 3271996616233862424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCHouseInterior_35
+      rect:
+        serializedVersion: 2
+        x: 4519
+        y: 5239
+        width: 1182
+        height: 922
+      alignment: 9
+      pivot: {x: 0.5, y: 0.55}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 033b64c5ca8ba15d0800000000000000
+      internalID: -3090955143814401232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCHouseInterior_36
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 5279
+        width: 172
+        height: 532
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1302992ad37d21a00800000000000000
+      internalID: 725879149680992305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCHouseInterior_37
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 5559
+        width: 172
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdd4123cb73865100800000000000000
+      internalID: 96409009613000159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCHouseInterior_38
+      rect:
+        serializedVersion: 2
+        x: 1479
+        y: 5299
+        width: 172
+        height: 352
+      alignment: 9
+      pivot: {x: 0.5, y: 0.24}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbe1d8d011dd7c9f0800000000000000
+      internalID: -448146572588540228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCHouseInterior_39
+      rect:
+        serializedVersion: 2
+        x: 3339
+        y: 5269
+        width: 382
+        height: 492
+      alignment: 9
+      pivot: {x: 0.35, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ca0da1136a4e4480800000000000000
+      internalID: -8913104823160862011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCHouseInterior_41
+      rect:
+        serializedVersion: 2
+        x: 5879
+        y: 5249
+        width: 262
+        height: 512
+      alignment: 9
+      pivot: {x: 0.4, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7de03f542198c34a0800000000000000
+      internalID: -6612259441310757161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCHouseInterior_42
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 5249
+        width: 622
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4d205d18ff402d30800000000000000
+      internalID: 4404608362630622540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCHouseInterior_43
+      rect:
+        serializedVersion: 2
+        x: 1799
+        y: 4739
+        width: 1362
+        height: 732
+      alignment: 9
+      pivot: {x: 0.5, y: 0.465}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc67ea2c12245b250800000000000000
+      internalID: 5959742394662287052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCHouseInterior_44
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 4969
+        width: 622
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c00f6e8ba63d3a30800000000000000
+      internalID: 4196570538236117192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCHouseInterior_46
+      rect:
+        serializedVersion: 2
+        x: 4569
+        y: 5019
+        width: 152
+        height: 72
+      alignment: 9
+      pivot: {x: 0.7, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 043960c0dfa829720800000000000000
+      internalID: 2851494333512061760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCHouseInterior_47
+      rect:
+        serializedVersion: 2
+        x: 4749
+        y: 5019
+        width: 32
+        height: 72
+      alignment: 9
+      pivot: {x: 1.5, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f814e1d136b22130800000000000000
+      internalID: 3540592582157670641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCHouseInterior_49
+      rect:
+        serializedVersion: 2
+        x: 5169
+        y: 4740
+        width: 501
+        height: 410
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fce3711fb04bfbe0800000000000000
+      internalID: -1442488066266370829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCHouseInterior_50
+      rect:
+        serializedVersion: 2
+        x: 5779
+        y: 4829
+        width: 582
+        height: 272
+      alignment: 9
+      pivot: {x: 0.6, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db5be7ee6cd3d2a50800000000000000
+      internalID: 6497917761979594173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCHouseInterior_51
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 4429
+        width: 462
+        height: 412
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df86704fd8fc90a20800000000000000
+      internalID: 3029180432974833917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCHouseInterior_52
+      rect:
+        serializedVersion: 2
+        x: 3449
+        y: 4059
+        width: 802
+        height: 482
+      alignment: 9
+      pivot: {x: 0.48, y: 0.33}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e7630271529a8990800000000000000
+      internalID: -7382927760617674781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCHouseInterior_126
+      rect:
+        serializedVersion: 2
+        x: 1950
+        y: 7730
+        width: 300
+        height: 480
+      alignment: 9
+      pivot: {x: 0.27, y: 0.55}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30bddfeb20472f44e8bb6df5ccde455b
+      internalID: 1380590831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCHouseInterior_129
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 5690
+        width: 480
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfd52307869379545afea3bac4cc08de
+      internalID: 1318416625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCHouseInterior_133
+      rect:
+        serializedVersion: 2
+        x: 3880
+        y: 4750
+        width: 500
+        height: 480
+      alignment: 9
+      pivot: {x: 0.52, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ea52447f2eee59418d93fd8bc168476
+      internalID: -2075230530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCHouseInterior_142
+      rect:
+        serializedVersion: 2
+        x: 3380
+        y: 4750
+        width: 500
+        height: 310
+      alignment: 9
+      pivot: {x: 0.56, y: 0.54}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0c6bcd6468838c4c868d4904cb60f93
+      internalID: 985446014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCInteriorDecor_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 5690
+        width: 480
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d1ad8c878d061244a79d03e6260f14b
+      internalID: -713049502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCInteriorDecor_0
+      rect:
+        serializedVersion: 2
+        x: 4850
+        y: 4870
+        width: 200
+        height: 280
+      alignment: 9
+      pivot: {x: 0.63, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31b6b58b42ed1ef4e81211263711c7b9
+      internalID: -233046656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCInteriorDecor_1
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 5300
+        width: 570
+        height: 350
+      alignment: 9
+      pivot: {x: 0.47, y: 0.47}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3d8ab548b011f143b902cac56e8ce78
+      internalID: -1306692416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 7f1fdaaa15f411f4ca457f6f83b4552d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      MCHouseInterior_0: -398419577931508071
+      MCHouseInterior_1: 7113679221766312881
+      MCHouseInterior_10: -495587760160412480
+      MCHouseInterior_100: 1282482914
+      MCHouseInterior_101: 1458640272
+      MCHouseInterior_102: 154556930
+      MCHouseInterior_103: -1764820467
+      MCHouseInterior_104: -1137912625
+      MCHouseInterior_105: 869896543
+      MCHouseInterior_106: 456811726
+      MCHouseInterior_107: -220745267
+      MCHouseInterior_108: -1158621439
+      MCHouseInterior_109: -965237453
+      MCHouseInterior_11: 8246213062596042849
+      MCHouseInterior_110: 1854225035
+      MCHouseInterior_111: 1692528273
+      MCHouseInterior_112: -1628176072
+      MCHouseInterior_113: 1089424232
+      MCHouseInterior_114: -1460997662
+      MCHouseInterior_115: 254647779
+      MCHouseInterior_116: -1805982153
+      MCHouseInterior_117: -752111789
+      MCHouseInterior_118: 1926297957
+      MCHouseInterior_119: -1048322256
+      MCHouseInterior_12: 5375296000776927891
+      MCHouseInterior_120: 906025078
+      MCHouseInterior_121: -923883784
+      MCHouseInterior_122: 1816058622
+      MCHouseInterior_123: -865880496
+      MCHouseInterior_124: -619617383
+      MCHouseInterior_125: -734493774
+      MCHouseInterior_126: 1380590831
+      MCHouseInterior_127: -1784512424
+      MCHouseInterior_128: 766948833
+      MCHouseInterior_129: 1318416625
+      MCHouseInterior_13: 5702842640520313967
+      MCHouseInterior_130: -601491347
+      MCHouseInterior_131: 462257816
+      MCHouseInterior_132: 1689961959
+      MCHouseInterior_133: -2075230530
+      MCHouseInterior_134: 90997749
+      MCHouseInterior_135: -752123600
+      MCHouseInterior_136: -270738929
+      MCHouseInterior_137: 408880378
+      MCHouseInterior_138: -214035583
+      MCHouseInterior_139: 1789410656
+      MCHouseInterior_14: 7613577421134391050
+      MCHouseInterior_140: -1723613959
+      MCHouseInterior_141: 255742568
+      MCHouseInterior_142: 985446014
+      MCHouseInterior_143: -1314814560
+      MCHouseInterior_144: -117992940
+      MCHouseInterior_145: 98986038
+      MCHouseInterior_146: 529556928
+      MCHouseInterior_147: -1969990502
+      MCHouseInterior_148: 1736232800
+      MCHouseInterior_149: -1636005220
+      MCHouseInterior_15: -7205372752892155124
+      MCHouseInterior_150: -624615338
+      MCHouseInterior_151: -176018348
+      MCHouseInterior_152: -67428722
+      MCHouseInterior_153: 27701038
+      MCHouseInterior_16: -556914090864423372
+      MCHouseInterior_17: 4577175474269262341
+      MCHouseInterior_18: 3984394612674214537
+      MCHouseInterior_19: 8274823004215535917
+      MCHouseInterior_2: 1980099412057783804
+      MCHouseInterior_20: -5764021888158698280
+      MCHouseInterior_21: -4778916720231334448
+      MCHouseInterior_22: 7676385570653996748
+      MCHouseInterior_23: 6230713316741401641
+      MCHouseInterior_24: -6434487761103448249
+      MCHouseInterior_25: -3174662848974792888
+      MCHouseInterior_26: -8289449742173145208
+      MCHouseInterior_27: -6341082971711902529
+      MCHouseInterior_28: 2477050948507196134
+      MCHouseInterior_29: -8335725276720978834
+      MCHouseInterior_3: 3085114678467495158
+      MCHouseInterior_30: 7277643783009520451
+      MCHouseInterior_31: -3386736448473195006
+      MCHouseInterior_32: 9007613925411614564
+      MCHouseInterior_33: 7863340603407254430
+      MCHouseInterior_34: 3271996616233862424
+      MCHouseInterior_35: -3090955143814401232
+      MCHouseInterior_36: 725879149680992305
+      MCHouseInterior_37: 96409009613000159
+      MCHouseInterior_38: -448146572588540228
+      MCHouseInterior_39: -8913104823160862011
+      MCHouseInterior_4: 2665370431973178237
+      MCHouseInterior_40: 8361960655259798104
+      MCHouseInterior_41: -6612259441310757161
+      MCHouseInterior_42: 4404608362630622540
+      MCHouseInterior_43: 5959742394662287052
+      MCHouseInterior_44: 4196570538236117192
+      MCHouseInterior_45: 5785068860076782086
+      MCHouseInterior_46: 2851494333512061760
+      MCHouseInterior_47: 3540592582157670641
+      MCHouseInterior_48: 5138829761345091427
+      MCHouseInterior_49: -1442488066266370829
+      MCHouseInterior_5: -8407822786479923752
+      MCHouseInterior_50: 6497917761979594173
+      MCHouseInterior_51: 3029180432974833917
+      MCHouseInterior_52: -7382927760617674781
+      MCHouseInterior_53: 1105787245
+      MCHouseInterior_54: -956738476
+      MCHouseInterior_55: 582990740
+      MCHouseInterior_56: -1737091865
+      MCHouseInterior_57: -8231744
+      MCHouseInterior_58: 1953939528
+      MCHouseInterior_59: 906773232
+      MCHouseInterior_6: 8739008650681665892
+      MCHouseInterior_60: -540530065
+      MCHouseInterior_61: -1664387099
+      MCHouseInterior_62: -716170707
+      MCHouseInterior_63: 1709773438
+      MCHouseInterior_64: 2108003319
+      MCHouseInterior_65: -16770635
+      MCHouseInterior_66: 136304439
+      MCHouseInterior_67: -746109953
+      MCHouseInterior_68: 407207858
+      MCHouseInterior_69: 1864266593
+      MCHouseInterior_7: -6841231983917842650
+      MCHouseInterior_70: 318911590
+      MCHouseInterior_71: -1354326329
+      MCHouseInterior_72: 1912807022
+      MCHouseInterior_73: 1603901685
+      MCHouseInterior_74: 273713870
+      MCHouseInterior_75: -41400507
+      MCHouseInterior_76: -506921795
+      MCHouseInterior_77: -1816666311
+      MCHouseInterior_78: -1445822483
+      MCHouseInterior_79: 1244911729
+      MCHouseInterior_8: 3899080226619480073
+      MCHouseInterior_80: -893649565
+      MCHouseInterior_81: 1275337837
+      MCHouseInterior_82: 562666474
+      MCHouseInterior_83: -1021116881
+      MCHouseInterior_84: 1904123185
+      MCHouseInterior_85: -1386022971
+      MCHouseInterior_86: 2084899042
+      MCHouseInterior_87: -630391156
+      MCHouseInterior_88: -904604001
+      MCHouseInterior_89: -574777933
+      MCHouseInterior_9: 4125340352686531786
+      MCHouseInterior_90: 134535017
+      MCHouseInterior_91: 563313562
+      MCHouseInterior_92: 1093094567
+      MCHouseInterior_93: -1185985765
+      MCHouseInterior_94: 1753317485
+      MCHouseInterior_95: -1515909259
+      MCHouseInterior_96: -192210437
+      MCHouseInterior_97: 1606575282
+      MCHouseInterior_98: -303233710
+      MCHouseInterior_99: -1070308648
+      MCInteriorDecor_0: -233046656
+      MCInteriorDecor_1: -1306692416
+      MCInteriorDecor_2: 347905319
+      MCInteriorDecor_3: -713049502
+      MCInteriorDecor_4: -610036901
+      MCInteriorDecor_5: 1146360505
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
