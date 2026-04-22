@@ -46,18 +46,19 @@ public class GameManager : MonoBehaviour
 
         SceneManager.LoadScene(sceneName);
 
-        yield return new WaitForSeconds(.2f);
+        yield return null; // wait one frame
 
-        PlaySceneMusic(sceneName);
-
-        SaveManager.instance.LoadGame();
+        string loadedSceneName = SceneManager.GetActiveScene().name;
+        PlaySceneMusic(loadedSceneName);
 
         Vector3 position = GetWaypointPosition(respawnType);
 
-        if (position != Vector3.zero)
+        if (position != Vector3.zero && Player.instance != null)
         {
             Player.instance.transform.position = position;
         }
+
+        SaveManager.instance.LoadGame();
     }
 
     private Vector3 GetWaypointPosition(RespawnType type)
