@@ -1,0 +1,29 @@
+using UnityEngine;
+
+public class Entity_SFX : MonoBehaviour
+{
+    [SerializeField] private AudioDatabaseSO audioDatabase;
+
+    private AudioSource audioSource;
+
+    private void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
+    public void PlaySound(string soundName)
+    {
+        var data = audioDatabase.Get(soundName);
+
+        if (data == null)
+        {
+            Debug.LogWarning($"No sound found: {soundName}");
+            return;
+        }
+
+        var clip = data.GetRandomClip();
+        if (clip == null) return;
+
+        audioSource.PlayOneShot(clip, data.volume);
+    }
+}
