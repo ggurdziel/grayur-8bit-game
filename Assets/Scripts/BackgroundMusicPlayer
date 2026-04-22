@@ -1,0 +1,50 @@
+using UnityEngine;
+
+public class BackgroundMusicPlayer : MonoBehaviour
+{
+    [SerializeField] private AudioDatabaseSO audioDatabase;
+    [SerializeField] private string musicName = "MainTheme";
+
+    private AudioSource musicSource;
+
+    private void Awake()
+    {
+        musicSource = GetComponent<AudioSource>();
+
+        if (musicSource == null)
+        {
+            musicSource = gameObject.AddComponent<AudioSource>();
+        }
+
+        musicSource.loop = true;
+        musicSource.playOnAwake = false;
+    }
+
+    private void Start()
+    {
+        PlayMusic(musicName);
+    }
+
+    public void PlayMusic(string groupName)
+    {
+        AudioClipData musicData = audioDatabase.Get(groupName);
+
+        if (musicData == null)
+        {
+            Debug.LogWarning($"No music found for group: {groupName}");
+            return;
+        }
+
+        AudioClip clip = musicData.GetRandomClip();
+        if (clip == null) return;
+
+        musicSource.clip = clip;
+        musicSource.volume = musicData.volume;
+        musicSource.Play();
+    }
+
+    public void StopMusic()
+    {
+        musicSource.Stop();
+    }
+}

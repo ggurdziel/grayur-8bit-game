@@ -6,7 +6,6 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
-
     private void Awake()
     {
         if (instance != null && instance != this)
@@ -18,22 +17,38 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
+    private void PlaySceneMusic(string sceneName)
+{
+    switch (sceneName)
+    {
+        case "HouseScene":
+            AudioManager.instance.PlayMusic("HouseTheme");
+            break;
+
+        case "OutsideScene":
+            AudioManager.instance.PlayMusic("MainTheme");
+            break;
+
+        default:
+            AudioManager.instance.PlayMusic("MainTheme");
+            break;
+    }
+}
 
     public void ChangeScene(string sceneName, RespawnType respawnType)
     {
         StartCoroutine(ChangeSceneCo(sceneName, respawnType));
     }
 
-
     private IEnumerator ChangeSceneCo(string sceneName, RespawnType respawnType)
     {
-        // fade effect and sound effect
-
         yield return new WaitForSeconds(1f);
 
         SceneManager.LoadScene(sceneName);
 
         yield return new WaitForSeconds(.2f);
+
+        PlaySceneMusic(sceneName);
 
         SaveManager.instance.LoadGame();
 
@@ -44,7 +59,6 @@ public class GameManager : MonoBehaviour
             Player.instance.transform.position = position;
         }
     }
-
 
     private Vector3 GetWaypointPosition(RespawnType type)
     {
