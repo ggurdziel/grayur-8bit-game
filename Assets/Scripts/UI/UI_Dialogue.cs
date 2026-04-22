@@ -48,8 +48,21 @@ public class UI_Dialogue : MonoBehaviour
 
         if (line.speaker != null)
         {
-            speakerPortrait.sprite = line.speaker.speakerPortrait;
             speakerName.text = line.speaker.speakerName;
+            Debug.Log("Portrait is: " + line.speaker.speakerPortrait);
+
+            if (line.speaker.speakerPortrait != null)
+            {
+                speakerPortrait.enabled = true;
+                speakerPortrait.sprite = line.speaker.speakerPortrait;
+                speakerPortrait.color = Color.white;
+                speakerPortrait.SetNativeSize();
+            }
+            else
+            {
+                Debug.LogWarning($"Speaker portrait is missing for {line.speaker.speakerName}");
+                speakerPortrait.enabled = false;
+            }
         }
 
         dialogueChoices.text = "Left click to continue";

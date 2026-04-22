@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Speaker - Brother
   m_EditorClassIdentifier: 
   speakerName: Brother
-  speakerPortrait: {fileID: -6366638279998213081, guid: 9c515eb7ff436b24b957d1b4c73bc074, type: 3}
+  speakerPortrait: {fileID: 319639895, guid: 62051cce68a7e3a468af1ed30fe735a3, type: 3}

@@ -21,6 +21,7 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
+        Debug.Log("AudioManager Start running");
         PlayMusic("MainTheme");
     }
 

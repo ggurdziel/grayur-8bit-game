@@ -218,7 +218,7 @@ SpriteRenderer:
   m_SortingLayerID: 1765169005
   m_SortingLayer: 2
   m_SortingOrder: 2
-  m_Sprite: {fileID: -6366638279998213081, guid: 66dd929ce09d7f94eac20d119f7e7e1e, type: 3}
+  m_Sprite: {fileID: 5223161781135215078, guid: 07109bfbb38b3b24da6cc8ca7b9a27e8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3254,17 +3254,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3325634960358688305, guid: 5266233ac25cf2d499c91540c31ce04a, type: 3}
   m_PrefabInstance: {fileID: 6214721305639309668}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &345438287 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1379884641173577070, guid: 5266233ac25cf2d499c91540c31ce04a, type: 3}
-  m_PrefabInstance: {fileID: 6214721305639309668}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc094bcc07c2e00478cd51ccc28b1ce2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &387085598
 GameObject:
   m_ObjectHideFlags: 0
@@ -14143,6 +14132,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 1086062808278072617, guid: 4bb8dd7786a8a5a4f9f96a489c3b0e0f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1485448924268199991, guid: 4bb8dd7786a8a5a4f9f96a489c3b0e0f, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -14295,10 +14288,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5514646690838791866, guid: 4bb8dd7786a8a5a4f9f96a489c3b0e0f, type: 3}
-      propertyPath: inventory
-      value: 
-      objectReference: {fileID: 345438287}
+    - target: {fileID: 4733168387432881850, guid: 4bb8dd7786a8a5a4f9f96a489c3b0e0f, type: 3}
+      propertyPath: m_Color.a
+      value: 0.72156864
+      objectReference: {fileID: 0}
     - target: {fileID: 6699457265894102677, guid: 4bb8dd7786a8a5a4f9f96a489c3b0e0f, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -14359,13 +14352,13 @@ SceneRoots:
   - {fileID: 780468181}
   - {fileID: 619394802}
   - {fileID: 6214721305639309668}
-  - {fileID: 8520770954576167677}
-  - {fileID: 702446640}
   - {fileID: 1316388221}
   - {fileID: 2396581020327673326}
-  - {fileID: 923184341}
-  - {fileID: 968017030}
-  - {fileID: 1866307394}
   - {fileID: 1158522448246745867}
+  - {fileID: 923184341}
+  - {fileID: 8520770954576167677}
+  - {fileID: 702446640}
   - {fileID: 1383464855}
+  - {fileID: 1866307394}
+  - {fileID: 968017030}
   - {fileID: 1721329377}

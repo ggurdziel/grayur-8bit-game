@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 9c515eb7ff436b24b957d1b4c73bc074
+guid: 4d674cf28b71ddc48baf067f90fb0b79
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6366638279998213081
-    second: brotherSpriteSheet_Front_0
-  - first:
-      213: 338400154893973542
-    second: brotherSpriteSheet_Front_1
-  - first:
-      213: -5453138647927404471
-    second: brotherSpriteSheet_Front_2
+      213: -2376489465979468571
+    second: Max_Walk_Front_Final_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -43,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -57,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 80
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -81,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -106,67 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: brotherSpriteSheet_Front_0
+      name: Max_Walk_Front_Final_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 37
-        width: 80
-        height: 80
+        x: 0
+        y: 0
+        width: 68
+        height: 24
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7247d4b573825a7a0800000000000000
-      internalID: -6366638279998213081
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: brotherSpriteSheet_Front_1
-      rect:
-        serializedVersion: 2
-        x: 105
-        y: 37
-        width: 80
-        height: 80
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6287460e52d32b400800000000000000
-      internalID: 338400154893973542
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: brotherSpriteSheet_Front_2
-      rect:
-        serializedVersion: 2
-        x: 195
-        y: 37
-        width: 80
-        height: 80
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 948455baa4f8254b0800000000000000
-      internalID: -5453138647927404471
+      spriteID: 5e406dffb63050fd0800000000000000
+      internalID: -2376489465979468571
       vertices: []
       indices: 
       edges: []
@@ -175,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 2af9d2daede137c4abf8f72fddb765a7
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -185,9 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      brotherSpriteSheet_Front_0: -6366638279998213081
-      brotherSpriteSheet_Front_1: 338400154893973542
-      brotherSpriteSheet_Front_2: -5453138647927404471
+      Max_Walk_Front_Final_0: -2376489465979468571
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
