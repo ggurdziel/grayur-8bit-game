@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 66dd929ce09d7f94eac20d119f7e7e1e
+guid: 62051cce68a7e3a468af1ed30fe735a3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6366638279998213081
-    second: brotherSpriteSheet_Front_0
-  - first:
-      213: 338400154893973542
-    second: brotherSpriteSheet_Front_1
-  - first:
-      213: -5453138647927404471
-    second: brotherSpriteSheet_Front_2
+      213: 5223161781135215078
+    second: Max_Idle_Front_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -57,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 80
+  spritePixelsToUnits: 10
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -106,67 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: brotherSpriteSheet_Front_0
+      name: Max_Idle_Front_1
       rect:
         serializedVersion: 2
-        x: 12
-        y: 17
-        width: 79
-        height: 101
+        x: 17
+        y: 7
+        width: 17
+        height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7247d4b573825a7a0800000000000000
-      internalID: -6366638279998213081
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: brotherSpriteSheet_Front_1
-      rect:
-        serializedVersion: 2
-        x: 107
-        y: 17
-        width: 79
-        height: 101
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6287460e52d32b400800000000000000
-      internalID: 338400154893973542
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: brotherSpriteSheet_Front_2
-      rect:
-        serializedVersion: 2
-        x: 197
-        y: 17
-        width: 79
-        height: 101
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 948455baa4f8254b0800000000000000
-      internalID: -5453138647927404471
+      spriteID: 79482e1f70ef74d4781fa2118a323765
+      internalID: 319639895
       vertices: []
       indices: 
       edges: []
@@ -175,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 372b0ce7f73ba224bba7efcf6a6115c2
     internalID: 0
     vertices: []
     indices: 
@@ -185,9 +135,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      brotherSpriteSheet_Front_0: -6366638279998213081
-      brotherSpriteSheet_Front_1: 338400154893973542
-      brotherSpriteSheet_Front_2: -5453138647927404471
+      Max_Idle_Front_0: 5223161781135215078
+      Max_Idle_Front_1: 319639895
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

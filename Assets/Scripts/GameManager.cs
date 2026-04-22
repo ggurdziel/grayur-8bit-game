@@ -21,11 +21,11 @@ public class GameManager : MonoBehaviour
 {
     switch (sceneName)
     {
-        case "HouseScene":
+        case "House_1":
             AudioManager.instance.PlayMusic("HouseTheme");
             break;
 
-        case "OutsideScene":
+        case "Hanalei":
             AudioManager.instance.PlayMusic("MainTheme");
             break;
 
