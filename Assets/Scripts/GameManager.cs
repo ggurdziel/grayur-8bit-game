@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
     switch (sceneName)
     {
         case "House_1":
+        case "House_2":
             AudioManager.instance.PlayMusic("HouseTheme");
             break;
 
