@@ -42,14 +42,11 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator ChangeSceneCo(string sceneName, RespawnType respawnType)
     {
-        yield return new WaitForSeconds(1f);
+        PlaySceneMusic(sceneName);
 
         SceneManager.LoadScene(sceneName);
-
+        
         yield return null; // wait one frame
-
-        string loadedSceneName = SceneManager.GetActiveScene().name;
-        PlaySceneMusic(loadedSceneName);
 
         Vector3 position = GetWaypointPosition(respawnType);
 

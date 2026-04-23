@@ -13577,7 +13577,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.020231009, y: 0.12802738}
+  m_Offset: {x: 0.020231009, y: 0.3306474}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -13587,7 +13587,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.2697482, y: 1.1215924}
+  m_Size: {x: 1.2697482, y: 0.71635234}
   m_EdgeRadius: 0
 --- !u!114 &1598322476
 MonoBehaviour:
@@ -13750,6 +13750,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioDB: {fileID: 11400000, guid: 9619fae20b95137499168b83c1929923, type: 2}
   bgmSource: {fileID: 1721329375}
+  fadeDuration: 0.75
 --- !u!4 &1721329377
 Transform:
   m_ObjectHideFlags: 0
@@ -13861,7 +13862,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.03655529, y: 0.11986536}
+  m_Offset: {x: 0.03655529, y: 0.31167895}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -13871,7 +13872,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.1935692, y: 1.1379164}
+  m_Size: {x: 1.1935692, y: 0.75428927}
   m_EdgeRadius: 0
 --- !u!114 &1982766729
 MonoBehaviour:
@@ -14116,6 +14117,22 @@ PrefabInstance:
     - target: {fileID: 3770213018384961088, guid: 6c4936e8be34d7f4a903d3e0194682a3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8611142967746375656, guid: 6c4936e8be34d7f4a903d3e0194682a3, type: 3}
+      propertyPath: m_Size.x
+      value: 1.1431216
+      objectReference: {fileID: 0}
+    - target: {fileID: 8611142967746375656, guid: 6c4936e8be34d7f4a903d3e0194682a3, type: 3}
+      propertyPath: m_Size.y
+      value: 1.8370303
+      objectReference: {fileID: 0}
+    - target: {fileID: 8611142967746375656, guid: 6c4936e8be34d7f4a903d3e0194682a3, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.032045662
+      objectReference: {fileID: 0}
+    - target: {fileID: 8611142967746375656, guid: 6c4936e8be34d7f4a903d3e0194682a3, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.0030385852
       objectReference: {fileID: 0}
     - target: {fileID: 8686721555980394801, guid: 6c4936e8be34d7f4a903d3e0194682a3, type: 3}
       propertyPath: m_Name
