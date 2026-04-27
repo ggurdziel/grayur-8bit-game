@@ -1,5 +1,3 @@
-using UnityEngine;
-
 public enum RespawnType
 {
     None,
@@ -8,5 +6,14 @@ public enum RespawnType
     House1Inside,
 
     House2Outside,
-    House2Inside
+    House2Inside,
+
+    House3Outside,
+    House3Inside,
+
+    House4Outside,
+    House4Inside,
+
+    House5Outside,
+    House5Inside
 }

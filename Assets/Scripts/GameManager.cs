@@ -13,28 +13,26 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
+
         instance = this;
         DontDestroyOnLoad(gameObject);
     }
 
     private void PlaySceneMusic(string sceneName)
-{
-    switch (sceneName)
     {
-        case "House_1":
-        case "House_2":
+        if (sceneName.StartsWith("House_"))
+        {
             AudioManager.instance.PlayMusic("HouseTheme");
-            break;
-
-        case "Hanalei":
+        }
+        else if (sceneName == "Hanalei")
+        {
             AudioManager.instance.PlayMusic("MainTheme");
-            break;
-
-        default:
+        }
+        else
+        {
             AudioManager.instance.PlayMusic("MainTheme");
-            break;
+        }
     }
-}
 
     public void ChangeScene(string sceneName, RespawnType respawnType)
     {
@@ -46,8 +44,10 @@ public class GameManager : MonoBehaviour
         PlaySceneMusic(sceneName);
 
         SceneManager.LoadScene(sceneName);
-        
-        yield return null; // wait one frame
+
+        yield return null;
+
+        SaveManager.instance.LoadGame();
 
         Vector3 position = GetWaypointPosition(respawnType);
 
@@ -55,8 +55,6 @@ public class GameManager : MonoBehaviour
         {
             Player.instance.transform.position = position;
         }
-
-        SaveManager.instance.LoadGame();
     }
 
     private Vector3 GetWaypointPosition(RespawnType type)
@@ -71,6 +69,7 @@ public class GameManager : MonoBehaviour
                 return point.GetPosition();
             }
         }
+
         return Vector3.zero;
     }
 }
