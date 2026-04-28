@@ -485,12 +485,12 @@ TextureImporter:
       name: TUT_AREA-Recovered2_7
       rect:
         serializedVersion: 2
-        x: 1419
-        y: 788
-        width: 107
-        height: 131
+        x: 1422
+        y: 789
+        width: 112
+        height: 128
       alignment: 9
-      pivot: {x: 0.5, y: 0}
+      pivot: {x: 0.025, y: -0.0275}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -507,12 +507,12 @@ TextureImporter:
       name: TUT_AREA-Recovered2_8
       rect:
         serializedVersion: 2
-        x: 1555
+        x: 1551
         y: 787
-        width: 121
-        height: 125
-      alignment: 6
-      pivot: {x: 0, y: 0}
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -529,12 +529,12 @@ TextureImporter:
       name: TUT_AREA-Recovered2_9
       rect:
         serializedVersion: 2
-        x: 1696
-        y: 788
-        width: 85
-        height: 131
-      alignment: 6
-      pivot: {x: 0, y: 0}
+        x: 1691
+        y: 789
+        width: 96
+        height: 128
+      alignment: 9
+      pivot: {x: -0.05, y: -0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -553,10 +553,10 @@ TextureImporter:
         serializedVersion: 2
         x: 1810
         y: 768
-        width: 263
-        height: 151
+        width: 272
+        height: 160
       alignment: 9
-      pivot: {x: -1, y: 0}
+      pivot: {x: 0.0225, y: -0.0025}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -727,12 +727,12 @@ TextureImporter:
       name: TUT_AREA-Recovered2_18
       rect:
         serializedVersion: 2
-        x: 1275
+        x: 1276
         y: 801
-        width: 131
-        height: 94
+        width: 130
+        height: 96
       alignment: 9
-      pivot: {x: 0.5, y: 2}
+      pivot: {x: 0, y: -0.075}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
