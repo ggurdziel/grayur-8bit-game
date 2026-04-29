@@ -2,15 +2,151 @@ using UnityEngine;
 
 public class Object_NPC : MonoBehaviour, IInteractable
 {
+    [Header("Dialogue")]
     [SerializeField] private DialogueLineSO firstDialogueLine;
+
+    [Header("Wandering")]
+    [SerializeField] private bool canWander = true;
+    [SerializeField] private float moveSpeed = 1.5f;
+
+    [Header("Walk Schedule")]
+    [SerializeField] private float minWalkTime = 1.5f;
+    [SerializeField] private float maxWalkTime = 3f;
+
+    [Header("Idle")]
+    [SerializeField] private float minIdleTime = 1f;
+    [SerializeField] private float maxIdleTime = 3f;
 
     protected UI ui;
     protected Inventory_NPC npcInventory;
+
+    private Rigidbody2D rb;
+    private Animator anim;
+    private SpriteRenderer sr;
+
+    private Vector2 moveDir;
+    private float timer;
+    private bool isIdle = true;
+    private int scheduleIndex = 0;
 
     protected virtual void Awake()
     {
         ui = FindFirstObjectByType<UI>();
         npcInventory = GetComponent<Inventory_NPC>();
+
+        rb = GetComponent<Rigidbody2D>();
+        anim = GetComponentInChildren<Animator>();
+        sr = GetComponentInChildren<SpriteRenderer>();
+    }
+
+    private void Start()
+    {
+        StartIdle();
+    }
+
+    private void Update()
+    {
+        if (!canWander)
+            return;
+
+        timer -= Time.deltaTime;
+
+        if (timer <= 0)
+            NextScheduleStep();
+
+        UpdateAnimation();
+    }
+
+    private void FixedUpdate()
+    {
+        if (!canWander || rb == null)
+            return;
+
+        rb.linearVelocity = moveDir * moveSpeed;
+    }
+
+    private void NextScheduleStep()
+    {
+        scheduleIndex++;
+
+        switch (scheduleIndex % 8)
+        {
+            case 0:
+                StartWalking(Vector2.right);
+                break;
+
+            case 1:
+                StartIdle();
+                break;
+
+            case 2:
+                StartWalking(Vector2.up);
+                break;
+
+            case 3:
+                StartIdle();
+                break;
+
+            case 4:
+                StartWalking(Vector2.left);
+                break;
+
+            case 5:
+                StartIdle();
+                break;
+
+            case 6:
+                StartWalking(Vector2.down);
+                break;
+
+            case 7:
+                StartIdle();
+                break;
+        }
+    }
+
+    private void StartIdle()
+    {
+        isIdle = true;
+        moveDir = Vector2.zero;
+        timer = Random.Range(minIdleTime, maxIdleTime);
+
+        if (rb != null)
+            rb.linearVelocity = Vector2.zero;
+    }
+
+    private void StartWalking(Vector2 direction)
+    {
+        isIdle = false;
+        moveDir = direction;
+        timer = Random.Range(minWalkTime, maxWalkTime);
+    }
+
+    private void UpdateAnimation()
+    {
+        if (anim == null)
+            return;
+
+        anim.SetBool("isMoving", !isIdle);
+
+        if (isIdle)
+            return;
+
+        if (Mathf.Abs(moveDir.x) > Mathf.Abs(moveDir.y))
+        {
+            anim.SetInteger("direction", 1);
+
+            if (sr != null)
+                sr.flipX = moveDir.x < 0;
+        }
+        else if (moveDir.y > 0)
+        {
+            anim.SetInteger("direction", 2);
+        }
+        else if (moveDir.y < 0)
+        {
+            anim.SetInteger("direction", 0);
+        }
     }
 
     public virtual void Interact(Player player)
@@ -26,7 +162,6 @@ public class Object_NPC : MonoBehaviour, IInteractable
         {
             Inventory_Item selectedItem = playerInventory.GetSelectedItem();
 
-            // Only the currently selected hotbar item can be given
             if (selectedItem != null && selectedItem.itemData != null)
             {
                 if (npcInventory != null && npcInventory.CanAddItem())

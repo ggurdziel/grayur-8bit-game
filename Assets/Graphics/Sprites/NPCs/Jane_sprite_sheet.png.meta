@@ -1,0 +1,585 @@
+fileFormatVersion: 2
+guid: 420d0113a4337f44abce026e04a5f716
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4438480502528712650
+    second: Jane_sprite_sheet_0
+  - first:
+      213: 359274551935365051
+    second: Jane_sprite_sheet_1
+  - first:
+      213: 9020201648020455510
+    second: Jane_sprite_sheet_2
+  - first:
+      213: -1622063495642573436
+    second: Jane_sprite_sheet_3
+  - first:
+      213: 4451709907382780766
+    second: Jane_sprite_sheet_4
+  - first:
+      213: 7992917295683216857
+    second: Jane_sprite_sheet_5
+  - first:
+      213: -5944624188821125378
+    second: Jane_sprite_sheet_6
+  - first:
+      213: -1661541590683740323
+    second: Jane_sprite_sheet_7
+  - first:
+      213: -6050998786233679182
+    second: Jane_sprite_sheet_8
+  - first:
+      213: -1653010947859602299
+    second: Jane_sprite_sheet_9
+  - first:
+      213: 6719744160292983258
+    second: Jane_sprite_sheet_10
+  - first:
+      213: -2790840337969871168
+    second: Jane_sprite_sheet_11
+  - first:
+      213: 265472447081497888
+    second: Jane_sprite_sheet_12
+  - first:
+      213: 1727370673542923869
+    second: Jane_sprite_sheet_13
+  - first:
+      213: -8145559685037176174
+    second: Jane_sprite_sheet_14
+  - first:
+      213: -627306126515930102
+    second: Jane_sprite_sheet_15
+  - first:
+      213: -4838581742783283847
+    second: Jane_sprite_sheet_16
+  - first:
+      213: 5987558428129539904
+    second: Jane_sprite_sheet_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Jane_sprite_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 648
+        width: 182
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acf98bf3086a89d30800000000000000
+      internalID: 4438480502528712650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jane_sprite_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 658
+        width: 182
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbfe1fc2d466cf400800000000000000
+      internalID: 359274551935365051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jane_sprite_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 648
+        width: 182
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65007a89b913e2d70800000000000000
+      internalID: 9020201648020455510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jane_sprite_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 658
+        width: 182
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 485981348d54d79e0800000000000000
+      internalID: -1622063495642573436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jane_sprite_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1549
+        y: 658
+        width: 182
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5343a81396a7cd30800000000000000
+      internalID: 4451709907382780766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jane_sprite_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1799
+        y: 658
+        width: 182
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d52640aeeb8cee60800000000000000
+      internalID: 7992917295683216857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jane_sprite_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 328
+        width: 182
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef64f16dbc3708da0800000000000000
+      internalID: -5944624188821125378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jane_sprite_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 338
+        width: 182
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5712cbf9b401f8e0800000000000000
+      internalID: -1661541590683740323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jane_sprite_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 328
+        width: 182
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b2c83ad9a8860ca0800000000000000
+      internalID: -6050998786233679182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jane_sprite_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 338
+        width: 182
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5842ffa0d435f09e0800000000000000
+      internalID: -1653010947859602299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jane_sprite_sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1549
+        y: 348
+        width: 182
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad1d4c706b3514d50800000000000000
+      internalID: 6719744160292983258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jane_sprite_sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1799
+        y: 348
+        width: 182
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c68976cf71f449d0800000000000000
+      internalID: -2790840337969871168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jane_sprite_sheet_12
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 18
+        width: 182
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02542f9b8c52fa300800000000000000
+      internalID: 265472447081497888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jane_sprite_sheet_13
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 18
+        width: 182
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5604ffb97ad8f710800000000000000
+      internalID: 1727370673542923869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jane_sprite_sheet_14
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 18
+        width: 182
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29acd9c9f9825fe80800000000000000
+      internalID: -8145559685037176174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jane_sprite_sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 18
+        width: 182
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0c779bc66c5b47f0800000000000000
+      internalID: -627306126515930102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jane_sprite_sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1549
+        y: 28
+        width: 182
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97d36b47a87e9dcb0800000000000000
+      internalID: -4838581742783283847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jane_sprite_sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1789
+        y: 28
+        width: 182
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 047be8cbaa4181350800000000000000
+      internalID: 5987558428129539904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Jane_sprite_sheet_0: 4438480502528712650
+      Jane_sprite_sheet_1: 359274551935365051
+      Jane_sprite_sheet_10: 6719744160292983258
+      Jane_sprite_sheet_11: -2790840337969871168
+      Jane_sprite_sheet_12: 265472447081497888
+      Jane_sprite_sheet_13: 1727370673542923869
+      Jane_sprite_sheet_14: -8145559685037176174
+      Jane_sprite_sheet_15: -627306126515930102
+      Jane_sprite_sheet_16: -4838581742783283847
+      Jane_sprite_sheet_17: 5987558428129539904
+      Jane_sprite_sheet_2: 9020201648020455510
+      Jane_sprite_sheet_3: -1622063495642573436
+      Jane_sprite_sheet_4: 4451709907382780766
+      Jane_sprite_sheet_5: 7992917295683216857
+      Jane_sprite_sheet_6: -5944624188821125378
+      Jane_sprite_sheet_7: -1661541590683740323
+      Jane_sprite_sheet_8: -6050998786233679182
+      Jane_sprite_sheet_9: -1653010947859602299
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
