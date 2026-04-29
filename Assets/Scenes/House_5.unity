@@ -3165,6 +3165,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstDialogueLine: {fileID: 0}
+  canWander: 1
+  moveSpeed: 1.5
+  minWalkTime: 1.5
+  maxWalkTime: 3
+  minIdleTime: 1
+  maxIdleTime: 3
   questData: {fileID: 0}
   questStartLine: {fileID: 0}
   questInProgressLine: {fileID: 0}
@@ -3248,7 +3254,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 7
+  m_Constraints: 4
 --- !u!4 &709233954
 Transform:
   m_ObjectHideFlags: 0
