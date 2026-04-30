@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
 
         instance = this;
         DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(transform.root.gameObject);
     }
 
     private void PlaySceneMusic(string sceneName)
@@ -41,19 +42,32 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator ChangeSceneCo(string sceneName, RespawnType respawnType)
     {
+        if (ScreenFader.instance != null)
+        {
+            yield return ScreenFader.instance.FadeOut();
+        }
+
         PlaySceneMusic(sceneName);
 
         SceneManager.LoadScene(sceneName);
 
         yield return null;
 
-        SaveManager.instance.LoadGame();
+        if (SaveManager.instance != null)
+        {
+            SaveManager.instance.LoadGame();
+        }
 
         Vector3 position = GetWaypointPosition(respawnType);
 
         if (position != Vector3.zero && Player.instance != null)
         {
             Player.instance.transform.position = position;
+        }
+
+        if (ScreenFader.instance != null)
+        {
+            yield return ScreenFader.instance.FadeIn();
         }
     }
 
