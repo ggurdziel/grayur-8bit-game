@@ -17,6 +17,10 @@ public class Object_NPC : MonoBehaviour, IInteractable
     [SerializeField] private float minIdleTime = 1f;
     [SerializeField] private float maxIdleTime = 3f;
 
+    [Header("Collision")]
+    [SerializeField] private LayerMask buildingLayer;
+    [SerializeField] private float flipCooldown = 0.2f;
+
     protected UI ui;
     protected Inventory_NPC npcInventory;
 
@@ -28,6 +32,7 @@ public class Object_NPC : MonoBehaviour, IInteractable
     private float timer;
     private bool isIdle = true;
     private int scheduleIndex = 0;
+    private float lastFlipTime;
 
     protected virtual void Awake()
     {
@@ -63,6 +68,40 @@ public class Object_NPC : MonoBehaviour, IInteractable
             return;
 
         rb.linearVelocity = moveDir * moveSpeed;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (IsInBuildingLayer(collision.gameObject))
+        {
+            FlipDirection();
+        }
+    }
+
+    private bool IsInBuildingLayer(GameObject obj)
+    {
+        return ((1 << obj.layer) & buildingLayer) != 0;
+    }
+
+    private void FlipDirection()
+    {
+        if (Time.time - lastFlipTime < flipCooldown)
+            return;
+
+        lastFlipTime = Time.time;
+
+        if (moveDir == Vector2.zero)
+            return;
+
+        moveDir = -moveDir;
+
+        if (rb != null)
+        {
+            rb.linearVelocity = moveDir * moveSpeed;
+            rb.MovePosition(rb.position + moveDir * 0.05f);
+        }
+
+        UpdateAnimation();
     }
 
     private void NextScheduleStep()
@@ -118,7 +157,7 @@ public class Object_NPC : MonoBehaviour, IInteractable
     private void StartWalking(Vector2 direction)
     {
         isIdle = false;
-        moveDir = direction;
+        moveDir = direction.normalized;
         timer = Random.Range(minWalkTime, maxWalkTime);
     }
 

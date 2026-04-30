@@ -3171,6 +3171,10 @@ MonoBehaviour:
   maxWalkTime: 3
   minIdleTime: 1
   maxIdleTime: 3
+  buildingLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  flipCooldown: 0.2
   questData: {fileID: 0}
   questStartLine: {fileID: 0}
   questInProgressLine: {fileID: 0}
