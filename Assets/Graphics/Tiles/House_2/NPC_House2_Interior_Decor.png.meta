@@ -1,0 +1,625 @@
+fileFormatVersion: 2
+guid: a36c67ccd7ebba244861013d2a41e49a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 852068317746935662
+    second: NPC_House2_Interior_0
+  - first:
+      213: -4231728910964901902
+    second: NPC_House2_Interior_1
+  - first:
+      213: -1709300160202865806
+    second: NPC_House2_Interior_2
+  - first:
+      213: -1742950084664751419
+    second: NPC_House2_Interior_3
+  - first:
+      213: -46211431394678803
+    second: NPC_House2_Interior_4
+  - first:
+      213: 4310185540563927107
+    second: NPC_House2_Interior_5
+  - first:
+      213: 1341279250673284353
+    second: NPC_House2_Interior_6
+  - first:
+      213: 5615621351604822801
+    second: NPC_House2_Interior_7
+  - first:
+      213: -5926465727133709385
+    second: NPC_House2_Interior_8
+  - first:
+      213: 1262617953558096444
+    second: NPC_House2_Interior_9
+  - first:
+      213: 6180056232124875257
+    second: NPC_House2_Interior_10
+  - first:
+      213: 5320967315184611531
+    second: NPC_House2_Interior_11
+  - first:
+      213: -4898992206291123106
+    second: NPC_House2_Interior_12
+  - first:
+      213: -6419733560159336363
+    second: NPC_House2_Interior_13
+  - first:
+      213: -5858644658912122937
+    second: NPC_House2_Interior_14
+  - first:
+      213: -5224278081685325664
+    second: NPC_House2_Interior_15
+  - first:
+      213: 2905798865390123023
+    second: NPC_House2_Interior_16
+  - first:
+      213: 6932739062156028603
+    second: NPC_House2_Interior_17
+  - first:
+      213: 3477735906196693523
+    second: NPC_House2_Interior_18
+  - first:
+      213: -7562767827712886631
+    second: NPC_House2_Interior_19
+  - first:
+      213: -8824348547382275694
+    second: NPC_House2_Interior_20
+  - first:
+      213: 8648761463343788063
+    second: NPC_House2_Interior_21
+  - first:
+      213: 7111552045235366156
+    second: NPC_House2_Interior_22
+  - first:
+      213: 3803682035717645953
+    second: NPC_House2_Interior_23
+  - first:
+      213: 4715368032870836612
+    second: NPC_House2_Interior_24
+  - first:
+      213: 7880529534071000630
+    second: NPC_House2_Interior_25
+  - first:
+      213: -3597772718067144610
+    second: NPC_House2_Interior_26
+  - first:
+      213: -8335799142914966409
+    second: NPC_House2_Interior_27
+  - first:
+      213: -5136940240701267743
+    second: NPC_House2_Interior_28
+  - first:
+      213: -7176412225371541174
+    second: NPC_House2_Interior_29
+  - first:
+      213: -8961798546446244939
+    second: NPC_House2_Interior_30
+  - first:
+      213: 2606347981618190553
+    second: NPC_House2_Interior_31
+  - first:
+      213: 4748870534016312473
+    second: NPC_House2_Interior_32
+  - first:
+      213: 284972313383803842
+    second: NPC_House2_Interior_33
+  - first:
+      213: 6944235043798425926
+    second: NPC_House2_Interior_34
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: NPC_House2_Interior_Decor_0
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 99
+        width: 108
+        height: 55
+      alignment: 9
+      pivot: {x: 0.48, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 067284d9c2740f14eb9f9eb367541d01
+      internalID: -2144923124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_House2_Interior_Decor_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 104
+        width: 42
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 619f1a0a1144f5b49ac4ceff0799a42c
+      internalID: 565849490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_House2_Interior_Decor_2
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 129
+        width: 44
+        height: 25
+      alignment: 9
+      pivot: {x: 0.4, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3a5933dd85b3d9438f79ab660f125ae
+      internalID: 1245585968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_House2_Interior_Decor_3
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 76
+        width: 18
+        height: 46
+      alignment: 9
+      pivot: {x: 0.2, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 585c0431fdf0b0243bb113022cb14572
+      internalID: -1552648845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_House2_Interior_Decor_4
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 76
+        width: 18
+        height: 46
+      alignment: 9
+      pivot: {x: 0.7, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8060a2c88f867b34a8d62891bc803aae
+      internalID: 1627164377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_House2_Interior_Decor_5
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 80
+        width: 17
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e39a28148337ff648af058d2a61f848e
+      internalID: 578776892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_House2_Interior_Decor_6
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 58
+        width: 17
+        height: 37
+      alignment: 9
+      pivot: {x: 0.45, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cf8ef50460f3394e95a36de4c3ba6f1
+      internalID: 1867268811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_House2_Interior_Decor_7
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 58
+        width: 40
+        height: 21
+      alignment: 9
+      pivot: {x: 0.3, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af8621cd436615447af1a480fa099311
+      internalID: 153021818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_House2_Interior_Decor_8
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 10
+        width: 19
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5250c3254ef8dae49867a4e14d5b2790
+      internalID: -169681156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_House2_Interior_Decor_9
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 10
+        width: 61
+        height: 35
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17a9b1cdb7b537f42bed111fa0c7fb7d
+      internalID: -946536186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_House2_Interior_Decor_10
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 10
+        width: 116
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57a41581ec5a46543b34d7e3949993d6
+      internalID: -51037495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_House2_Interior_Decor_11
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 94
+        width: 9
+        height: 31
+      alignment: 9
+      pivot: {x: 0.7, y: 0.7}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15379a76a03206641b13df2edb638ad2
+      internalID: -970730385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_House2_Interior_Decor_12
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 94
+        width: 18
+        height: 37
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c70000b466fffbb4aba4396d5f66be0b
+      internalID: -1091963059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_House2_Interior_Decor_13
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 129
+        width: 44
+        height: 25
+      alignment: 9
+      pivot: {x: 0.4, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee0911930d89007498a22b06de6791c4
+      internalID: -157037130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_House2_Interior_Decor_14
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 58
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17ce559baab9e0a489eed0998619b931
+      internalID: -830297857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_House2_Interior_Decor_15
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 10
+        width: 80
+        height: 54
+      alignment: 9
+      pivot: {x: 0.5, y: 0.38}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bfb9a6445801694abe118f3580c9295
+      internalID: -1131032304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 2688f11c55609de4d8e3e24192ce6232
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      NPC_House2_Interior_0: 852068317746935662
+      NPC_House2_Interior_1: -4231728910964901902
+      NPC_House2_Interior_10: 6180056232124875257
+      NPC_House2_Interior_11: 5320967315184611531
+      NPC_House2_Interior_12: -4898992206291123106
+      NPC_House2_Interior_13: -6419733560159336363
+      NPC_House2_Interior_14: -5858644658912122937
+      NPC_House2_Interior_15: -5224278081685325664
+      NPC_House2_Interior_16: 2905798865390123023
+      NPC_House2_Interior_17: 6932739062156028603
+      NPC_House2_Interior_18: 3477735906196693523
+      NPC_House2_Interior_19: -7562767827712886631
+      NPC_House2_Interior_2: -1709300160202865806
+      NPC_House2_Interior_20: -8824348547382275694
+      NPC_House2_Interior_21: 8648761463343788063
+      NPC_House2_Interior_22: 7111552045235366156
+      NPC_House2_Interior_23: 3803682035717645953
+      NPC_House2_Interior_24: 4715368032870836612
+      NPC_House2_Interior_25: 7880529534071000630
+      NPC_House2_Interior_26: -3597772718067144610
+      NPC_House2_Interior_27: -8335799142914966409
+      NPC_House2_Interior_28: -5136940240701267743
+      NPC_House2_Interior_29: -7176412225371541174
+      NPC_House2_Interior_3: -1742950084664751419
+      NPC_House2_Interior_30: -8961798546446244939
+      NPC_House2_Interior_31: 2606347981618190553
+      NPC_House2_Interior_32: 4748870534016312473
+      NPC_House2_Interior_33: 284972313383803842
+      NPC_House2_Interior_34: 6944235043798425926
+      NPC_House2_Interior_4: -46211431394678803
+      NPC_House2_Interior_5: 4310185540563927107
+      NPC_House2_Interior_6: 1341279250673284353
+      NPC_House2_Interior_7: 5615621351604822801
+      NPC_House2_Interior_8: -5926465727133709385
+      NPC_House2_Interior_9: 1262617953558096444
+      NPC_House2_Interior_Decor_0: -2144923124
+      NPC_House2_Interior_Decor_1: 565849490
+      NPC_House2_Interior_Decor_10: -51037495
+      NPC_House2_Interior_Decor_11: -970730385
+      NPC_House2_Interior_Decor_12: -1091963059
+      NPC_House2_Interior_Decor_13: -157037130
+      NPC_House2_Interior_Decor_14: -830297857
+      NPC_House2_Interior_Decor_15: -1131032304
+      NPC_House2_Interior_Decor_2: 1245585968
+      NPC_House2_Interior_Decor_3: -1552648845
+      NPC_House2_Interior_Decor_4: 1627164377
+      NPC_House2_Interior_Decor_5: 578776892
+      NPC_House2_Interior_Decor_6: 1867268811
+      NPC_House2_Interior_Decor_7: 153021818
+      NPC_House2_Interior_Decor_8: -169681156
+      NPC_House2_Interior_Decor_9: -946536186
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
