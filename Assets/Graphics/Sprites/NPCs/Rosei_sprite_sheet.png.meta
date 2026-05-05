@@ -1,0 +1,453 @@
+fileFormatVersion: 2
+guid: 246762bb99c07d94e999ec42b3434d64
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -160582408695404386
+    second: Rosei_sprite_sheet_0
+  - first:
+      213: 7274751440038775413
+    second: Rosei_sprite_sheet_1
+  - first:
+      213: -6024384005579390008
+    second: Rosei_sprite_sheet_2
+  - first:
+      213: 7261611602836772645
+    second: Rosei_sprite_sheet_3
+  - first:
+      213: 8170057997183019945
+    second: Rosei_sprite_sheet_4
+  - first:
+      213: 4678318408922909302
+    second: Rosei_sprite_sheet_5
+  - first:
+      213: -2612243906192376807
+    second: Rosei_sprite_sheet_6
+  - first:
+      213: 4911502105459654207
+    second: Rosei_sprite_sheet_7
+  - first:
+      213: 3079098540836928582
+    second: Rosei_sprite_sheet_8
+  - first:
+      213: 2848903680155245876
+    second: Rosei_sprite_sheet_9
+  - first:
+      213: -6411186410048606640
+    second: Rosei_sprite_sheet_10
+  - first:
+      213: -4343622572619910407
+    second: Rosei_sprite_sheet_11
+  - first:
+      213: -430115681024715452
+    second: Rosei_sprite_sheet_12
+  - first:
+      213: 3506360460897579692
+    second: Rosei_sprite_sheet_13
+  - first:
+      213: 696227059259564963
+    second: Rosei_sprite_sheet_14
+  - first:
+      213: -2377235134732892849
+    second: Rosei_sprite_sheet_15
+  - first:
+      213: 6134267431834905514
+    second: Rosei_sprite_sheet_16
+  - first:
+      213: 6736367554092579838
+    second: Rosei_sprite_sheet_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Rosei_sprite_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 661
+        width: 212
+        height: 262
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e98a88c662f75cdf0800000000000000
+      internalID: -160582408695404386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rosei_sprite_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 661
+        width: 212
+        height: 272
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57ac5c434eb15f460800000000000000
+      internalID: 7274751440038775413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rosei_sprite_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 661
+        width: 212
+        height: 262
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c345ec5aa6156ca0800000000000000
+      internalID: -6024384005579390008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rosei_sprite_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 661
+        width: 212
+        height: 272
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 527d0f3774d66c460800000000000000
+      internalID: 7261611602836772645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rosei_sprite_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 661
+        width: 212
+        height: 262
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9abee6c2670e16170800000000000000
+      internalID: 8170057997183019945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rosei_sprite_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1465
+        y: 661
+        width: 212
+        height: 272
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67a450e5ec9bce040800000000000000
+      internalID: 4678318408922909302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rosei_sprite_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 361
+        width: 212
+        height: 262
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91c79b0f1027fbbd0800000000000000
+      internalID: -2612243906192376807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rosei_sprite_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 361
+        width: 212
+        height: 272
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3e71858429292440800000000000000
+      internalID: 4911502105459654207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rosei_sprite_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 361
+        width: 212
+        height: 272
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64c32032fc72bba20800000000000000
+      internalID: 3079098540836928582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rosei_sprite_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 361
+        width: 212
+        height: 262
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43dd4fe8dc6598720800000000000000
+      internalID: 2848903680155245876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rosei_sprite_sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 32
+        width: 210
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc75bb2779cb66c40b090aff5397c199
+      internalID: -430115681024715452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rosei_sprite_sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 32
+        width: 210
+        height: 270
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88fc45ae759e7a8449e766df122d8955
+      internalID: 3506360460897579692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a2a9cab7815359841970eb1876695107
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Rosei_sprite_sheet_0: -160582408695404386
+      Rosei_sprite_sheet_1: 7274751440038775413
+      Rosei_sprite_sheet_10: -6411186410048606640
+      Rosei_sprite_sheet_11: -4343622572619910407
+      Rosei_sprite_sheet_12: -430115681024715452
+      Rosei_sprite_sheet_13: 3506360460897579692
+      Rosei_sprite_sheet_14: 696227059259564963
+      Rosei_sprite_sheet_15: -2377235134732892849
+      Rosei_sprite_sheet_16: 6134267431834905514
+      Rosei_sprite_sheet_17: 6736367554092579838
+      Rosei_sprite_sheet_2: -6024384005579390008
+      Rosei_sprite_sheet_3: 7261611602836772645
+      Rosei_sprite_sheet_4: 8170057997183019945
+      Rosei_sprite_sheet_5: 4678318408922909302
+      Rosei_sprite_sheet_6: -2612243906192376807
+      Rosei_sprite_sheet_7: 4911502105459654207
+      Rosei_sprite_sheet_8: 3079098540836928582
+      Rosei_sprite_sheet_9: 2848903680155245876
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

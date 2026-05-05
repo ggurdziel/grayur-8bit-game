@@ -1,0 +1,453 @@
+fileFormatVersion: 2
+guid: 4699a5e77e3fbe54ab81b61e3b169c4c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1161439510894301787
+    second: Joele_sprite_sheet_0
+  - first:
+      213: 4221681508198477428
+    second: Joele_sprite_sheet_1
+  - first:
+      213: 8555443760967602854
+    second: Joele_sprite_sheet_2
+  - first:
+      213: -3488207131274090380
+    second: Joele_sprite_sheet_3
+  - first:
+      213: 6227760196713452310
+    second: Joele_sprite_sheet_4
+  - first:
+      213: -2950505123547156286
+    second: Joele_sprite_sheet_5
+  - first:
+      213: -2008751828939229200
+    second: Joele_sprite_sheet_6
+  - first:
+      213: 51665352851617747
+    second: Joele_sprite_sheet_7
+  - first:
+      213: -6668162404443320623
+    second: Joele_sprite_sheet_8
+  - first:
+      213: -5670521472185042435
+    second: Joele_sprite_sheet_9
+  - first:
+      213: -1664353133238712593
+    second: Joele_sprite_sheet_10
+  - first:
+      213: 2093778467355629460
+    second: Joele_sprite_sheet_11
+  - first:
+      213: -7176935540044052970
+    second: Joele_sprite_sheet_12
+  - first:
+      213: 3210808636605869416
+    second: Joele_sprite_sheet_13
+  - first:
+      213: -3093648433926577061
+    second: Joele_sprite_sheet_14
+  - first:
+      213: -7456721549698366686
+    second: Joele_sprite_sheet_15
+  - first:
+      213: -1003474966067544099
+    second: Joele_sprite_sheet_16
+  - first:
+      213: 901236004394754108
+    second: Joele_sprite_sheet_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Joele_sprite_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 624
+        width: 162
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5adaa0d1becb1efe0800000000000000
+      internalID: -1161439510894301787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joele_sprite_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 634
+        width: 162
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47e610bd6fc669a30800000000000000
+      internalID: 4221681508198477428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joele_sprite_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 624
+        width: 162
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a25e4c95ca0bb670800000000000000
+      internalID: 8555443760967602854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joele_sprite_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 634
+        width: 162
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4786c6d6816679fc0800000000000000
+      internalID: -3488207131274090380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joele_sprite_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 334
+        width: 162
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f7392abada7f14e0800000000000000
+      internalID: -2008751828939229200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joele_sprite_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 344
+        width: 162
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d77aeb5d5d87b000800000000000000
+      internalID: 51665352851617747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joele_sprite_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 334
+        width: 162
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1de8a826f9de573a0800000000000000
+      internalID: -6668162404443320623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joele_sprite_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 344
+        width: 162
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df97f27c3c24e41b0800000000000000
+      internalID: -5670521472185042435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joele_sprite_sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1291
+        y: 364
+        width: 162
+        height: 232
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe68f78b4a707e8e0800000000000000
+      internalID: -1664353133238712593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joele_sprite_sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1491
+        y: 364
+        width: 162
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49718193c689e0d10800000000000000
+      internalID: 2093778467355629460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joele_sprite_sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1291
+        y: 64
+        width: 162
+        height: 232
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddffb82c5d0f212f0800000000000000
+      internalID: -1003474966067544099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joele_sprite_sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1501
+        y: 64
+        width: 162
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c30edbcfe55d18c00800000000000000
+      internalID: 901236004394754108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f1fe7d9c840614247a8ab680afdb3599
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Joele_sprite_sheet_0: -1161439510894301787
+      Joele_sprite_sheet_1: 4221681508198477428
+      Joele_sprite_sheet_10: -1664353133238712593
+      Joele_sprite_sheet_11: 2093778467355629460
+      Joele_sprite_sheet_12: -7176935540044052970
+      Joele_sprite_sheet_13: 3210808636605869416
+      Joele_sprite_sheet_14: -3093648433926577061
+      Joele_sprite_sheet_15: -7456721549698366686
+      Joele_sprite_sheet_16: -1003474966067544099
+      Joele_sprite_sheet_17: 901236004394754108
+      Joele_sprite_sheet_2: 8555443760967602854
+      Joele_sprite_sheet_3: -3488207131274090380
+      Joele_sprite_sheet_4: 6227760196713452310
+      Joele_sprite_sheet_5: -2950505123547156286
+      Joele_sprite_sheet_6: -2008751828939229200
+      Joele_sprite_sheet_7: 51665352851617747
+      Joele_sprite_sheet_8: -6668162404443320623
+      Joele_sprite_sheet_9: -5670521472185042435
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
