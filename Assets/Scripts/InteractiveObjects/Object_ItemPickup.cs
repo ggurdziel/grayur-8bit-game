@@ -26,10 +26,14 @@ public class Object_ItemPickup : MonoBehaviour, IInteractable
     public void Interact(Player player)
     {
         Inventory_Base inventory = player.GetComponent<Inventory_Base>();
+        if (inventory == null || itemData == null)
+            return;
 
-        if (inventory != null && inventory.CanAddItem())
+        Inventory_Item itemToPickUp = new Inventory_Item(itemData);
+
+        if (inventory.CanAddItem(itemToPickUp))
         {
-            inventory.AddItem(new Inventory_Item(itemData));
+            inventory.AddItem(itemToPickUp);
             Debug.Log("Picked up: " + itemData.itemName);
             Destroy(gameObject);
         }

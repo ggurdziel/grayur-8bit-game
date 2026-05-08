@@ -16,7 +16,7 @@ public class Inventory_Player : Inventory_Base, ISaveable
         if (selectedItem == null || selectedItem.itemData == null)
             return false;
 
-        if (!targetInventory.CanAddItem())
+        if (!targetInventory.CanAddItem(selectedItem))
             return false;
 
         targetInventory.AddItem(selectedItem);
@@ -59,10 +59,21 @@ public class Inventory_Player : Inventory_Base, ISaveable
     public void LoadData(GameData data)
     {
         itemList.Clear();
-        foreach (var item in data.inventory)
+
+        while (itemList.Count < maxInventorySize)
         {
-            string saveId = item.saveID;
-            int stackSize = item.stackSize;
+            itemList.Add(null);
+        }
+
+        int index = 0;
+
+        foreach (var savedItem in data.inventory)
+        {
+            if (index >= itemList.Count)
+                break;
+
+            string saveId = savedItem.saveID;
+            int stackSize = savedItem.stackSize;
 
             ItemDataSO itemData = itemListData.GetItemData(saveId);
 
@@ -75,7 +86,8 @@ public class Inventory_Player : Inventory_Base, ISaveable
             Inventory_Item itemToLoad = new Inventory_Item(itemData);
             itemToLoad.stackSize = stackSize;
 
-            itemList.Add(itemToLoad);
+            itemList[index] = itemToLoad;
+            index++;
         }
 
         NotifyInventoryChanged();

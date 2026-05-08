@@ -91,7 +91,8 @@ public class Player : MonoBehaviour
 
     private void OnDisable()
     {
-        input.Disable();
+        if (input != null)
+            input.Disable();
     }
 
 
@@ -114,7 +115,10 @@ public class Player : MonoBehaviour
             HandleCooldown();
         }
 
-        stateMachine.UpdateActiveState();
+        if (stateMachine != null && stateMachine.currentState != null)
+        {
+            stateMachine.UpdateActiveState();
+        }
     }
 
 

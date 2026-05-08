@@ -203,7 +203,7 @@ public class Object_NPC : MonoBehaviour, IInteractable
 
             if (selectedItem != null && selectedItem.itemData != null)
             {
-                if (npcInventory != null && npcInventory.CanAddItem())
+                if (npcInventory != null && npcInventory.CanAddItem(selectedItem))
                 {
                     npcInventory.AddItem(selectedItem);
                     playerInventory.RemoveSelectedItem();

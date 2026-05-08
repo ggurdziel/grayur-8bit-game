@@ -49,14 +49,28 @@ public class SaveManager : MonoBehaviour
 
     public void SaveGame()
     {
+        if (dataHandler == null)
+        {
+            Debug.LogWarning("SaveManager: dataHandler is null, skipping save.");
+            return;
+        }
+
+        if (allSaveables == null)
+        {
+            allSaveables = FindISaveables();
+        }
+
         if (gameData == null)
         {
             gameData = new GameData();
         }
-        
+
         foreach (ISaveable saveable in allSaveables)
         {
-            saveable.SaveData(ref gameData);
+            if (saveable != null)
+            {
+                saveable.SaveData(ref gameData);
+            }
         }
 
         dataHandler.SaveData(gameData);
