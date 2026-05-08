@@ -1,9 +1,11 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 public class UI_Dialogue : MonoBehaviour
 {
+
     [SerializeField] private Image speakerPortrait;
     [SerializeField] private TextMeshProUGUI speakerName;
     [SerializeField] private TextMeshProUGUI dialogueText;
@@ -15,15 +17,14 @@ public class UI_Dialogue : MonoBehaviour
 
     private void Awake()
     {
-        ui = GetComponentInParent<UI>();
+        ui = FindFirstObjectByType<UI>();
     }
 
     private void Update()
     {
-        if (!gameObject.activeSelf || currentDialogue == null)
+        if (currentDialogue == null)
             return;
-
-        if (Input.GetMouseButtonDown(0))
+        if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
         {
             ShowNextLine();
         }
@@ -31,6 +32,8 @@ public class UI_Dialogue : MonoBehaviour
 
     public void PlayDialogueLine(DialogueLineSO line)
     {
+        Debug.Log("PlayDialogueLine called");
+
         if (line == null)
         {
             Debug.LogWarning("No dialogue line provided.");
@@ -49,20 +52,22 @@ public class UI_Dialogue : MonoBehaviour
         if (line.speaker != null)
         {
             speakerName.text = line.speaker.speakerName;
-            Debug.Log("Portrait is: " + line.speaker.speakerPortrait);
 
             if (line.speaker.speakerPortrait != null)
             {
                 speakerPortrait.enabled = true;
                 speakerPortrait.sprite = line.speaker.speakerPortrait;
                 speakerPortrait.color = Color.white;
-                speakerPortrait.SetNativeSize();
             }
             else
             {
-                Debug.LogWarning($"Speaker portrait is missing for {line.speaker.speakerName}");
                 speakerPortrait.enabled = false;
             }
+        }
+        else
+        {
+            speakerName.text = "";
+            speakerPortrait.enabled = false;
         }
 
         dialogueChoices.text = "Left click to continue";
@@ -71,12 +76,6 @@ public class UI_Dialogue : MonoBehaviour
 
     private void ShowCurrentLine()
     {
-        if (currentDialogue == null)
-            return;
-
-        if (currentTextIndex < 0 || currentTextIndex >= currentDialogue.textLine.Length)
-            return;
-
         dialogueText.text = currentDialogue.textLine[currentTextIndex];
     }
 
@@ -84,7 +83,6 @@ public class UI_Dialogue : MonoBehaviour
     {
         if (currentDialogue == null)
             return;
-
         currentTextIndex++;
 
         if (currentTextIndex >= currentDialogue.textLine.Length)
@@ -100,12 +98,13 @@ public class UI_Dialogue : MonoBehaviour
     {
         currentDialogue = null;
         currentTextIndex = 0;
+
         dialogueText.text = "";
         dialogueChoices.text = "";
+        speakerName.text = "";
+        speakerPortrait.enabled = false;
 
         if (ui != null)
             ui.CloseDialogueUI();
-        else
-            gameObject.SetActive(false);
     }
 }

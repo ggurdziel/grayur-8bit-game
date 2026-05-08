@@ -13,45 +13,44 @@ public class UI_Inventory : MonoBehaviour
 
     private void Start()
     {
-        ConnectToInventory();
+        inventory = FindFirstObjectByType<Inventory_Player>();
+
+        if (inventory != null)
+        {
+            inventory.OnInventoryChange += UpdateInventoryUI;
+            UpdateInventoryUI();
+        }
     }
 
     private void OnDestroy()
     {
         if (inventory != null)
         {
-            inventory.OnInventoryChange -= UpdateInventorySlots;
+            inventory.OnInventoryChange -= UpdateInventoryUI;
         }
     }
 
-    private void ConnectToInventory()
+    private void UpdateInventoryUI()
     {
-        inventory = FindFirstObjectByType<Inventory_Player>();
-
-        if (inventory == null)
-        {
-            Debug.LogError("UI_Inventory: Inventory_Player reference is missing.");
+        if (inventory == null) 
             return;
-        }
 
-        inventory.OnInventoryChange -= UpdateInventorySlots;
-        inventory.OnInventoryChange += UpdateInventorySlots;
-
-        UpdateInventorySlots();
-    }
-
-    private void UpdateInventorySlots()
-    {
-        if (inventory == null) return;
-
-        List<Inventory_Item> itemList = inventory.itemList;
+        int startIndex = inventory.GetHotbarSize();
 
         for (int i = 0; i < uiItemSlots.Length; i++)
         {
-            if (i < itemList.Count)
-                uiItemSlots[i].UpdateSlot(itemList[i]);
-            else
-                uiItemSlots[i].UpdateSlot(null);
+            int inventoryIndex = startIndex + i;
+
+            Debug.Log(
+                "Inventory UI slot " + i +
+                " object=" + uiItemSlots[i].gameObject.name +
+                " inventoryIndex=" + inventoryIndex +
+                " item=" + (inventory.GetItemAtIndex(inventoryIndex) == null ? "null" : inventory.GetItemAtIndex(inventoryIndex).itemData.itemName)
+            );
+
+            uiItemSlots[i].Setup(inventory, inventoryIndex);
+            uiItemSlots[i].UpdateSlot(inventory.GetItemAtIndex(inventoryIndex));
         }
     }
 }
+

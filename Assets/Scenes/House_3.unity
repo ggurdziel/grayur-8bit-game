@@ -192,6 +192,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c4936e8be34d7f4a903d3e0194682a3, type: 3}
+--- !u!4 &16577124 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3770213018384961088, guid: 6c4936e8be34d7f4a903d3e0194682a3, type: 3}
+  m_PrefabInstance: {fileID: 16577123}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &142728270
 GameObject:
   m_ObjectHideFlags: 0
@@ -5390,7 +5395,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.751032, y: -0.36107045, z: 2.0126963}
+  m_LocalPosition: {x: -10.871032, y: 0.74892956, z: 2.0126963}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5674,7 +5679,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.02821517, y: -0.31508422}
+  m_Offset: {x: -0.5175357, y: 0.15203846}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -5684,7 +5689,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.866547, y: 2.0078158}
+  m_Size: {x: 2.9640856, y: 2.9420612}
   m_EdgeRadius: 0
 --- !u!114 &644938558
 MonoBehaviour:
@@ -5712,7 +5717,7 @@ Transform:
   m_GameObject: {fileID: 644938556}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.54, y: 0.53, z: 0.03651406}
+  m_LocalPosition: {x: -8.95, y: -0.13, z: 0.03651406}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12461,7 +12466,7 @@ Transform:
   m_GameObject: {fileID: 2087315870}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.751032, y: -0.36107045, z: 2.0126963}
+  m_LocalPosition: {x: -10.871032, y: 0.74892956, z: 2.0126963}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12518,7 +12523,7 @@ MonoBehaviour:
   m_StreamingVersion: 20241001
   m_LegacyPriority: 0
   Target:
-    TrackingTarget: {fileID: 0}
+    TrackingTarget: {fileID: 16577124}
     LookAtTarget: {fileID: 0}
     CustomLookAtTarget: 0
   Lens:

@@ -4698,7 +4698,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.02821517, y: -0.31508422}
+  m_Offset: {x: 0.02821517, y: 0.27806866}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -4708,7 +4708,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.866547, y: 2.0078158}
+  m_Size: {x: 2.866547, y: 1.7501247}
   m_EdgeRadius: 0
 --- !u!114 &644938558
 MonoBehaviour:
@@ -4736,7 +4736,7 @@ Transform:
   m_GameObject: {fileID: 644938556}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.01, y: -2.7, z: 0.03651406}
+  m_LocalPosition: {x: -6.01, y: -2.01, z: 0.03651406}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10769,7 +10769,7 @@ TilemapRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 1.5666666, y: 0.06666666, z: 0}
+  m_ChunkCullingBounds: {x: 1.98, y: 0.2933333, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
