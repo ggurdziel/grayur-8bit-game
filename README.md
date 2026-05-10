@@ -1,5 +1,11 @@
-# grayur-8bit-game
+<img width="809" height="654" alt="image" src="https://github.com/user-attachments/assets/5e7ca3c6-9605-4a07-b988-0c9f7276462f" />
+
+# GrayUR 8-bit game
 A retro-style 2D game built in Unity as part of the GrayUR research project at Virginia Tech. The project focuses on creating interactive gameplay systems inspired by classic 8-bit games, including player movement, inventory management, NPC interactions, dialogue systems, and quest progression mechanics.
+
+
+# Tutorial Demo
+https://www.youtube.com/watch?v=dus_vogUyfY&t=1s
 
 
 # Project Version Control and Task Management
