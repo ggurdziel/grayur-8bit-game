@@ -5,10 +5,10 @@ A retro-style 2D game built in Unity as part of the GrayUR research project at V
 The links below document the progression of the project throughout the semester, including gameplay demos, development milestones, technical implementation updates, and iterative improvements made over time.
 
 ## Week 1 Progression
-- https://github.com/ggurdziel/grayur-8bit-game/issues/31
+https://github.com/ggurdziel/grayur-8bit-game/issues/31
 
 ## Weeks 2–3 Progression
-- https://github.com/ggurdziel/grayur-8bit-game/issues/42
+https://github.com/ggurdziel/grayur-8bit-game/issues/42
 
 ## Weeks 3–5+ Progression
-- https://github.com/ggurdziel/grayur-8bit-game/issues/57
+https://github.com/ggurdziel/grayur-8bit-game/issues/57
