@@ -11,8 +11,8 @@ This board was used to organize gameplay feature development, track project mile
 # Project Progression
 The links below document the progression of the project throughout the semester, including gameplay demos, development milestones, technical implementation updates, and iterative improvements made over time.
 
-## Week 1 Progression https://github.com/ggurdziel/grayur-8bit-game/issues/31
+### - Week 1 Progression https://github.com/ggurdziel/grayur-8bit-game/issues/31
 
-## Weeks 2–3 Progression https://github.com/ggurdziel/grayur-8bit-game/issues/42
+### - Weeks 2–3 Progression https://github.com/ggurdziel/grayur-8bit-game/issues/42
 
-## Weeks 3–5+ Progression https://github.com/ggurdziel/grayur-8bit-game/issues/57
+### - Weeks 3–5+ Progression https://github.com/ggurdziel/grayur-8bit-game/issues/57
