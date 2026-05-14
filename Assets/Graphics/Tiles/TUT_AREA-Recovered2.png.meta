@@ -1,0 +1,2119 @@
+fileFormatVersion: 2
+guid: f76ba6f677f6b3e4898f36466959bb03
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2990239249118510394
+    second: TUT_AREA-Recovered2_0
+  - first:
+      213: -1086500150406045961
+    second: TUT_AREA-Recovered2_1
+  - first:
+      213: 1927881500999014805
+    second: TUT_AREA-Recovered2_2
+  - first:
+      213: -8009025245630916016
+    second: TUT_AREA-Recovered2_3
+  - first:
+      213: 8913535694681507347
+    second: TUT_AREA-Recovered2_4
+  - first:
+      213: 998539318600063186
+    second: TUT_AREA-Recovered2_5
+  - first:
+      213: 8554587186011899203
+    second: TUT_AREA-Recovered2_6
+  - first:
+      213: 6012002096647103533
+    second: TUT_AREA-Recovered2_7
+  - first:
+      213: -7469304777723680384
+    second: TUT_AREA-Recovered2_8
+  - first:
+      213: -1127029507381168679
+    second: TUT_AREA-Recovered2_9
+  - first:
+      213: -3949936056329399461
+    second: TUT_AREA-Recovered2_10
+  - first:
+      213: -5493428819927118358
+    second: TUT_AREA-Recovered2_11
+  - first:
+      213: 2633004747246110012
+    second: TUT_AREA-Recovered2_12
+  - first:
+      213: 301983271493025500
+    second: TUT_AREA-Recovered2_13
+  - first:
+      213: 2593719637302376473
+    second: TUT_AREA-Recovered2_14
+  - first:
+      213: 1451807548642877485
+    second: TUT_AREA-Recovered2_15
+  - first:
+      213: 3637862062469564816
+    second: TUT_AREA-Recovered2_16
+  - first:
+      213: -8716268113122232017
+    second: TUT_AREA-Recovered2_17
+  - first:
+      213: 4659489930468730995
+    second: TUT_AREA-Recovered2_18
+  - first:
+      213: -4051194861049368143
+    second: TUT_AREA-Recovered2_19
+  - first:
+      213: -9021199918062646841
+    second: TUT_AREA-Recovered2_20
+  - first:
+      213: -7419672577188665586
+    second: TUT_AREA-Recovered2_21
+  - first:
+      213: 8393757204564578698
+    second: TUT_AREA-Recovered2_22
+  - first:
+      213: 485395725075350529
+    second: TUT_AREA-Recovered2_23
+  - first:
+      213: -8351591099506165228
+    second: TUT_AREA-Recovered2_24
+  - first:
+      213: -3436493700049856156
+    second: TUT_AREA-Recovered2_25
+  - first:
+      213: 2229706027644442828
+    second: TUT_AREA-Recovered2_26
+  - first:
+      213: 1201372107558750837
+    second: TUT_AREA-Recovered2_27
+  - first:
+      213: -4787800120006174159
+    second: TUT_AREA-Recovered2_28
+  - first:
+      213: 4871889609523077340
+    second: TUT_AREA-Recovered2_29
+  - first:
+      213: 9145080816743407988
+    second: TUT_AREA-Recovered2_30
+  - first:
+      213: -4332678279952310174
+    second: TUT_AREA-Recovered2_31
+  - first:
+      213: 4121389145419216017
+    second: TUT_AREA-Recovered2_32
+  - first:
+      213: 6235802957290680265
+    second: TUT_AREA-Recovered2_33
+  - first:
+      213: 7275330126942021188
+    second: TUT_AREA-Recovered2_34
+  - first:
+      213: -2759635405613188080
+    second: TUT_AREA-Recovered2_35
+  - first:
+      213: -1626394037135169302
+    second: TUT_AREA-Recovered2_36
+  - first:
+      213: -7204360186358750011
+    second: TUT_AREA-Recovered2_37
+  - first:
+      213: -749434504378722198
+    second: TUT_AREA-Recovered2_38
+  - first:
+      213: -6079528244796927382
+    second: TUT_AREA-Recovered2_39
+  - first:
+      213: 8024908838091717645
+    second: TUT_AREA-Recovered2_40
+  - first:
+      213: -8459364323638636539
+    second: TUT_AREA-Recovered2_41
+  - first:
+      213: 5745707715280827212
+    second: TUT_AREA-Recovered2_42
+  - first:
+      213: -7562633555621312987
+    second: TUT_AREA-Recovered2_43
+  - first:
+      213: -9061239487752459619
+    second: TUT_AREA-Recovered2_44
+  - first:
+      213: -3666174059312497433
+    second: TUT_AREA-Recovered2_45
+  - first:
+      213: 4675458663811345672
+    second: TUT_AREA-Recovered2_46
+  - first:
+      213: -6106880591201870539
+    second: TUT_AREA-Recovered2_47
+  - first:
+      213: 7845255267111914076
+    second: TUT_AREA-Recovered2_48
+  - first:
+      213: 8817057871246970018
+    second: TUT_AREA-Recovered2_49
+  - first:
+      213: 3330542036122207108
+    second: TUT_AREA-Recovered2_50
+  - first:
+      213: 4636893516678731160
+    second: TUT_AREA-Recovered2_51
+  - first:
+      213: -6112898759050022769
+    second: TUT_AREA-Recovered2_52
+  - first:
+      213: 8787008176753702026
+    second: TUT_AREA-Recovered2_53
+  - first:
+      213: -3034235500281047541
+    second: TUT_AREA-Recovered2_54
+  - first:
+      213: -680246031403259840
+    second: TUT_AREA-Recovered2_55
+  - first:
+      213: -9022915139419157706
+    second: TUT_AREA-Recovered2_56
+  - first:
+      213: -8467545333729720264
+    second: TUT_AREA-Recovered2_57
+  - first:
+      213: -8586573020786171918
+    second: TUT_AREA-Recovered2_58
+  - first:
+      213: 2717616128391130121
+    second: TUT_AREA-Recovered2_59
+  - first:
+      213: 2616878862371773607
+    second: TUT_AREA-Recovered2_60
+  - first:
+      213: -3158632549910386278
+    second: TUT_AREA-Recovered2_61
+  - first:
+      213: 5788523530524616894
+    second: TUT_AREA-Recovered2_62
+  - first:
+      213: 6327336657710357451
+    second: TUT_AREA-Recovered2_63
+  - first:
+      213: 6399171029508231129
+    second: TUT_AREA-Recovered2_64
+  - first:
+      213: 2838922500792399828
+    second: TUT_AREA-Recovered2_65
+  - first:
+      213: 472507255740460796
+    second: TUT_AREA-Recovered2_66
+  - first:
+      213: -7954423581244006964
+    second: TUT_AREA-Recovered2_67
+  - first:
+      213: 1561428057750051082
+    second: TUT_AREA-Recovered2_68
+  - first:
+      213: -5711221363296961544
+    second: TUT_AREA-Recovered2_69
+  - first:
+      213: -8341250939821813816
+    second: TUT_AREA-Recovered2_70
+  - first:
+      213: -5597967399655927659
+    second: TUT_AREA-Recovered2_71
+  - first:
+      213: 8851183790709962100
+    second: TUT_AREA-Recovered2_72
+  - first:
+      213: 3622987201683686157
+    second: TUT_AREA-Recovered2_73
+  - first:
+      213: -5620463405065818702
+    second: TUT_AREA-Recovered2_74
+  - first:
+      213: -4253863846378378311
+    second: TUT_AREA-Recovered2_75
+  - first:
+      213: -6443271121872276426
+    second: TUT_AREA-Recovered2_76
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_0
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 928
+        width: 10
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3db32d01c67f7920800000000000000
+      internalID: 2990239249118510394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_1
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 894
+        width: 9
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fe93a6aed9fbe0f0800000000000000
+      internalID: -1086500150406045961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_2
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 914
+        width: 9
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 599d714c20631ca10800000000000000
+      internalID: 1927881500999014805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_3
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 933
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05a980509f93ad090800000000000000
+      internalID: -8009025245630916016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_4
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 935
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31681460d7d33bb70800000000000000
+      internalID: 8913535694681507347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_5
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 929
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d8da6348368bdd00800000000000000
+      internalID: 998539318600063186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_6
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 907
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3450956b8bff7b670800000000000000
+      internalID: 8554587186011899203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_7
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 788
+        width: 107
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d24ed8fcd0cee6350800000000000000
+      internalID: 6012002096647103533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_8
+      rect:
+        serializedVersion: 2
+        x: 1555
+        y: 787
+        width: 121
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 089e6a4f0e2b75890800000000000000
+      internalID: -7469304777723680384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_9
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 788
+        width: 85
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d5792162acfb50f0800000000000000
+      internalID: -1127029507381168679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_10
+      rect:
+        serializedVersion: 2
+        x: 1810
+        y: 768
+        width: 263
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b539afc95120f29c0800000000000000
+      internalID: -3949936056329399461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_11
+      rect:
+        serializedVersion: 2
+        x: 2102
+        y: 784
+        width: 202
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aedc95df79b63c3b0800000000000000
+      internalID: -5493428819927118358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_12
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 822
+        width: 127
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c35858b0edf4a8420800000000000000
+      internalID: 2633004747246110012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_13
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 810
+        width: 205
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdeb3797f2cd03400800000000000000
+      internalID: 301983271493025500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_14
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 852
+        width: 62
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 918fc5c944ebef320800000000000000
+      internalID: 2593719637302376473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_15
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 839
+        width: 29
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d20e613064bd52410800000000000000
+      internalID: 1451807548642877485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_16
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 809
+        width: 51
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0994e5785484c7230800000000000000
+      internalID: 3637862062469564816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_17
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 804
+        width: 67
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f29f846f458990780800000000000000
+      internalID: -8716268113122232017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_18
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 801
+        width: 131
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 378291c9765d9a040800000000000000
+      internalID: 4659489930468730995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_19
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 776
+        width: 99
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b1b34fecb347c7c0800000000000000
+      internalID: -4051194861049368143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_20
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 786
+        width: 127
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c9c71c88724ec280800000000000000
+      internalID: -9021199918062646841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_21
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 774
+        width: 41
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0766f62a17080990800000000000000
+      internalID: -7419672577188665586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_22
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 772
+        width: 19
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8192fc94bd9c7470800000000000000
+      internalID: 8393757204564578698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_23
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 763
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1040c9817d87cb600800000000000000
+      internalID: 485395725075350529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_24
+      rect:
+        serializedVersion: 2
+        x: 1046
+        y: 773
+        width: 34
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41afe94c420391c80800000000000000
+      internalID: -8351591099506165228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_25
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 729
+        width: 11
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46919a7ef2f1f40d0800000000000000
+      internalID: -3436493700049856156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_26
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 727
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc85b4391d181fe10800000000000000
+      internalID: 2229706027644442828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_27
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 744
+        width: 31
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57a0a1211912ca010800000000000000
+      internalID: 1201372107558750837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_28
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 681
+        width: 11
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13a957f58215e8db0800000000000000
+      internalID: -4787800120006174159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_29
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 723
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd02a8899cd6c9340800000000000000
+      internalID: 4871889609523077340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_30
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 14
+        width: 1781
+        height: 713
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 471ea34dc8ad9ee70800000000000000
+      internalID: 9145080816743407988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_31
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 649
+        width: 11
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26064655f0c3fd3c0800000000000000
+      internalID: -4332678279952310174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_32
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 677
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 194fcd9779d123930800000000000000
+      internalID: 4121389145419216017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_33
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 630
+        width: 11
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cf24ae30c50a8650800000000000000
+      internalID: 6235802957290680265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_34
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 646
+        width: 50
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 446a310443a27f460800000000000000
+      internalID: 7275330126942021188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_35
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 582
+        width: 20
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01cb5d2483ec3b9d0800000000000000
+      internalID: -2759635405613188080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_36
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 414
+        width: 270
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae8aebf7d33ed69e0800000000000000
+      internalID: -1626394037135169302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_37
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 582
+        width: 11
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c4ae12b498f40c90800000000000000
+      internalID: -7204360186358750011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_38
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 582
+        width: 66
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a68d518f9497995f0800000000000000
+      internalID: -749434504378722198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_39
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 501
+        width: 32
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a62dce6a54d21aba0800000000000000
+      internalID: -6079528244796927382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_40
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 502
+        width: 17
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0c795902143e5f60800000000000000
+      internalID: 8024908838091717645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_41
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 416
+        width: 33
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50018ef97fc4a9a80800000000000000
+      internalID: -8459364323638636539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_42
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 414
+        width: 17
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c43f88899badcbf40800000000000000
+      internalID: 5745707715280827212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_43
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 427
+        width: 31
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5260eb689d02c0790800000000000000
+      internalID: -7562633555621312987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_44
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 392
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9aa5c3c1b2004280800000000000000
+      internalID: -9061239487752459619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_45
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 399
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ec3de50e122f1dc0800000000000000
+      internalID: -3666174059312497433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_46
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 396
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80d6f7212e092e040800000000000000
+      internalID: 4675458663811345672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_47
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 394
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53d5fab3570004ba0800000000000000
+      internalID: -6106880591201870539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_48
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 391
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5ac7787912ffdc60800000000000000
+      internalID: 7845255267111914076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_49
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 380
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2acccbb4b6b7c5a70800000000000000
+      internalID: 8817057871246970018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_50
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 375
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 483029cf556783e20800000000000000
+      internalID: 3330542036122207108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_51
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 376
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89592fa061e895040800000000000000
+      internalID: 4636893516678731160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_52
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 383
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f80b5e657fe9a2ba0800000000000000
+      internalID: -6112898759050022769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_53
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 380
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a847bd59169b1f970800000000000000
+      internalID: 8787008176753702026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_54
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 364
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b065ed873ea34e5d0800000000000000
+      internalID: -3034235500281047541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_55
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 359
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 048e65aa6d74f86f0800000000000000
+      internalID: -680246031403259840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_56
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 360
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63b4d647c7a28c280800000000000000
+      internalID: -9022915139419157706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_57
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 367
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8380687c16c3d7a80800000000000000
+      internalID: -8467545333729720264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_58
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 364
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ff561ac45d56d880800000000000000
+      internalID: -8586573020786171918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_59
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 333
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90c20a06879e6b520800000000000000
+      internalID: 2717616128391130121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_60
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 333
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7acd5e3e575015420800000000000000
+      internalID: 2616878862371773607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_61
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 339
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a99ea965e684a24d0800000000000000
+      internalID: -3158632549910386278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_62
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 206
+        width: 468
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb8e8ea6b77f45050800000000000000
+      internalID: 5788523530524616894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_63
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 317
+        width: 32
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcb1221aa273fc750800000000000000
+      internalID: 6327336657710357451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_64
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 317
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9df0fc6a52c6ec850800000000000000
+      internalID: 6399171029508231129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_65
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 302
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d7389429f0e56720800000000000000
+      internalID: 2838922500792399828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_66
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 301
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfe643c78deae8600800000000000000
+      internalID: 472507255740460796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_67
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 285
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccdd5fea5e53c9190800000000000000
+      internalID: -7954423581244006964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_68
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 307
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a091584bb8e4ba510800000000000000
+      internalID: 1561428057750051082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_69
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 291
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fbff0fed6aadb0b0800000000000000
+      internalID: -5711221363296961544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_70
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 269
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cf078dc67ced3c80800000000000000
+      internalID: -8341250939821813816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_71
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 221
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5909a4f2f460052b0800000000000000
+      internalID: -5597967399655927659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_72
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 221
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47576f613c8b5da70800000000000000
+      internalID: 8851183790709962100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_73
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 221
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d03842e1aaf674230800000000000000
+      internalID: 3622987201683686157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_74
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 221
+        width: 56
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bd28f3cf4a1002b0800000000000000
+      internalID: -5620463405065818702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_75
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 235
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bb6db1ae5d37f4c0800000000000000
+      internalID: -4253863846378378311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TUT_AREA-Recovered2_76
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 108
+        width: 276
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63435457d07e496a0800000000000000
+      internalID: -6443271121872276426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      TUT_AREA-Recovered2_0: 2990239249118510394
+      TUT_AREA-Recovered2_1: -1086500150406045961
+      TUT_AREA-Recovered2_10: -3949936056329399461
+      TUT_AREA-Recovered2_11: -5493428819927118358
+      TUT_AREA-Recovered2_12: 2633004747246110012
+      TUT_AREA-Recovered2_13: 301983271493025500
+      TUT_AREA-Recovered2_14: 2593719637302376473
+      TUT_AREA-Recovered2_15: 1451807548642877485
+      TUT_AREA-Recovered2_16: 3637862062469564816
+      TUT_AREA-Recovered2_17: -8716268113122232017
+      TUT_AREA-Recovered2_18: 4659489930468730995
+      TUT_AREA-Recovered2_19: -4051194861049368143
+      TUT_AREA-Recovered2_2: 1927881500999014805
+      TUT_AREA-Recovered2_20: -9021199918062646841
+      TUT_AREA-Recovered2_21: -7419672577188665586
+      TUT_AREA-Recovered2_22: 8393757204564578698
+      TUT_AREA-Recovered2_23: 485395725075350529
+      TUT_AREA-Recovered2_24: -8351591099506165228
+      TUT_AREA-Recovered2_25: -3436493700049856156
+      TUT_AREA-Recovered2_26: 2229706027644442828
+      TUT_AREA-Recovered2_27: 1201372107558750837
+      TUT_AREA-Recovered2_28: -4787800120006174159
+      TUT_AREA-Recovered2_29: 4871889609523077340
+      TUT_AREA-Recovered2_3: -8009025245630916016
+      TUT_AREA-Recovered2_30: 9145080816743407988
+      TUT_AREA-Recovered2_31: -4332678279952310174
+      TUT_AREA-Recovered2_32: 4121389145419216017
+      TUT_AREA-Recovered2_33: 6235802957290680265
+      TUT_AREA-Recovered2_34: 7275330126942021188
+      TUT_AREA-Recovered2_35: -2759635405613188080
+      TUT_AREA-Recovered2_36: -1626394037135169302
+      TUT_AREA-Recovered2_37: -7204360186358750011
+      TUT_AREA-Recovered2_38: -749434504378722198
+      TUT_AREA-Recovered2_39: -6079528244796927382
+      TUT_AREA-Recovered2_4: 8913535694681507347
+      TUT_AREA-Recovered2_40: 8024908838091717645
+      TUT_AREA-Recovered2_41: -8459364323638636539
+      TUT_AREA-Recovered2_42: 5745707715280827212
+      TUT_AREA-Recovered2_43: -7562633555621312987
+      TUT_AREA-Recovered2_44: -9061239487752459619
+      TUT_AREA-Recovered2_45: -3666174059312497433
+      TUT_AREA-Recovered2_46: 4675458663811345672
+      TUT_AREA-Recovered2_47: -6106880591201870539
+      TUT_AREA-Recovered2_48: 7845255267111914076
+      TUT_AREA-Recovered2_49: 8817057871246970018
+      TUT_AREA-Recovered2_5: 998539318600063186
+      TUT_AREA-Recovered2_50: 3330542036122207108
+      TUT_AREA-Recovered2_51: 4636893516678731160
+      TUT_AREA-Recovered2_52: -6112898759050022769
+      TUT_AREA-Recovered2_53: 8787008176753702026
+      TUT_AREA-Recovered2_54: -3034235500281047541
+      TUT_AREA-Recovered2_55: -680246031403259840
+      TUT_AREA-Recovered2_56: -9022915139419157706
+      TUT_AREA-Recovered2_57: -8467545333729720264
+      TUT_AREA-Recovered2_58: -8586573020786171918
+      TUT_AREA-Recovered2_59: 2717616128391130121
+      TUT_AREA-Recovered2_6: 8554587186011899203
+      TUT_AREA-Recovered2_60: 2616878862371773607
+      TUT_AREA-Recovered2_61: -3158632549910386278
+      TUT_AREA-Recovered2_62: 5788523530524616894
+      TUT_AREA-Recovered2_63: 6327336657710357451
+      TUT_AREA-Recovered2_64: 6399171029508231129
+      TUT_AREA-Recovered2_65: 2838922500792399828
+      TUT_AREA-Recovered2_66: 472507255740460796
+      TUT_AREA-Recovered2_67: -7954423581244006964
+      TUT_AREA-Recovered2_68: 1561428057750051082
+      TUT_AREA-Recovered2_69: -5711221363296961544
+      TUT_AREA-Recovered2_7: 6012002096647103533
+      TUT_AREA-Recovered2_70: -8341250939821813816
+      TUT_AREA-Recovered2_71: -5597967399655927659
+      TUT_AREA-Recovered2_72: 8851183790709962100
+      TUT_AREA-Recovered2_73: 3622987201683686157
+      TUT_AREA-Recovered2_74: -5620463405065818702
+      TUT_AREA-Recovered2_75: -4253863846378378311
+      TUT_AREA-Recovered2_76: -6443271121872276426
+      TUT_AREA-Recovered2_8: -7469304777723680384
+      TUT_AREA-Recovered2_9: -1127029507381168679
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

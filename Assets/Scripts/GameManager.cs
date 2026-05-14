@@ -6,6 +6,11 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
+    private void Start()
+    {
+        PlaySceneMusic(SceneManager.GetActiveScene().name);
+    }
+
     private void Awake()
     {
         if (instance != null && instance != this)
@@ -31,7 +36,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            AudioManager.instance.PlayMusic("MainTheme");
+            AudioManager.instance.PlayMusic("HouseTheme");
         }
     }
 

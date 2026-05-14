@@ -1,0 +1,440 @@
+{
+  "Dlg_A40F9C56.DisplayName": {
+    "en-US": {
+      "Text": "Main Quest"
+    },
+    "Context": "Flow/Main Quest"
+  },
+  "Dlg_A40F9C56.Text": {
+    "en-US": {
+      "Text": "All of the interactions that are a part of the main quest to get the objects for the boat"
+    },
+    "Context": "Flow/Main Quest"
+  },
+  "Dlg_77621272.DisplayName": {
+    "en-US": {
+      "Text": "Scene 1: Intro to Quest"
+    },
+    "Context": "Flow/Main Quest/Scene 1: Intro to Quest"
+  },
+  "Dlg_77621272.Text": {
+    "en-US": {
+      "Text": "Marie wakes up in bed to Max bothering her, tutorial of movement, and introduction to quest"
+    },
+    "Context": "Flow/Main Quest/Scene 1: Intro to Quest"
+  },
+  "Dlg_977E426B.DisplayName": {
+    "en-US": {
+      "Text": "Scene 3: Boat Building Scene"
+    },
+    "Context": "Flow/Main Quest/Scene 3: Boat Building Scene"
+  },
+  "Dlg_977E426B.Text": {
+    "en-US": {
+      "Text": "Marie arrives to the beach with all the materials and tries to build it. Max steps in and saves the day"
+    },
+    "Context": "Flow/Main Quest/Scene 3: Boat Building Scene"
+  },
+  "Dlg_966A0239.DisplayName": {
+    "en-US": {
+      "Text": "Scene 2: Collecting Items for Boat"
+    },
+    "Context": "Flow/Main Quest/Scene 2: Collecting Items for Boat"
+  },
+  "Dlg_966A0239.Text": {
+    "en-US": {
+      "Text": "Marie collects items to build the boat from Arrnold, Rosei, and Grumpy Joe"
+    },
+    "Context": "Flow/Main Quest/Scene 2: Collecting Items for Boat"
+  },
+  "Dlg_1FC4438F.DisplayName": {
+    "en-US": {
+      "Text": "NPC Interactions"
+    },
+    "Context": "Flow/NPC Interactions"
+  },
+  "Dlg_1FC4438F.Text": {
+    "en-US": {
+      "Text": "All interactions with NPC that aren't a part of the main quest"
+    },
+    "Context": "Flow/NPC Interactions"
+  },
+  "Dlg_C922EC84.DisplayName": {
+    "en-US": {
+      "Text": "Interactions with Arrnold"
+    },
+    "Context": "Flow/NPC Interactions/Interactions with Arrnold"
+  },
+  "Dlg_C922EC84.Text": {
+    "en-US": {
+      "Text": "If you talk to him after the main quest interaction"
+    },
+    "Context": "Flow/NPC Interactions/Interactions with Arrnold"
+  },
+  "Dlg_B34D722D.DisplayName": {
+    "en-US": {
+      "Text": "Interactions with Grumpy Joe"
+    },
+    "Context": "Flow/NPC Interactions/Interactions with Grumpy Joe"
+  },
+  "Dlg_B34D722D.Text": {
+    "en-US": {
+      "Text": "If you talk to him after the main quest interaction"
+    },
+    "Context": "Flow/NPC Interactions/Interactions with Grumpy Joe"
+  },
+  "Dlg_C10E682D.DisplayName": {
+    "en-US": {
+      "Text": "Interactions with Jane"
+    },
+    "Context": "Flow/NPC Interactions/Interactions with Jane"
+  },
+  "Dlg_57513DEA.DisplayName": {
+    "en-US": {
+      "Text": "Interactions with Joele"
+    },
+    "Context": "Flow/NPC Interactions/Interactions with Joele"
+  },
+  "Dlg_F3F25C8C.DisplayName": {
+    "en-US": {
+      "Text": "Interactions with Rosei"
+    },
+    "Context": "Flow/NPC Interactions/Interactions with Rosei"
+  },
+  "Dlg_F3F25C8C.Text": {
+    "en-US": {
+      "Text": "If you talk to her after the main quest interaction"
+    },
+    "Context": "Flow/NPC Interactions/Interactions with Rosei"
+  },
+  "Dlg_07522768.DisplayName": {
+    "en-US": {
+      "Text": "Interactions with Viola"
+    },
+    "Context": "Flow/NPC Interactions/Interactions with Viola"
+  },
+  "DFr_C9B2D691.Text": {
+    "en-US": {
+      "Text": "Hey!! Mar-oh...of course you're still asleep..."
+    },
+    "Context": "Flow/Scene 1: Intro to Quest/Max: \"Hey!! Mar-oh...of course you're sti...\""
+  },
+  "DFr_4A0E6510.Text": {
+    "en-US": {
+      "Text": "Don’t tell me you forgot!"
+    },
+    "Context": "Flow/Scene 1: Intro to Quest/Max: \"Don’t tell me you forgot!\""
+  },
+  "DFr_5B26F394.Text": {
+    "en-US": {
+      "Text": "Wake up, lazy bones!"
+    },
+    "Context": "Flow/Scene 1: Intro to Quest/Max: \"Wake up, lazy bones!\""
+  },
+  "DFr_98F731EA.Text": {
+    "en-US": {
+      "Text": "Forgot what?"
+    },
+    "Context": "Flow/Scene 1: Intro to Quest/Marie: \"Forgot what?\""
+  },
+  "DFr_F695C7AE.Text": {
+    "en-US": {
+      "Text": "Of course not! I’d never forget that today is…uh…"
+    },
+    "Context": "Flow/Scene 1: Intro to Quest/Marie: \"Of course not! I’d never forget tha...\""
+  },
+  "DFr_AF16311F.Text": {
+    "en-US": {
+      "Text": "Marieeeeeeeeee…"
+    },
+    "Context": "Flow/Scene 1: Intro to Quest/Max: \"Marieeeeeeeeee…\""
+  },
+  "DFr_34BA271B.Text": {
+    "en-US": {
+      "Text": "I can’t believe you sometimes. The ISLAND BOAT RACE! It’s today! They’re giving a trophy to whoever wins - and it HAS to be us!"
+    },
+    "Context": "Flow/Scene 1: Intro to Quest/Max: \"I can’t believe you sometimes. The...\""
+  },
+  "DFr_C11105CD.Text": {
+    "en-US": {
+      "Text": "MARIE!!!"
+    },
+    "Context": "Flow/Scene 1: Intro to Quest/Max: \"MARIE!!!\""
+  },
+  "DFr_FAD7E7F1.Text": {
+    "en-US": {
+      "Text": "Oh, yeah? Where’s our boat?"
+    },
+    "Context": "Flow/Scene 1: Intro to Quest/Marie: \"Oh, yeah? Where’s our boat?\""
+  },
+  "DFr_97EC1B3F.Text": {
+    "en-US": {
+      "Text": "Good grief! It sure took you long enough to wake up. Don’t you remember what day it is?!"
+    },
+    "Context": "Flow/Scene 1: Intro to Quest/Max: \"Good grief! It sure took you long e...\""
+  },
+  "DFr_134E88A4.Text": {
+    "en-US": {
+      "Text": "…That’s what we’re working on today. But I’m not worried about it! We’ll make it happen. You and me, we make a great team."
+    },
+    "Context": "Flow/Scene 1: Intro to Quest/Max: \"…That’s what we’re working on today...\""
+  },
+  "DFr_7A5077E9.Text": {
+    "en-US": {
+      "Text": "Quick! Get on your feet! We’ve gotta get to work!"
+    },
+    "Context": "Flow/Scene 1: Intro to Quest/Max: \"Quick! Get on your feet! We’ve gott...\""
+  },
+  "DFr_F3729180.Text": {
+    "en-US": {
+      "Text": "It won’t take us very long! We just need to get stuff to build with. I’m thinking we’ll need wood, string, and canvas. Can you ask around town to see if anyone can help us out?"
+    },
+    "Context": "Flow/Scene 1: Intro to Quest/Max: \"It won’t take us very long! We just...\""
+  },
+  "DFr_E779FA9C.Text": {
+    "en-US": {
+      "Text": "I remember this day…why am I back here?"
+    },
+    "Context": "Flow/Scene 1: Intro to Quest/Marie: \"I remember this day…why am I back h...\""
+  },
+  "DFr_F0CC2E05.Text": {
+    "en-US": {
+      "Text": "Well? What’re you waiting for?"
+    },
+    "Context": "Flow/Scene 1: Intro to Quest/Max: \"Well? What’re you waiting for?\""
+  },
+  "DFr_BA2832F6.Text": {
+    "en-US": {
+      "Text": "whatdoweneedtogetprobablywoodmaybesomecanvasmaybesomeuhhhhh…"
+    },
+    "Context": "Flow/Scene 1: Intro to Quest/Max: \"whatdoweneedtogetprobablywoodmaybes...\""
+  },
+  "DFr_D75E7685.Text": {
+    "en-US": {
+      "Text": "Wow, he’s not here yet? I’m the one doing the leg work too, ugh"
+    },
+    "Context": "Flow/Scene 3: Boat Building Scene/Marie: \"Wow, he’s not here yet? I’m the one...\""
+  },
+  "DFr_F510393B.Text": {
+    "en-US": {
+      "Text": "...!"
+    },
+    "Context": "Flow/Scene 3: Boat Building Scene/Marie: \"...!\""
+  },
+  "DFr_BFA552EC.Text": {
+    "en-US": {
+      "Text": "Hmm, well Max isn’t here to build the boat…and I have the supplies to build the boat…and the tools to build the boat…"
+    },
+    "Context": "Flow/Scene 3: Boat Building Scene/Marie: \"Hmm, well Max isn’t here to build t...\""
+  },
+  "DFr_2F4AE501.Text": {
+    "en-US": {
+      "Text": "Might as well give it a go!"
+    },
+    "Context": "Flow/Scene 3: Boat Building Scene/Marie: \"Might as well give it a go!\""
+  },
+  "DFr_BB05CE37.Text": {
+    "en-US": {
+      "Text": "Marie? What are you doing?"
+    },
+    "Context": "Flow/Scene 3: Boat Building Scene/Max: \"Marie? What are you doing?\""
+  },
+  "DFr_CB2CE0E2.Text": {
+    "en-US": {
+      "Text": "AHH-"
+    },
+    "Context": "Flow/Scene 3: Boat Building Scene/Marie: \"AHH-\""
+  },
+  "DFr_1111FBE7.Text": {
+    "en-US": {
+      "Text": "OH MY GOD-"
+    },
+    "Context": "Flow/Scene 3: Boat Building Scene/Marie: \"OH MY GOD-\""
+  },
+  "DFr_E358D799.Text": {
+    "en-US": {
+      "Text": "WHEN DID YOU GET THERE?!?!"
+    },
+    "Context": "Flow/Scene 3: Boat Building Scene/Marie: \"WHEN DID YOU GET THERE?!?!\""
+  },
+  "DFr_351ECB7E.Text": {
+    "en-US": {
+      "Text": "Uh...just a second ago. Are you okay?"
+    },
+    "Context": "Flow/Scene 3: Boat Building Scene/Max: \"Uh...just a second ago. Are you oka...\""
+  },
+  "DFr_76B7ABA1.Text": {
+    "en-US": {
+      "Text": "YOU BROKE MY BOAT!!!"
+    },
+    "Context": "Flow/Scene 3: Boat Building Scene/Marie: \"YOU BROKE MY BOAT!!!\""
+  },
+  "DFr_635773BE.Text": {
+    "en-US": {
+      "Text": "Sorry... I think I ruined it."
+    },
+    "Context": "Flow/Scene 3: Boat Building Scene/Marie: \"Sorry... I think I ruined it.\""
+  },
+  "DFr_9B4ED6DB.Text": {
+    "en-US": {
+      "Text": "Well, I dunno why you tried to do it alone. It's a job for two people. We'll rebuild it together."
+    },
+    "Context": "Flow/Scene 3: Boat Building Scene/Max: \"Well, I dunno why you tried to do i...\""
+  },
+  "DFr_5E9979FC.Text": {
+    "en-US": {
+      "Text": "Hmph... you better."
+    },
+    "Context": "Flow/Scene 3: Boat Building Scene/Marie: \"Hmph... you better.\""
+  },
+  "DFr_35F28D9A.Text": {
+    "en-US": {
+      "Text": ""
+    },
+    "Context": "Flow/Scene 3: Boat Building Scene/New dialogue fragment"
+  },
+  "DFr_34B914C4.Text": {
+    "en-US": {
+      "Text": "Eh?? Who’s that?? …Oh, it’s just you, Marie. Don’t sneak up on me like that, you’ll give this old man a heart attack. Ah, no matter...are you staying out of trouble today?"
+    },
+    "Context": "Flow/Scene 2: Collecting Items for Boat/Grumpy Joe: \"Eh?? Who’s that?? …Oh, it’s just yo...\""
+  },
+  "DFr_EAB744DE.Text": {
+    "en-US": {
+      "Text": "Ah, you again, Marie! What is it now?"
+    },
+    "Context": "Flow/Scene 2: Collecting Items for Boat/Grumpy Joe: \"Ah, you again, Marie! What is it no...\""
+  },
+  "DFr_297A99C5.Text": {
+    "en-US": {
+      "Text": "Max and I need wood to build a boat!"
+    },
+    "Context": "Flow/Scene 2: Collecting Items for Boat/Marie: \"Max and I need wood to build a boat...\""
+  },
+  "DFr_20629E4F.Text": {
+    "en-US": {
+      "Text": "What’s new, Grumpy Joe?"
+    },
+    "Context": "Flow/Scene 2: Collecting Items for Boat/Marie: \"What’s new, Grumpy Joe?\""
+  },
+  "DFr_C8855140.Text": {
+    "en-US": {
+      "Text": "Nevermind."
+    },
+    "Context": "Flow/Scene 2: Collecting Items for Boat/Marie: \"Nevermind.\""
+  },
+  "DFr_625F6A0B.Text": {
+    "en-US": {
+      "Text": "Now, why would you ever want to build a boat? There’s nothin’ out there in that cursed ocean. Nothin’ worth seeing!"
+    },
+    "Context": "Flow/Scene 2: Collecting Items for Boat/Grumpy Joe: \"Now, why would you ever want to bui...\""
+  },
+  "DFr_98AC033E.Text": {
+    "en-US": {
+      "Text": "To win the Boat Racing Contest, of course!"
+    },
+    "Context": "Flow/Scene 2: Collecting Items for Boat/Marie: \"To win the Boat Racing Contest, of...\""
+  },
+  "DFr_1B4F4534.Text": {
+    "en-US": {
+      "Text": "What’s it to you?!"
+    },
+    "Context": "Flow/Scene 2: Collecting Items for Boat/Marie: \"What’s it to you?!\""
+  },
+  "DFr_B25E5CAB.Text": {
+    "en-US": {
+      "Text": "Contest? Bah! You kids and your silly games. ...Tell you what, though, this might be your lucky day. I have some pieces of an old boat that have just been sitting around in my shop. Haven’t been put together in years. I’ve been looking for a chance to get rid of them. You and your brother can have them, under one condition..."
+    },
+    "Context": "Flow/Scene 2: Collecting Items for Boat/Grumpy Joe: \"Contest? Bah! You kids and your sil...\""
+  },
+  "DFr_52685F47.Text": {
+    "en-US": {
+      "Text": "What’s that?"
+    },
+    "Context": "Flow/Scene 2: Collecting Items for Boat/Marie: \"What’s that?\""
+  },
+  "DFr_3889500E.Text": {
+    "en-US": {
+      "Text": "You take the blasted things, and don’t try to give them back! Now here, take ‘em and get to work!"
+    },
+    "Context": "Flow/Scene 2: Collecting Items for Boat/Grumpy Joe: \"You take the blasted things, and do...\""
+  },
+  "DFr_99F2A115.Text": {
+    "en-US": {
+      "Text": "Well! Excuse an old man for being curious! You’ll surely have rotten luck getting any wood with that attitude!"
+    },
+    "Context": "Flow/Scene 2: Collecting Items for Boat/Grumpy Joe: \"Well! Excuse an old man for being c...\""
+  },
+  "DFr_B5E5BE82.Text": {
+    "en-US": {
+      "Text": "Eh? What’s new? Not much around here, I’ll tell you that! Business at the shop is the slowest it’s been in months. I’m telling you, young people these days just can’t appreciate good craftsmanship."
+    },
+    "Context": "Flow/Scene 2: Collecting Items for Boat/Grumpy Joe: \"Eh? What’s new? Not much around her...\""
+  },
+  "DFr_E7431CAE.Text": {
+    "en-US": {
+      "Text": "Are you sure that’s why?"
+    },
+    "Context": "Flow/Scene 2: Collecting Items for Boat/Marie: \"Are you sure that’s why?\""
+  },
+  "DFr_2A793D08.Text": {
+    "en-US": {
+      "Text": "Of course! I don’t see what else it could be!"
+    },
+    "Context": "Flow/Scene 2: Collecting Items for Boat/Grumpy Joe: \"Of course! I don’t see what else it...\""
+  },
+  "DFr_CBA65250.Text": {
+    "en-US": {
+      "Text": "Bah, you kids. You think an old man’s just got all the time in the world!"
+    },
+    "Context": "Flow/Scene 2: Collecting Items for Boat/Grumpy Joe: \"Bah, you kids. You think an old man...\""
+  },
+  "Ntt_12489C3B.DisplayName": {
+    "en-US": {
+      "Text": "Marie"
+    },
+    "Context": "Entities/Marie"
+  },
+  "Ntt_DB8FD32E.DisplayName": {
+    "en-US": {
+      "Text": "Max"
+    },
+    "Context": "Entities/Max"
+  },
+  "Ntt_6339C985.DisplayName": {
+    "en-US": {
+      "Text": "Arrnold Mille"
+    },
+    "Context": "Entities/Arrnold Mille"
+  },
+  "Ntt_D8AED529.DisplayName": {
+    "en-US": {
+      "Text": "Rosei Mille"
+    },
+    "Context": "Entities/Rosei Mille"
+  },
+  "Ntt_9BA2459D.DisplayName": {
+    "en-US": {
+      "Text": "Joele Mille"
+    },
+    "Context": "Entities/Joele Mille"
+  },
+  "Ntt_F148E78D.DisplayName": {
+    "en-US": {
+      "Text": "Grumpy Joe"
+    },
+    "Context": "Entities/Grumpy Joe"
+  },
+  "Ntt_3D56F26C.DisplayName": {
+    "en-US": {
+      "Text": "Jane"
+    },
+    "Context": "Entities/Jane"
+  },
+  "Ntt_646448C7.DisplayName": {
+    "en-US": {
+      "Text": "Viola Earnest"
+    },
+    "Context": "Entities/Viola Earnest"
+  }
+}

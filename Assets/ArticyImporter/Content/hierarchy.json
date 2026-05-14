@@ -1,0 +1,700 @@
+{
+  "Id": "0x0100000000000001",
+  "TechnicalName": "_8_Bit_Tutorial_1_",
+  "Type": "Project",
+  "Children": [
+    {
+      "Id": "0x03000000F917511B",
+      "TechnicalName": "ProjectSettings",
+      "Type": "ProjectSettingsFolder",
+      "Children": [
+        {
+          "Id": "0x010000000000000C",
+          "TechnicalName": "",
+          "Type": "ProjectSettingsFlow"
+        },
+        {
+          "Id": "0x0100000000000007",
+          "TechnicalName": "",
+          "Type": "ProjectSettingsGeneral"
+        },
+        {
+          "Id": "0x010000000000000A",
+          "TechnicalName": "",
+          "Type": "ProjectSettingsJourneys"
+        },
+        {
+          "Id": "0x010000000000000B",
+          "TechnicalName": "",
+          "Type": "ProjectSettingsLocation"
+        }
+      ]
+    },
+    {
+      "Id": "0x030000002B4F4C54",
+      "TechnicalName": "GlobalVariables",
+      "Type": "GlobalVariables"
+    },
+    {
+      "Id": "0x0300000043CE43F7",
+      "TechnicalName": "Flow",
+      "Type": "Flow",
+      "Children": [
+        {
+          "Id": "0x01000000000001E1",
+          "TechnicalName": "Dlg_A40F9C56",
+          "Type": "Dialogue",
+          "Children": [
+            {
+              "Id": "0x01000000000001F8",
+              "TechnicalName": "Dlg_77621272",
+              "Type": "Dialogue",
+              "Children": [
+                {
+                  "Id": "0x0100000000000237",
+                  "TechnicalName": "DFr_BA2832F6",
+                  "Type": "DialogueFragment"
+                },
+                {
+                  "Id": "0x0100000000000159",
+                  "TechnicalName": "DFr_C9B2D691",
+                  "Type": "DialogueFragment"
+                },
+                {
+                  "Id": "0x01000000000001AA",
+                  "TechnicalName": "DFr_4A0E6510",
+                  "Type": "DialogueFragment"
+                },
+                {
+                  "Id": "0x0100000000000225",
+                  "TechnicalName": "DFr_F0CC2E05",
+                  "Type": "DialogueFragment"
+                },
+                {
+                  "Id": "0x010000000000016B",
+                  "TechnicalName": "DFr_5B26F394",
+                  "Type": "DialogueFragment"
+                },
+                {
+                  "Id": "0x01000000000001B0",
+                  "TechnicalName": "DFr_98F731EA",
+                  "Type": "DialogueFragment"
+                },
+                {
+                  "Id": "0x01000000000001B6",
+                  "TechnicalName": "DFr_F695C7AE",
+                  "Type": "DialogueFragment"
+                },
+                {
+                  "Id": "0x0100000000000177",
+                  "TechnicalName": "DFr_AF16311F",
+                  "Type": "DialogueFragment"
+                },
+                {
+                  "Id": "0x01000000000001BD",
+                  "TechnicalName": "DFr_34BA271B",
+                  "Type": "DialogueFragment"
+                },
+                {
+                  "Id": "0x010000000000017D",
+                  "TechnicalName": "DFr_C11105CD",
+                  "Type": "DialogueFragment"
+                },
+                {
+                  "Id": "0x01000000000001C4",
+                  "TechnicalName": "DFr_FAD7E7F1",
+                  "Type": "DialogueFragment"
+                },
+                {
+                  "Id": "0x0100000000000187",
+                  "TechnicalName": "DFr_97EC1B3F",
+                  "Type": "DialogueFragment"
+                },
+                {
+                  "Id": "0x01000000000001CC",
+                  "TechnicalName": "DFr_134E88A4",
+                  "Type": "DialogueFragment"
+                },
+                {
+                  "Id": "0x010000000000018F",
+                  "TechnicalName": "DFr_7A5077E9",
+                  "Type": "DialogueFragment"
+                },
+                {
+                  "Id": "0x01000000000001D3",
+                  "TechnicalName": "DFr_F3729180",
+                  "Type": "DialogueFragment"
+                },
+                {
+                  "Id": "0x0100000000000196",
+                  "TechnicalName": "DFr_E779FA9C",
+                  "Type": "DialogueFragment"
+                }
+              ]
+            },
+            {
+              "Id": "0x0100000000000250",
+              "TechnicalName": "Dlg_966A0239",
+              "Type": "Dialogue",
+              "Children": [
+                {
+                  "Id": "0x0100000000000316",
+                  "TechnicalName": "DFr_257954B6",
+                  "Type": "DialogueFragment"
+                },
+                {
+                  "Id": "0x010000000000031B",
+                  "TechnicalName": "DFr_10BE5A96",
+                  "Type": "DialogueFragment"
+                },
+                {
+                  "Id": "0x010000000000028F",
+                  "TechnicalName": "DFr_34B914C4",
+                  "Type": "DialogueFragment"
+                },
+                {
+                  "Id": "0x01000000000002A4",
+                  "TechnicalName": "DFr_EAB744DE",
+                  "Type": "DialogueFragment"
+                },
+                {
+                  "Id": "0x01000000000002B4",
+                  "TechnicalName": "DFr_C8855140",
+                  "Type": "DialogueFragment"
+                },
+                {
+                  "Id": "0x01000000000002AF",
+                  "TechnicalName": "DFr_20629E4F",
+                  "Type": "DialogueFragment"
+                },
+                {
+                  "Id": "0x01000000000002AA",
+                  "TechnicalName": "DFr_297A99C5",
+                  "Type": "DialogueFragment"
+                },
+                {
+                  "Id": "0x0100000000000307",
+                  "TechnicalName": "DFr_CBA65250",
+                  "Type": "DialogueFragment"
+                },
+                {
+                  "Id": "0x01000000000002F2",
+                  "TechnicalName": "DFr_B5E5BE82",
+                  "Type": "DialogueFragment"
+                },
+                {
+                  "Id": "0x01000000000002C0",
+                  "TechnicalName": "DFr_625F6A0B",
+                  "Type": "DialogueFragment"
+                },
+                {
+                  "Id": "0x01000000000002F8",
+                  "TechnicalName": "DFr_E7431CAE",
+                  "Type": "DialogueFragment"
+                },
+                {
+                  "Id": "0x01000000000002C6",
+                  "TechnicalName": "DFr_98AC033E",
+                  "Type": "DialogueFragment"
+                },
+                {
+                  "Id": "0x01000000000002CD",
+                  "TechnicalName": "DFr_1B4F4534",
+                  "Type": "DialogueFragment"
+                },
+                {
+                  "Id": "0x0100000000000300",
+                  "TechnicalName": "DFr_2A793D08",
+                  "Type": "DialogueFragment"
+                },
+                {
+                  "Id": "0x01000000000002EB",
+                  "TechnicalName": "DFr_99F2A115",
+                  "Type": "DialogueFragment"
+                },
+                {
+                  "Id": "0x01000000000002D4",
+                  "TechnicalName": "DFr_B25E5CAB",
+                  "Type": "DialogueFragment"
+                },
+                {
+                  "Id": "0x01000000000002DB",
+                  "TechnicalName": "DFr_52685F47",
+                  "Type": "DialogueFragment"
+                },
+                {
+                  "Id": "0x01000000000002E2",
+                  "TechnicalName": "DFr_3889500E",
+                  "Type": "DialogueFragment"
+                }
+              ]
+            },
+            {
+              "Id": "0x0100000000000201",
+              "TechnicalName": "Dlg_977E426B",
+              "Type": "Dialogue",
+              "Children": [
+                {
+                  "Id": "0x0100000000000320",
+                  "TechnicalName": "DFr_D75E7685",
+                  "Type": "DialogueFragment"
+                },
+                {
+                  "Id": "0x0100000000000325",
+                  "TechnicalName": "DFr_F510393B",
+                  "Type": "DialogueFragment"
+                },
+                {
+                  "Id": "0x010000000000032C",
+                  "TechnicalName": "DFr_BFA552EC",
+                  "Type": "DialogueFragment"
+                },
+                {
+                  "Id": "0x0100000000000335",
+                  "TechnicalName": "DFr_2F4AE501",
+                  "Type": "DialogueFragment"
+                },
+                {
+                  "Id": "0x010000000000033C",
+                  "TechnicalName": "DFr_359EA62F",
+                  "Type": "DialogueFragment"
+                },
+                {
+                  "Id": "0x0100000000000343",
+                  "TechnicalName": "DFr_BB05CE37",
+                  "Type": "DialogueFragment"
+                },
+                {
+                  "Id": "0x0100000000000348",
+                  "TechnicalName": "DFr_CB2CE0E2",
+                  "Type": "DialogueFragment"
+                },
+                {
+                  "Id": "0x0100000000000357",
+                  "TechnicalName": "DFr_1111FBE7",
+                  "Type": "DialogueFragment"
+                },
+                {
+                  "Id": "0x010000000000035C",
+                  "TechnicalName": "DFr_E358D799",
+                  "Type": "DialogueFragment"
+                },
+                {
+                  "Id": "0x0100000000000366",
+                  "TechnicalName": "DFr_351ECB7E",
+                  "Type": "DialogueFragment"
+                },
+                {
+                  "Id": "0x010000000000036F",
+                  "TechnicalName": "DFr_76B7ABA1",
+                  "Type": "DialogueFragment"
+                },
+                {
+                  "Id": "0x0100000000000374",
+                  "TechnicalName": "DFr_635773BE",
+                  "Type": "DialogueFragment"
+                },
+                {
+                  "Id": "0x010000000000037E",
+                  "TechnicalName": "DFr_9B4ED6DB",
+                  "Type": "DialogueFragment"
+                },
+                {
+                  "Id": "0x0100000000000387",
+                  "TechnicalName": "DFr_5E9979FC",
+                  "Type": "DialogueFragment"
+                },
+                {
+                  "Id": "0x010000000000038D",
+                  "TechnicalName": "DFr_35F28D9A",
+                  "Type": "DialogueFragment"
+                },
+                {
+                  "Id": "0x0100000000000395",
+                  "TechnicalName": "DFr_7E9B3D80",
+                  "Type": "DialogueFragment"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": "0x01000000000001EA",
+          "TechnicalName": "Dlg_1FC4438F",
+          "Type": "Dialogue",
+          "Children": [
+            {
+              "Id": "0x010000000000025C",
+              "TechnicalName": "Dlg_C922EC84",
+              "Type": "Dialogue"
+            },
+            {
+              "Id": "0x010000000000026C",
+              "TechnicalName": "Dlg_C10E682D",
+              "Type": "Dialogue"
+            },
+            {
+              "Id": "0x0100000000000264",
+              "TechnicalName": "Dlg_B34D722D",
+              "Type": "Dialogue"
+            },
+            {
+              "Id": "0x0100000000000274",
+              "TechnicalName": "Dlg_57513DEA",
+              "Type": "Dialogue",
+              "Children": [
+                {
+                  "Id": "0x010000000000029E",
+                  "TechnicalName": "DFr_2637AC43",
+                  "Type": "DialogueFragment"
+                }
+              ]
+            },
+            {
+              "Id": "0x010000000000027C",
+              "TechnicalName": "Dlg_F3F25C8C",
+              "Type": "Dialogue"
+            },
+            {
+              "Id": "0x0100000000000284",
+              "TechnicalName": "Dlg_07522768",
+              "Type": "Dialogue"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "0x03000000AC61A2B3",
+      "TechnicalName": "Entities",
+      "Type": "Entities",
+      "Children": [
+        {
+          "Id": "0x0100000000000126",
+          "TechnicalName": "Ntt_6339C985",
+          "Type": "Entity"
+        },
+        {
+          "Id": "0x0100000000000132",
+          "TechnicalName": "Ntt_F148E78D",
+          "Type": "Entity"
+        },
+        {
+          "Id": "0x0100000000000136",
+          "TechnicalName": "Ntt_3D56F26C",
+          "Type": "Entity"
+        },
+        {
+          "Id": "0x010000000000012E",
+          "TechnicalName": "Ntt_9BA2459D",
+          "Type": "Entity"
+        },
+        {
+          "Id": "0x010000000000011E",
+          "TechnicalName": "Ntt_12489C3B",
+          "Type": "Entity"
+        },
+        {
+          "Id": "0x0100000000000122",
+          "TechnicalName": "Ntt_DB8FD32E",
+          "Type": "Entity"
+        },
+        {
+          "Id": "0x010000000000012A",
+          "TechnicalName": "Ntt_D8AED529",
+          "Type": "Entity"
+        },
+        {
+          "Id": "0x010000000000013A",
+          "TechnicalName": "Ntt_646448C7",
+          "Type": "Entity"
+        }
+      ]
+    },
+    {
+      "Id": "0x030000003140D3AC",
+      "TechnicalName": "Locations",
+      "Type": "Locations"
+    },
+    {
+      "Id": "0x03000000103AA2F0",
+      "TechnicalName": "Documents",
+      "Type": "Documents",
+      "Children": [
+        {
+          "Id": "0x010000000000013E",
+          "TechnicalName": "Doc_219C5709",
+          "Type": "Document"
+        }
+      ]
+    },
+    {
+      "Id": "0x03000000236F7272",
+      "TechnicalName": "Journeys",
+      "Type": "Journeys"
+    },
+    {
+      "Id": "0x0300000029CF057C",
+      "TechnicalName": "TemplateDesign",
+      "Type": "TemplateDesign",
+      "Children": [
+        {
+          "Id": "0x03000000D2404DC0",
+          "TechnicalName": "Features",
+          "Type": "Features",
+          "Children": [
+            {
+              "Id": "0x010000000000000F",
+              "TechnicalName": "DefaultBasicCharacterFeature",
+              "Type": "Feature"
+            },
+            {
+              "Id": "0x0100000000000051",
+              "TechnicalName": "DefaultExtendedCharacterFeature",
+              "Type": "Feature"
+            }
+          ]
+        },
+        {
+          "Id": "0x030000002C0951AE",
+          "TechnicalName": "PropertyTemplates",
+          "Type": "PropertyTemplates",
+          "Children": [
+            {
+              "Id": "0x03000000BB12F1B8",
+              "TechnicalName": "",
+              "Type": "TypedPropertyTemplates"
+            },
+            {
+              "Id": "0x0300000037DCE3F0",
+              "TechnicalName": "",
+              "Type": "TypedPropertyTemplates"
+            },
+            {
+              "Id": "0x030000006E2C178B",
+              "TechnicalName": "",
+              "Type": "TypedPropertyTemplates"
+            },
+            {
+              "Id": "0x03000000D745C449",
+              "TechnicalName": "",
+              "Type": "TypedPropertyTemplates"
+            },
+            {
+              "Id": "0x030000003630A240",
+              "TechnicalName": "",
+              "Type": "TypedPropertyTemplates"
+            },
+            {
+              "Id": "0x030000006F82D78E",
+              "TechnicalName": "",
+              "Type": "TypedPropertyTemplates"
+            }
+          ]
+        },
+        {
+          "Id": "0x030000009AF68DCD",
+          "TechnicalName": "Templates",
+          "Type": "Templates",
+          "Children": [
+            {
+              "Id": "0x0300000030635118",
+              "TechnicalName": "",
+              "Type": "TemplateTypeFolder"
+            },
+            {
+              "Id": "0x03000000DCC67F9D",
+              "TechnicalName": "",
+              "Type": "TemplateTypeFolder"
+            },
+            {
+              "Id": "0x03000000030B5ACF",
+              "TechnicalName": "",
+              "Type": "TemplateTypeFolder"
+            },
+            {
+              "Id": "0x030000008DD5C0F2",
+              "TechnicalName": "",
+              "Type": "TemplateTypeFolder"
+            },
+            {
+              "Id": "0x03000000ECC00F83",
+              "TechnicalName": "",
+              "Type": "TemplateTypeFolder"
+            },
+            {
+              "Id": "0x0300000078B45A71",
+              "TechnicalName": "",
+              "Type": "TemplateTypeFolder",
+              "Children": [
+                {
+                  "Id": "0x01000000000000A9",
+                  "TechnicalName": "DefaultMainCharacterTemplate",
+                  "Type": "Template"
+                },
+                {
+                  "Id": "0x010000000000007F",
+                  "TechnicalName": "DefaultSupportingCharacterTemplate",
+                  "Type": "Template"
+                }
+              ]
+            },
+            {
+              "Id": "0x030000006D1BC275",
+              "TechnicalName": "",
+              "Type": "TemplateTypeFolder"
+            },
+            {
+              "Id": "0x0300000013DF3A1A",
+              "TechnicalName": "",
+              "Type": "TemplateTypeFolder"
+            },
+            {
+              "Id": "0x03000000CC5A07F0",
+              "TechnicalName": "",
+              "Type": "TemplateTypeFolder"
+            },
+            {
+              "Id": "0x03000000BA022E2F",
+              "TechnicalName": "",
+              "Type": "TemplateTypeFolder"
+            },
+            {
+              "Id": "0x03000000ADA9FA17",
+              "TechnicalName": "",
+              "Type": "TemplateTypeFolder"
+            },
+            {
+              "Id": "0x03000000FB371D5C",
+              "TechnicalName": "",
+              "Type": "TemplateTypeFolder"
+            },
+            {
+              "Id": "0x0300000092CF598E",
+              "TechnicalName": "",
+              "Type": "TemplateTypeFolder"
+            },
+            {
+              "Id": "0x030000005314E813",
+              "TechnicalName": "",
+              "Type": "TemplateTypeFolder"
+            },
+            {
+              "Id": "0x030000004264B29C",
+              "TechnicalName": "",
+              "Type": "TemplateTypeFolder"
+            },
+            {
+              "Id": "0x03000000F514339C",
+              "TechnicalName": "",
+              "Type": "TemplateTypeFolder"
+            },
+            {
+              "Id": "0x0300000096812FC1",
+              "TechnicalName": "",
+              "Type": "TemplateTypeFolder"
+            },
+            {
+              "Id": "0x03000000A715C057",
+              "TechnicalName": "",
+              "Type": "TemplateTypeFolder"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "0x03000000173C3392",
+      "TechnicalName": "",
+      "Type": "RuleSets",
+      "Children": [
+        {
+          "Id": "0x010000000000010E",
+          "TechnicalName": "",
+          "Type": "RuleSet",
+          "Children": [
+            {
+              "Id": "0x0100000000000111",
+              "TechnicalName": "",
+              "Type": "RuleSetPackage"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "0x030000004C3DAF54",
+      "TechnicalName": "Assets",
+      "Type": "Assets",
+      "Children": [
+        {
+          "Id": "0x0100000000000118",
+          "TechnicalName": "Ufo_948E9BBB",
+          "Type": "AssetsUserFolder"
+        },
+        {
+          "Id": "0x010000000000011A",
+          "TechnicalName": "Ufo_FA34D480",
+          "Type": "AssetsUserFolder"
+        },
+        {
+          "Id": "0x0100000000000114",
+          "TechnicalName": "Ufo_95FFF303",
+          "Type": "AssetsUserFolder",
+          "Children": [
+            {
+              "Id": "0x010000000000014D",
+              "TechnicalName": "Ast_5C0C2CB2",
+              "Type": "Asset"
+            },
+            {
+              "Id": "0x0100000000000150",
+              "TechnicalName": "Ast_A16A5FEE",
+              "Type": "Asset"
+            },
+            {
+              "Id": "0x0100000000000144",
+              "TechnicalName": "Ast_3796ABD5",
+              "Type": "Asset"
+            },
+            {
+              "Id": "0x0100000000000147",
+              "TechnicalName": "Ast_35075E57",
+              "Type": "Asset"
+            },
+            {
+              "Id": "0x0100000000000156",
+              "TechnicalName": "Ast_501DCEE6",
+              "Type": "Asset"
+            },
+            {
+              "Id": "0x0100000000000141",
+              "TechnicalName": "Ast_080CBAED",
+              "Type": "Asset"
+            },
+            {
+              "Id": "0x0100000000000153",
+              "TechnicalName": "Ast_0F90C468",
+              "Type": "Asset"
+            },
+            {
+              "Id": "0x010000000000014A",
+              "TechnicalName": "Ast_32FD7AE7",
+              "Type": "Asset"
+            }
+          ]
+        },
+        {
+          "Id": "0x010000000000011C",
+          "TechnicalName": "Ufo_E2682A13",
+          "Type": "AssetsUserFolder"
+        },
+        {
+          "Id": "0x0100000000000116",
+          "TechnicalName": "Ufo_80F60381",
+          "Type": "AssetsUserFolder"
+        }
+      ]
+    }
+  ]
+}
