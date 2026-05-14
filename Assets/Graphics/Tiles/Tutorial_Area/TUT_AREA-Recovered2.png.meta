@@ -951,8 +951,8 @@ TextureImporter:
         y: 681
         width: 11
         height: 50
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.375}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -973,8 +973,8 @@ TextureImporter:
         y: 723
         width: 11
         height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 1, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1039,8 +1039,8 @@ TextureImporter:
         y: 677
         width: 26
         height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.45, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1054,59 +1054,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TUT_AREA-Recovered2_33
-      rect:
-        serializedVersion: 2
-        x: 561
-        y: 630
-        width: 11
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9cf24ae30c50a8650800000000000000
-      internalID: 6235802957290680265
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TUT_AREA-Recovered2_34
-      rect:
-        serializedVersion: 2
-        x: 579
-        y: 646
-        width: 50
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 446a310443a27f460800000000000000
-      internalID: 7275330126942021188
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: TUT_AREA-Recovered2_35
       rect:
         serializedVersion: 2
-        x: 643
-        y: 582
-        width: 20
-        height: 82
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 562
+        y: 583
+        width: 100
+        height: 80
+      alignment: 9
+      pivot: {x: 0.525, y: 0.425}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1127,8 +1083,8 @@ TextureImporter:
         y: 414
         width: 270
         height: 211
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1142,50 +1098,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TUT_AREA-Recovered2_37
-      rect:
-        serializedVersion: 2
-        x: 561
-        y: 582
-        width: 11
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5c4ae12b498f40c90800000000000000
-      internalID: -7204360186358750011
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TUT_AREA-Recovered2_38
-      rect:
-        serializedVersion: 2
-        x: 579
-        y: 582
-        width: 66
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a68d518f9497995f0800000000000000
-      internalID: -749434504378722198
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: TUT_AREA-Recovered2_39
       rect:
         serializedVersion: 2
@@ -1193,8 +1105,8 @@ TextureImporter:
         y: 501
         width: 32
         height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.8, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
