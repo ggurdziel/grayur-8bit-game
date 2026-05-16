@@ -7,6 +7,7 @@ public class AudioManager : MonoBehaviour
 
     [SerializeField] private AudioDatabaseSO audioDB;
     [SerializeField] private AudioSource bgmSource;
+    [SerializeField] private AudioSource sfxSource;
     [SerializeField] private float fadeDuration = 0.75f;
 
     private Coroutine musicFadeCoroutine;
@@ -94,4 +95,26 @@ public class AudioManager : MonoBehaviour
 
         musicFadeCoroutine = null;
     }
+
+
+    public void SetMusicVolume(float volume)
+    {
+        bgmSource.volume = volume;
+    }
+
+    public void SetSFXVolume(float volume)
+    {
+        sfxSource.volume = volume;
+    }
+
+    public float GetMusicVolume()
+    {
+        return bgmSource.volume;
+    }
+
+    public float GetSFXVolume()
+    {
+        return sfxSource.volume;
+    }
+
 }

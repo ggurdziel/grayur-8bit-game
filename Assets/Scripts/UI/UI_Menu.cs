@@ -21,7 +21,11 @@ public class UI_Menu : MonoBehaviour
         if (menuPanel != null)
             menuPanel.SetActive(true);
 
-        ShowInventorySection();
+        if (inventorySection != null)
+            inventorySection.SetActive(true);
+
+        if (settingsSection != null)
+            settingsSection.SetActive(true);
     }
 
     public void CloseMenu()
@@ -30,24 +34,12 @@ public class UI_Menu : MonoBehaviour
 
         if (menuPanel != null)
             menuPanel.SetActive(false);
-    }
 
-    public void ShowInventorySection()
-    {
-        if (inventorySection != null)
-            inventorySection.SetActive(true);
-
-        if (settingsSection != null)
-            settingsSection.SetActive(false);
-    }
-
-    public void ShowSettingsSection()
-    {
         if (inventorySection != null)
             inventorySection.SetActive(false);
 
         if (settingsSection != null)
-            settingsSection.SetActive(true);
+            settingsSection.SetActive(false);
     }
 
     public bool IsOpen()
