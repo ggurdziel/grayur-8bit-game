@@ -1,0 +1,4800 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1064702003, guid: df2ec02f61e861546b9427c26ccacb8d, type: 3}
+  m_Name: ArticyTypeSystem
+  m_EditorClassIdentifier: 
+  mArticyTypes:
+  - mTechnicalName: ArticyObject
+    mDisplayName: 
+    mBaseType: 
+    mCSharpType: Articy.Unity.ArticyObject, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+      PublicKeyToken=null
+    mIsEnum: 0
+    mHasTemplate: 0
+    mFeatures: []
+    mProperties:
+    - mTechnicalName: ParentId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Id
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: InstanceId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: TechnicalName
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Parent
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyObject, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+        PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Children
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+  - mTechnicalName: Sex
+    mDisplayName: Sex
+    mBaseType: 
+    mCSharpType: Articy._8_Bit_Tutorial_1_.Sex, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    mIsEnum: 1
+    mHasTemplate: 0
+    mFeatures: []
+    mProperties: []
+  - mTechnicalName: ShapeType
+    mDisplayName: ShapeType
+    mBaseType: 
+    mCSharpType: Articy._8_Bit_Tutorial_1_.ShapeType, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    mIsEnum: 1
+    mHasTemplate: 0
+    mFeatures: []
+    mProperties: []
+  - mTechnicalName: SelectabilityModes
+    mDisplayName: SelectabilityModes
+    mBaseType: 
+    mCSharpType: Articy._8_Bit_Tutorial_1_.SelectabilityModes, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    mIsEnum: 1
+    mHasTemplate: 0
+    mFeatures: []
+    mProperties: []
+  - mTechnicalName: VisibilityModes
+    mDisplayName: VisibilityModes
+    mBaseType: 
+    mCSharpType: Articy._8_Bit_Tutorial_1_.VisibilityModes, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    mIsEnum: 1
+    mHasTemplate: 0
+    mFeatures: []
+    mProperties: []
+  - mTechnicalName: OutlineStyle
+    mDisplayName: OutlineStyle
+    mBaseType: 
+    mCSharpType: Articy._8_Bit_Tutorial_1_.OutlineStyle, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    mIsEnum: 1
+    mHasTemplate: 0
+    mFeatures: []
+    mProperties: []
+  - mTechnicalName: PathCaps
+    mDisplayName: PathCaps
+    mBaseType: 
+    mCSharpType: Articy._8_Bit_Tutorial_1_.PathCaps, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    mIsEnum: 1
+    mHasTemplate: 0
+    mFeatures: []
+    mProperties: []
+  - mTechnicalName: LocationAnchorSize
+    mDisplayName: LocationAnchorSize
+    mBaseType: 
+    mCSharpType: Articy._8_Bit_Tutorial_1_.LocationAnchorSize, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    mIsEnum: 1
+    mHasTemplate: 0
+    mFeatures: []
+    mProperties: []
+  - mTechnicalName: PreviewImageViewBoxModes
+    mDisplayName: PreviewImageViewBoxModes
+    mBaseType: 
+    mCSharpType: Articy.Unity.PreviewImageViewBoxModes, ArticyRuntime, Version=1.3.1.0,
+      Culture=neutral, PublicKeyToken=null
+    mIsEnum: 1
+    mHasTemplate: 0
+    mFeatures: []
+    mProperties: []
+  - mTechnicalName: FlowFragment
+    mDisplayName: FlowFragment
+    mBaseType: ArticyObject
+    mCSharpType: Articy._8_Bit_Tutorial_1_.FlowFragment, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    mIsEnum: 0
+    mHasTemplate: 0
+    mFeatures: []
+    mProperties:
+    - mTechnicalName: Attachments
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Collections.Generic.List`1[[Articy.Unity.ArticyObject,
+        ArticyRuntime, Version=1.3.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
+        Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: DisplayName
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: PreviewImage
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.PreviewImage, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+        PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Color
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Text
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ExternalId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Position
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ZIndex
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Size
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ShortId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Id
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: TechnicalName
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Parent
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyObject, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+        PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: InputPins
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Collections.Generic.List`1[[Articy._8_Bit_Tutorial_1_.InputPin,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: OutputPins
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Collections.Generic.List`1[[Articy._8_Bit_Tutorial_1_.OutputPin,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ParentId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: InstanceId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Children
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+  - mTechnicalName: Dialogue
+    mDisplayName: Dialogue
+    mBaseType: ArticyObject
+    mCSharpType: Articy._8_Bit_Tutorial_1_.Dialogue, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    mIsEnum: 0
+    mHasTemplate: 0
+    mFeatures: []
+    mProperties:
+    - mTechnicalName: Attachments
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Collections.Generic.List`1[[Articy.Unity.ArticyObject,
+        ArticyRuntime, Version=1.3.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
+        Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: DisplayName
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: PreviewImage
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.PreviewImage, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+        PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Color
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Text
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ExternalId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Position
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ZIndex
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Size
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ShortId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Id
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: TechnicalName
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Parent
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyObject, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+        PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: InputPins
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Collections.Generic.List`1[[Articy._8_Bit_Tutorial_1_.InputPin,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: OutputPins
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Collections.Generic.List`1[[Articy._8_Bit_Tutorial_1_.OutputPin,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ParentId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: InstanceId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Children
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+  - mTechnicalName: DialogueFragment
+    mDisplayName: DialogueFragment
+    mBaseType: ArticyObject
+    mCSharpType: Articy._8_Bit_Tutorial_1_.DialogueFragment, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    mIsEnum: 0
+    mHasTemplate: 0
+    mFeatures: []
+    mProperties:
+    - mTechnicalName: MenuText
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyString, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+        PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: StageDirections
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyString, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+        PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Speaker
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyObject, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+        PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: SplitHeight
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Color
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Text
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ExternalId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Position
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ZIndex
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Size
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ShortId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Id
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: TechnicalName
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Parent
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyObject, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+        PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: InputPins
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Collections.Generic.List`1[[Articy._8_Bit_Tutorial_1_.InputPin,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: OutputPins
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Collections.Generic.List`1[[Articy._8_Bit_Tutorial_1_.OutputPin,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ParentId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: InstanceId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Children
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+  - mTechnicalName: Hub
+    mDisplayName: Hub
+    mBaseType: ArticyObject
+    mCSharpType: Articy._8_Bit_Tutorial_1_.Hub, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    mIsEnum: 0
+    mHasTemplate: 0
+    mFeatures: []
+    mProperties:
+    - mTechnicalName: DisplayName
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Color
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Text
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ExternalId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Position
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ZIndex
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Size
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ShortId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Id
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: TechnicalName
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Parent
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyObject, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+        PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: InputPins
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Collections.Generic.List`1[[Articy._8_Bit_Tutorial_1_.InputPin,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: OutputPins
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Collections.Generic.List`1[[Articy._8_Bit_Tutorial_1_.OutputPin,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ParentId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: InstanceId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Children
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+  - mTechnicalName: Comment
+    mDisplayName: Comment
+    mBaseType: ArticyObject
+    mCSharpType: Articy._8_Bit_Tutorial_1_.Comment, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    mIsEnum: 0
+    mHasTemplate: 0
+    mFeatures: []
+    mProperties:
+    - mTechnicalName: CreatedBy
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyString, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+        PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: CreatedOn
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Color
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Text
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ExternalId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Position
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ZIndex
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Size
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ShortId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Id
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: TechnicalName
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Parent
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyObject, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+        PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ParentId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: InstanceId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Children
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+  - mTechnicalName: Jump
+    mDisplayName: Jump
+    mBaseType: ArticyObject
+    mCSharpType: Articy._8_Bit_Tutorial_1_.Jump, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    mIsEnum: 0
+    mHasTemplate: 0
+    mFeatures: []
+    mProperties:
+    - mTechnicalName: Color
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Text
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ExternalId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Position
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ZIndex
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Size
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ShortId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Id
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: TechnicalName
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Parent
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyObject, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+        PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Target
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyObject, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+        PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: TargetPin
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy._8_Bit_Tutorial_1_.UInt64, Assembly-CSharp
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: InputPins
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Collections.Generic.List`1[[Articy._8_Bit_Tutorial_1_.InputPin,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: OutputPins
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Collections.Generic.List`1[[Articy._8_Bit_Tutorial_1_.OutputPin,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ParentId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: InstanceId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Children
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+  - mTechnicalName: Entity
+    mDisplayName: Entity
+    mBaseType: ArticyObject
+    mCSharpType: Articy._8_Bit_Tutorial_1_.Entity, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    mIsEnum: 0
+    mHasTemplate: 0
+    mFeatures: []
+    mProperties:
+    - mTechnicalName: Attachments
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Collections.Generic.List`1[[Articy.Unity.ArticyObject,
+        ArticyRuntime, Version=1.3.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
+        Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: DisplayName
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Color
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Text
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ExternalId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Position
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ZIndex
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Size
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: PreviewImage
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.PreviewImage, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+        PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ShortId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Id
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: TechnicalName
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Parent
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyObject, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+        PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ParentId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: InstanceId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Children
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+  - mTechnicalName: DefaultSupportingCharacterTemplate
+    mDisplayName: Supporting characters
+    mBaseType: Entity
+    mCSharpType: Articy._8_Bit_Tutorial_1_.DefaultSupportingCharacterTemplate, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    mIsEnum: 0
+    mHasTemplate: 1
+    mFeatures:
+    - DefaultBasicCharacterFeature
+    mProperties:
+    - mTechnicalName: DefaultBasicCharacterFeature.Age
+      mDisplayName: Age
+      mIsTemplateProperty: 1
+      mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+      mConstraintValues:
+      - 
+      - 
+      - 
+      - False
+      - 
+      - False
+      - False
+      - 0
+      - 0
+      - 0
+      - 3.40282346638529E+38
+      - 0
+      - -3.40282346638529E+38
+      - 
+      - 0
+      - 
+      - 
+      - 
+    - mTechnicalName: DefaultBasicCharacterFeature.Species
+      mDisplayName: Species
+      mIsTemplateProperty: 1
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+      mConstraintValues:
+      - 
+      - 
+      - 
+      - False
+      - 
+      - False
+      - True
+      - 2048
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 
+      - 0
+      - 
+      - 
+      - 
+    - mTechnicalName: DefaultBasicCharacterFeature.BornIn
+      mDisplayName: Born in
+      mIsTemplateProperty: 1
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+      mConstraintValues:
+      - 
+      - 
+      - 
+      - False
+      - 
+      - False
+      - True
+      - 2048
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 
+      - 0
+      - 
+      - 
+      - 
+    - mTechnicalName: DefaultBasicCharacterFeature.Sex
+      mDisplayName: Sex
+      mIsTemplateProperty: 1
+      mPropertyType: Articy._8_Bit_Tutorial_1_.Sex, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+      mConstraintValues:
+      - 
+      - 
+      - 
+      - False
+      - 
+      - False
+      - True
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 
+      - 0
+      - 
+      - BySortIndex
+      - 
+    - mTechnicalName: DefaultBasicCharacterFeature.Occupation
+      mDisplayName: Profession
+      mIsTemplateProperty: 1
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+      mConstraintValues:
+      - 
+      - 
+      - 
+      - False
+      - 
+      - False
+      - True
+      - 2048
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 
+      - 0
+      - 
+      - 
+      - 
+    - mTechnicalName: DefaultBasicCharacterFeature.Accent
+      mDisplayName: Voice
+      mIsTemplateProperty: 1
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+      mConstraintValues:
+      - 
+      - 
+      - 
+      - False
+      - 
+      - False
+      - True
+      - 2048
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 
+      - 0
+      - 
+      - 
+      - 
+    - mTechnicalName: DefaultBasicCharacterFeature.Personality
+      mDisplayName: Personality
+      mIsTemplateProperty: 1
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+      mConstraintValues:
+      - 
+      - 
+      - 
+      - True
+      - 
+      - False
+      - True
+      - 2048
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 
+      - 0
+      - 
+      - 
+      - 
+    - mTechnicalName: DefaultBasicCharacterFeature.Appearance
+      mDisplayName: Appearance
+      mIsTemplateProperty: 1
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+      mConstraintValues:
+      - 
+      - 
+      - 
+      - True
+      - 
+      - False
+      - True
+      - 2048
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 
+      - 0
+      - 
+      - 
+      - 
+    - mTechnicalName: Attachments
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Collections.Generic.List`1[[Articy.Unity.ArticyObject,
+        ArticyRuntime, Version=1.3.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
+        Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: DisplayName
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Color
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Text
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ExternalId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Position
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ZIndex
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Size
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: PreviewImage
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.PreviewImage, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+        PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ShortId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Id
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: TechnicalName
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Parent
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyObject, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+        PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ParentId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: InstanceId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Children
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+  - mTechnicalName: DefaultMainCharacterTemplate
+    mDisplayName: Main characters
+    mBaseType: Entity
+    mCSharpType: Articy._8_Bit_Tutorial_1_.DefaultMainCharacterTemplate, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    mIsEnum: 0
+    mHasTemplate: 1
+    mFeatures:
+    - DefaultExtendedCharacterFeature
+    - DefaultBasicCharacterFeature
+    mProperties:
+    - mTechnicalName: DefaultExtendedCharacterFeature.Motivation
+      mDisplayName: Goals
+      mIsTemplateProperty: 1
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+      mConstraintValues:
+      - 
+      - 
+      - 
+      - True
+      - 
+      - False
+      - True
+      - 2048
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 
+      - 0
+      - 
+      - 
+      - 
+    - mTechnicalName: DefaultExtendedCharacterFeature.InnerConflict
+      mDisplayName: Inner Conflict
+      mIsTemplateProperty: 1
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+      mConstraintValues:
+      - 
+      - 
+      - 
+      - True
+      - 
+      - False
+      - True
+      - 2048
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 
+      - 0
+      - 
+      - 
+      - 
+    - mTechnicalName: DefaultExtendedCharacterFeature.Skills
+      mDisplayName: Skills
+      mIsTemplateProperty: 1
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+      mConstraintValues:
+      - 
+      - 
+      - 
+      - True
+      - 
+      - False
+      - True
+      - 2048
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 
+      - 0
+      - 
+      - 
+      - 
+    - mTechnicalName: DefaultExtendedCharacterFeature.Fears
+      mDisplayName: Weaknesses
+      mIsTemplateProperty: 1
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+      mConstraintValues:
+      - 
+      - 
+      - 
+      - True
+      - 
+      - False
+      - True
+      - 2048
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 
+      - 0
+      - 
+      - 
+      - 
+    - mTechnicalName: DefaultExtendedCharacterFeature.Habits
+      mDisplayName: Quirks / Habits
+      mIsTemplateProperty: 1
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+      mConstraintValues:
+      - 
+      - 
+      - 
+      - True
+      - 
+      - False
+      - True
+      - 2048
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 
+      - 0
+      - 
+      - 
+      - 
+    - mTechnicalName: DefaultExtendedCharacterFeature.FurtherDetails
+      mDisplayName: Further Details
+      mIsTemplateProperty: 1
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+      mConstraintValues:
+      - 
+      - 
+      - 
+      - True
+      - 
+      - False
+      - True
+      - 2048
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 
+      - 0
+      - 
+      - 
+      - 
+    - mTechnicalName: DefaultBasicCharacterFeature.Age
+      mDisplayName: Age
+      mIsTemplateProperty: 1
+      mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+      mConstraintValues:
+      - 
+      - 
+      - 
+      - False
+      - 
+      - False
+      - False
+      - 0
+      - 0
+      - 0
+      - 3.40282346638529E+38
+      - 0
+      - -3.40282346638529E+38
+      - 
+      - 0
+      - 
+      - 
+      - 
+    - mTechnicalName: DefaultBasicCharacterFeature.Species
+      mDisplayName: Species
+      mIsTemplateProperty: 1
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+      mConstraintValues:
+      - 
+      - 
+      - 
+      - False
+      - 
+      - False
+      - True
+      - 2048
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 
+      - 0
+      - 
+      - 
+      - 
+    - mTechnicalName: DefaultBasicCharacterFeature.BornIn
+      mDisplayName: Born in
+      mIsTemplateProperty: 1
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+      mConstraintValues:
+      - 
+      - 
+      - 
+      - False
+      - 
+      - False
+      - True
+      - 2048
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 
+      - 0
+      - 
+      - 
+      - 
+    - mTechnicalName: DefaultBasicCharacterFeature.Sex
+      mDisplayName: Sex
+      mIsTemplateProperty: 1
+      mPropertyType: Articy._8_Bit_Tutorial_1_.Sex, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+      mConstraintValues:
+      - 
+      - 
+      - 
+      - False
+      - 
+      - False
+      - True
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 
+      - 0
+      - 
+      - BySortIndex
+      - 
+    - mTechnicalName: DefaultBasicCharacterFeature.Occupation
+      mDisplayName: Profession
+      mIsTemplateProperty: 1
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+      mConstraintValues:
+      - 
+      - 
+      - 
+      - False
+      - 
+      - False
+      - True
+      - 2048
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 
+      - 0
+      - 
+      - 
+      - 
+    - mTechnicalName: DefaultBasicCharacterFeature.Accent
+      mDisplayName: Voice
+      mIsTemplateProperty: 1
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+      mConstraintValues:
+      - 
+      - 
+      - 
+      - False
+      - 
+      - False
+      - True
+      - 2048
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 
+      - 0
+      - 
+      - 
+      - 
+    - mTechnicalName: DefaultBasicCharacterFeature.Personality
+      mDisplayName: Personality
+      mIsTemplateProperty: 1
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+      mConstraintValues:
+      - 
+      - 
+      - 
+      - True
+      - 
+      - False
+      - True
+      - 2048
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 
+      - 0
+      - 
+      - 
+      - 
+    - mTechnicalName: DefaultBasicCharacterFeature.Appearance
+      mDisplayName: Appearance
+      mIsTemplateProperty: 1
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+      mConstraintValues:
+      - 
+      - 
+      - 
+      - True
+      - 
+      - False
+      - True
+      - 2048
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 
+      - 0
+      - 
+      - 
+      - 
+    - mTechnicalName: Attachments
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Collections.Generic.List`1[[Articy.Unity.ArticyObject,
+        ArticyRuntime, Version=1.3.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
+        Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: DisplayName
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Color
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Text
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ExternalId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Position
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ZIndex
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Size
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: PreviewImage
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.PreviewImage, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+        PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ShortId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Id
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: TechnicalName
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Parent
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyObject, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+        PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ParentId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: InstanceId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Children
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+  - mTechnicalName: Location
+    mDisplayName: Location
+    mBaseType: ArticyObject
+    mCSharpType: Articy._8_Bit_Tutorial_1_.Location, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    mIsEnum: 0
+    mHasTemplate: 0
+    mFeatures: []
+    mProperties:
+    - mTechnicalName: Attachments
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Collections.Generic.List`1[[Articy.Unity.ArticyObject,
+        ArticyRuntime, Version=1.3.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
+        Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: DisplayName
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: PreviewImage
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.PreviewImage, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+        PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Color
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Text
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ExternalId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Position
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ZIndex
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Size
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ShortId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Id
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: TechnicalName
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Parent
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyObject, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+        PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ParentId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: InstanceId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Children
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+  - mTechnicalName: Spot
+    mDisplayName: Spot
+    mBaseType: ArticyObject
+    mCSharpType: Articy._8_Bit_Tutorial_1_.Spot, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    mIsEnum: 0
+    mHasTemplate: 0
+    mFeatures: []
+    mProperties:
+    - mTechnicalName: DisplayName
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Color
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Text
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ExternalId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Position
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ZIndex
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Size
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: PreviewImage
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.PreviewImage, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+        PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ShortId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Visibility
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy._8_Bit_Tutorial_1_.VisibilityModes, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ShowDisplayName
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: DisplayNameColor
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: DisplayNameSize
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: OutlineColor
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: OutlineSize
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: OutlineStyle
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy._8_Bit_Tutorial_1_.OutlineStyle, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: DropShadow
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Selectability
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy._8_Bit_Tutorial_1_.SelectabilityModes, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Id
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: TechnicalName
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Parent
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyObject, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+        PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ParentId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: InstanceId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Children
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+  - mTechnicalName: Zone
+    mDisplayName: Zone
+    mBaseType: ArticyObject
+    mCSharpType: Articy._8_Bit_Tutorial_1_.Zone, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    mIsEnum: 0
+    mHasTemplate: 0
+    mFeatures: []
+    mProperties:
+    - mTechnicalName: DisplayName
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: PreviewImage
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.PreviewImage, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+        PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Vertices
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Collections.Generic.List`1[[UnityEngine.Vector2, UnityEngine.CoreModule,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0,
+        Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Transform
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.Transformation, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ShapeType
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy._8_Bit_Tutorial_1_.ShapeType, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Color
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Text
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ExternalId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ZIndex
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Size
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ShortId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Visibility
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy._8_Bit_Tutorial_1_.VisibilityModes, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: OutlineColor
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: OutlineSize
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: OutlineStyle
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy._8_Bit_Tutorial_1_.OutlineStyle, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ShowDisplayName
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: DisplayNameColor
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: DisplayNameSize
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: DropShadow
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Selectability
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy._8_Bit_Tutorial_1_.SelectabilityModes, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Id
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: TechnicalName
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Parent
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyObject, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+        PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ParentId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: InstanceId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Children
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+  - mTechnicalName: Path
+    mDisplayName: Path
+    mBaseType: ArticyObject
+    mCSharpType: Articy._8_Bit_Tutorial_1_.Path, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    mIsEnum: 0
+    mHasTemplate: 0
+    mFeatures: []
+    mProperties:
+    - mTechnicalName: DisplayName
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: PreviewImage
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.PreviewImage, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+        PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Vertices
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Collections.Generic.List`1[[UnityEngine.Vector2, UnityEngine.CoreModule,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0,
+        Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Transform
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.Transformation, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Color
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Text
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ExternalId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ZIndex
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Size
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ShortId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Visibility
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy._8_Bit_Tutorial_1_.VisibilityModes, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Selectability
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy._8_Bit_Tutorial_1_.SelectabilityModes, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ShowDisplayName
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: DisplayNameColor
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: DisplayNameSize
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: DropShadow
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: OutlineColor
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: OutlineSize
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: OutlineStyle
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy._8_Bit_Tutorial_1_.OutlineStyle, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: StartCap
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy._8_Bit_Tutorial_1_.PathCaps, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: EndCap
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy._8_Bit_Tutorial_1_.PathCaps, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: LineWidth
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Id
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: TechnicalName
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Parent
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyObject, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+        PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ParentId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: InstanceId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Children
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+  - mTechnicalName: Link
+    mDisplayName: Link
+    mBaseType: ArticyObject
+    mCSharpType: Articy._8_Bit_Tutorial_1_.Link, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    mIsEnum: 0
+    mHasTemplate: 0
+    mFeatures: []
+    mProperties:
+    - mTechnicalName: Color
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Text
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ExternalId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Position
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ZIndex
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Size
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Target
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyObject, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+        PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ShortId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Visibility
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy._8_Bit_Tutorial_1_.VisibilityModes, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ShowDisplayName
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: DisplayNameColor
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: DisplayNameSize
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Selectability
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy._8_Bit_Tutorial_1_.SelectabilityModes, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: DropShadow
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Id
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: TechnicalName
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Parent
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyObject, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+        PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ParentId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: InstanceId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Children
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+  - mTechnicalName: Asset
+    mDisplayName: Asset
+    mBaseType: ArticyObject
+    mCSharpType: Articy._8_Bit_Tutorial_1_.Asset, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    mIsEnum: 0
+    mHasTemplate: 0
+    mFeatures: []
+    mProperties:
+    - mTechnicalName: DisplayName
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Filename
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyString, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+        PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: OriginalSource
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyString, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+        PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: PreviewImage
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.PreviewImage, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+        PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Color
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Text
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ExternalId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Position
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ZIndex
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Size
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ShortId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Id
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: TechnicalName
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Parent
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyObject, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+        PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ParentId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: InstanceId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Children
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+  - mTechnicalName: Condition
+    mDisplayName: Condition
+    mBaseType: ArticyObject
+    mCSharpType: Articy._8_Bit_Tutorial_1_.Condition, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    mIsEnum: 0
+    mHasTemplate: 0
+    mFeatures: []
+    mProperties:
+    - mTechnicalName: DisplayName
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Text
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ExternalId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Position
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ZIndex
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Size
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ShortId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Expression
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyScriptCondition, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Color
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Id
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: TechnicalName
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Parent
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyObject, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+        PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: InputPins
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Collections.Generic.List`1[[Articy._8_Bit_Tutorial_1_.InputPin,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: OutputPins
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Collections.Generic.List`1[[Articy._8_Bit_Tutorial_1_.OutputPin,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ParentId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: InstanceId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Children
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+  - mTechnicalName: Instruction
+    mDisplayName: Instruction
+    mBaseType: ArticyObject
+    mCSharpType: Articy._8_Bit_Tutorial_1_.Instruction, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    mIsEnum: 0
+    mHasTemplate: 0
+    mFeatures: []
+    mProperties:
+    - mTechnicalName: DisplayName
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Text
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ExternalId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Position
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ZIndex
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Size
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ShortId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Expression
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyScriptCondition, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Color
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Id
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: TechnicalName
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Parent
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyObject, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+        PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: InputPins
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Collections.Generic.List`1[[Articy._8_Bit_Tutorial_1_.InputPin,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: OutputPins
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Collections.Generic.List`1[[Articy._8_Bit_Tutorial_1_.OutputPin,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ParentId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: InstanceId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Children
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+  - mTechnicalName: LocationText
+    mDisplayName: LocationText
+    mBaseType: ArticyObject
+    mCSharpType: Articy._8_Bit_Tutorial_1_.LocationText, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    mIsEnum: 0
+    mHasTemplate: 0
+    mFeatures: []
+    mProperties:
+    - mTechnicalName: DisplayName
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: PreviewImage
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.PreviewImage, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+        PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Anchors
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Collections.Generic.List`1[[Articy._8_Bit_Tutorial_1_.LocationAnchor,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Vertices
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Collections.Generic.List`1[[UnityEngine.Vector2, UnityEngine.CoreModule,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0,
+        Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Transform
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.Transformation, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ShapeType
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy._8_Bit_Tutorial_1_.ShapeType, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Color
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Text
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ExternalId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ZIndex
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Size
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ShortId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Visibility
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy._8_Bit_Tutorial_1_.VisibilityModes, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: OutlineColor
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: OutlineSize
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: OutlineStyle
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy._8_Bit_Tutorial_1_.OutlineStyle, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Selectability
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy._8_Bit_Tutorial_1_.SelectabilityModes, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ForcedWidth
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ForcedHeight
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: DropShadow
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Id
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: TechnicalName
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Parent
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyObject, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+        PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ParentId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: InstanceId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Children
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+  - mTechnicalName: LocationImage
+    mDisplayName: LocationImage
+    mBaseType: ArticyObject
+    mCSharpType: Articy._8_Bit_Tutorial_1_.LocationImage, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    mIsEnum: 0
+    mHasTemplate: 0
+    mFeatures: []
+    mProperties:
+    - mTechnicalName: DisplayName
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: PreviewImage
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.PreviewImage, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+        PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Anchors
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Collections.Generic.List`1[[Articy._8_Bit_Tutorial_1_.LocationAnchor,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Vertices
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Collections.Generic.List`1[[UnityEngine.Vector2, UnityEngine.CoreModule,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0,
+        Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Transform
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.Transformation, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ShapeType
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy._8_Bit_Tutorial_1_.ShapeType, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Color
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Text
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ExternalId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ZIndex
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Size
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ShortId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Visibility
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy._8_Bit_Tutorial_1_.VisibilityModes, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: OutlineColor
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: OutlineSize
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: OutlineStyle
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy._8_Bit_Tutorial_1_.OutlineStyle, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Selectability
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy._8_Bit_Tutorial_1_.SelectabilityModes, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: DropShadow
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ClipRect
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Rect, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ImageOpacity
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ImageAsset
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyObject, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+        PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: CachedImageWidth
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: CachedImageHeight
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ShowDisplayName
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: DisplayNameColor
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: DisplayNameSize
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Id
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: TechnicalName
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Parent
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyObject, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+        PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ParentId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: InstanceId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Children
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+  - mTechnicalName: Document
+    mDisplayName: Document
+    mBaseType: ArticyObject
+    mCSharpType: Articy._8_Bit_Tutorial_1_.Document, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    mIsEnum: 0
+    mHasTemplate: 0
+    mFeatures: []
+    mProperties:
+    - mTechnicalName: DisplayName
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Color
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Text
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ExternalId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Position
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ZIndex
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Size
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ShortId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Id
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: TechnicalName
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Parent
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyObject, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+        PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ParentId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: InstanceId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Children
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+  - mTechnicalName: TextObject
+    mDisplayName: TextObject
+    mBaseType: ArticyObject
+    mCSharpType: Articy._8_Bit_Tutorial_1_.TextObject, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    mIsEnum: 0
+    mHasTemplate: 0
+    mFeatures: []
+    mProperties:
+    - mTechnicalName: DisplayName
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Attachments
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Collections.Generic.List`1[[Articy.Unity.ArticyObject,
+        ArticyRuntime, Version=1.3.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
+        Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: PreviewImage
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.PreviewImage, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+        PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Color
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Text
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ExternalId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Position
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ZIndex
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Size
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ShortId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Id
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: TechnicalName
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Parent
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyObject, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+        PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ParentId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: InstanceId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Children
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+  - mTechnicalName: UserFolder
+    mDisplayName: UserFolder
+    mBaseType: ArticyObject
+    mCSharpType: Articy._8_Bit_Tutorial_1_.UserFolder, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    mIsEnum: 0
+    mHasTemplate: 0
+    mFeatures: []
+    mProperties:
+    - mTechnicalName: DisplayName
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+        Culture=neutral, PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ExternalId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ShortId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Id
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: TechnicalName
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Parent
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: Articy.Unity.ArticyObject, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+        PublicKeyToken=null
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ZIndex
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: ParentId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: InstanceId
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+    - mTechnicalName: Children
+      mDisplayName: 
+      mIsTemplateProperty: 0
+      mPropertyType: System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      mConstraintNames: 
+      mConstraintValues: []
+  mArticyPropertyInfos:
+  - mTechnicalName: ParentId
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: Id
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: InstanceId
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: System.UInt64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: TechnicalName
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: Parent
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: Articy.Unity.ArticyObject, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+      PublicKeyToken=null
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: Children
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: System.Collections.ArrayList, mscorlib, Version=4.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: Attachments
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: System.Collections.Generic.List`1[[Articy.Unity.ArticyObject,
+      ArticyRuntime, Version=1.3.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
+      Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: DisplayName
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+      Culture=neutral, PublicKeyToken=null
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: PreviewImage
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: Articy.Unity.PreviewImage, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+      PublicKeyToken=null
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: Color
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: Text
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+      Culture=neutral, PublicKeyToken=null
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: ExternalId
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: Position
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: ZIndex
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: Size
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: ShortId
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: System.UInt32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: InputPins
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: System.Collections.Generic.List`1[[Articy._8_Bit_Tutorial_1_.InputPin,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
+      Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: OutputPins
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: System.Collections.Generic.List`1[[Articy._8_Bit_Tutorial_1_.OutputPin,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
+      Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: MenuText
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: Articy.Unity.ArticyString, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+      PublicKeyToken=null
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: StageDirections
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: Articy.Unity.ArticyString, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+      PublicKeyToken=null
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: Speaker
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: Articy.Unity.ArticyObject, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+      PublicKeyToken=null
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: SplitHeight
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: CreatedBy
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: Articy.Unity.ArticyString, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+      PublicKeyToken=null
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: CreatedOn
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: Target
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: Articy.Unity.ArticyObject, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+      PublicKeyToken=null
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: TargetPin
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: Articy._8_Bit_Tutorial_1_.UInt64, Assembly-CSharp
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: DefaultBasicCharacterFeature.Age
+    mDisplayName: Age
+    mIsTemplateProperty: 1
+    mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+    mConstraintValues:
+    - 
+    - 
+    - 
+    - False
+    - 
+    - False
+    - False
+    - 0
+    - 0
+    - 0
+    - 3.40282346638529E+38
+    - 0
+    - -3.40282346638529E+38
+    - 
+    - 0
+    - 
+    - 
+    - 
+  - mTechnicalName: DefaultBasicCharacterFeature.Species
+    mDisplayName: Species
+    mIsTemplateProperty: 1
+    mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+      Culture=neutral, PublicKeyToken=null
+    mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+    mConstraintValues:
+    - 
+    - 
+    - 
+    - False
+    - 
+    - False
+    - True
+    - 2048
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 
+    - 
+    - 
+  - mTechnicalName: DefaultBasicCharacterFeature.BornIn
+    mDisplayName: Born in
+    mIsTemplateProperty: 1
+    mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+      Culture=neutral, PublicKeyToken=null
+    mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+    mConstraintValues:
+    - 
+    - 
+    - 
+    - False
+    - 
+    - False
+    - True
+    - 2048
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 
+    - 
+    - 
+  - mTechnicalName: DefaultBasicCharacterFeature.Sex
+    mDisplayName: Sex
+    mIsTemplateProperty: 1
+    mPropertyType: Articy._8_Bit_Tutorial_1_.Sex, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+    mConstraintValues:
+    - 
+    - 
+    - 
+    - False
+    - 
+    - False
+    - True
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 
+    - BySortIndex
+    - 
+  - mTechnicalName: DefaultBasicCharacterFeature.Occupation
+    mDisplayName: Profession
+    mIsTemplateProperty: 1
+    mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+      Culture=neutral, PublicKeyToken=null
+    mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+    mConstraintValues:
+    - 
+    - 
+    - 
+    - False
+    - 
+    - False
+    - True
+    - 2048
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 
+    - 
+    - 
+  - mTechnicalName: DefaultBasicCharacterFeature.Accent
+    mDisplayName: Voice
+    mIsTemplateProperty: 1
+    mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+      Culture=neutral, PublicKeyToken=null
+    mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+    mConstraintValues:
+    - 
+    - 
+    - 
+    - False
+    - 
+    - False
+    - True
+    - 2048
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 
+    - 
+    - 
+  - mTechnicalName: DefaultBasicCharacterFeature.Personality
+    mDisplayName: Personality
+    mIsTemplateProperty: 1
+    mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+      Culture=neutral, PublicKeyToken=null
+    mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+    mConstraintValues:
+    - 
+    - 
+    - 
+    - True
+    - 
+    - False
+    - True
+    - 2048
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 
+    - 
+    - 
+  - mTechnicalName: DefaultBasicCharacterFeature.Appearance
+    mDisplayName: Appearance
+    mIsTemplateProperty: 1
+    mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+      Culture=neutral, PublicKeyToken=null
+    mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+    mConstraintValues:
+    - 
+    - 
+    - 
+    - True
+    - 
+    - False
+    - True
+    - 2048
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 
+    - 
+    - 
+  - mTechnicalName: DefaultExtendedCharacterFeature.Motivation
+    mDisplayName: Goals
+    mIsTemplateProperty: 1
+    mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+      Culture=neutral, PublicKeyToken=null
+    mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+    mConstraintValues:
+    - 
+    - 
+    - 
+    - True
+    - 
+    - False
+    - True
+    - 2048
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 
+    - 
+    - 
+  - mTechnicalName: DefaultExtendedCharacterFeature.InnerConflict
+    mDisplayName: Inner Conflict
+    mIsTemplateProperty: 1
+    mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+      Culture=neutral, PublicKeyToken=null
+    mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+    mConstraintValues:
+    - 
+    - 
+    - 
+    - True
+    - 
+    - False
+    - True
+    - 2048
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 
+    - 
+    - 
+  - mTechnicalName: DefaultExtendedCharacterFeature.Skills
+    mDisplayName: Skills
+    mIsTemplateProperty: 1
+    mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+      Culture=neutral, PublicKeyToken=null
+    mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+    mConstraintValues:
+    - 
+    - 
+    - 
+    - True
+    - 
+    - False
+    - True
+    - 2048
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 
+    - 
+    - 
+  - mTechnicalName: DefaultExtendedCharacterFeature.Fears
+    mDisplayName: Weaknesses
+    mIsTemplateProperty: 1
+    mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+      Culture=neutral, PublicKeyToken=null
+    mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+    mConstraintValues:
+    - 
+    - 
+    - 
+    - True
+    - 
+    - False
+    - True
+    - 2048
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 
+    - 
+    - 
+  - mTechnicalName: DefaultExtendedCharacterFeature.Habits
+    mDisplayName: Quirks / Habits
+    mIsTemplateProperty: 1
+    mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+      Culture=neutral, PublicKeyToken=null
+    mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+    mConstraintValues:
+    - 
+    - 
+    - 
+    - True
+    - 
+    - False
+    - True
+    - 2048
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 
+    - 
+    - 
+  - mTechnicalName: DefaultExtendedCharacterFeature.FurtherDetails
+    mDisplayName: Further Details
+    mIsTemplateProperty: 1
+    mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+      Culture=neutral, PublicKeyToken=null
+    mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+    mConstraintValues:
+    - 
+    - 
+    - 
+    - True
+    - 
+    - False
+    - True
+    - 2048
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 
+    - 
+    - 
+  - mTechnicalName: Visibility
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: Articy._8_Bit_Tutorial_1_.VisibilityModes, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: ShowDisplayName
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: DisplayNameColor
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: DisplayNameSize
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: OutlineColor
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: OutlineSize
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: OutlineStyle
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: Articy._8_Bit_Tutorial_1_.OutlineStyle, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: DropShadow
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: Selectability
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: Articy._8_Bit_Tutorial_1_.SelectabilityModes, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: Vertices
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: System.Collections.Generic.List`1[[UnityEngine.Vector2, UnityEngine.CoreModule,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0,
+      Culture=neutral, PublicKeyToken=b77a5c561934e089
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: Transform
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: Articy.Unity.Transformation, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+      PublicKeyToken=null
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: ShapeType
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: Articy._8_Bit_Tutorial_1_.ShapeType, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: StartCap
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: Articy._8_Bit_Tutorial_1_.PathCaps, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: EndCap
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: Articy._8_Bit_Tutorial_1_.PathCaps, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: LineWidth
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: Filename
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: Articy.Unity.ArticyString, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+      PublicKeyToken=null
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: OriginalSource
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: Articy.Unity.ArticyString, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+      PublicKeyToken=null
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: Expression
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: Articy.Unity.ArticyScriptCondition, ArticyRuntime, Version=1.3.1.0,
+      Culture=neutral, PublicKeyToken=null
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: Anchors
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: System.Collections.Generic.List`1[[Articy._8_Bit_Tutorial_1_.LocationAnchor,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
+      Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: ForcedWidth
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: ForcedHeight
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: ClipRect
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: UnityEngine.Rect, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: ImageOpacity
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: ImageAsset
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: Articy.Unity.ArticyObject, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+      PublicKeyToken=null
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: CachedImageWidth
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    mConstraintNames: 
+    mConstraintValues: []
+  - mTechnicalName: CachedImageHeight
+    mDisplayName: 
+    mIsTemplateProperty: 0
+    mPropertyType: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    mConstraintNames: 
+    mConstraintValues: []
+  mArticyTypeNames:
+  - ArticyObject
+  - Sex
+  - ShapeType
+  - SelectabilityModes
+  - VisibilityModes
+  - OutlineStyle
+  - PathCaps
+  - LocationAnchorSize
+  - PreviewImageViewBoxModes
+  - FlowFragment
+  - Dialogue
+  - DialogueFragment
+  - Hub
+  - Comment
+  - Jump
+  - Entity
+  - DefaultSupportingCharacterTemplate
+  - DefaultMainCharacterTemplate
+  - Location
+  - Spot
+  - Zone
+  - Path
+  - Link
+  - Asset
+  - Condition
+  - Instruction
+  - LocationText
+  - LocationImage
+  - Document
+  - TextObject
+  - UserFolder
+  mArticyTypeTypes:
+  - Articy.Unity.ArticyObject, ArticyRuntime, Version=1.3.1.0, Culture=neutral, PublicKeyToken=null
+  - Articy._8_Bit_Tutorial_1_.Sex, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  - Articy._8_Bit_Tutorial_1_.ShapeType, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  - Articy._8_Bit_Tutorial_1_.SelectabilityModes, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  - Articy._8_Bit_Tutorial_1_.VisibilityModes, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  - Articy._8_Bit_Tutorial_1_.OutlineStyle, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  - Articy._8_Bit_Tutorial_1_.PathCaps, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  - Articy._8_Bit_Tutorial_1_.LocationAnchorSize, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  - Articy.Unity.PreviewImageViewBoxModes, ArticyRuntime, Version=1.3.1.0, Culture=neutral,
+    PublicKeyToken=null
+  - Articy._8_Bit_Tutorial_1_.FlowFragment, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  - Articy._8_Bit_Tutorial_1_.Dialogue, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  - Articy._8_Bit_Tutorial_1_.DialogueFragment, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  - Articy._8_Bit_Tutorial_1_.Hub, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  - Articy._8_Bit_Tutorial_1_.Comment, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  - Articy._8_Bit_Tutorial_1_.Jump, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  - Articy._8_Bit_Tutorial_1_.Entity, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  - Articy._8_Bit_Tutorial_1_.DefaultSupportingCharacterTemplate, Assembly-CSharp,
+    Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Articy._8_Bit_Tutorial_1_.DefaultMainCharacterTemplate, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  - Articy._8_Bit_Tutorial_1_.Location, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  - Articy._8_Bit_Tutorial_1_.Spot, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  - Articy._8_Bit_Tutorial_1_.Zone, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  - Articy._8_Bit_Tutorial_1_.Path, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  - Articy._8_Bit_Tutorial_1_.Link, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  - Articy._8_Bit_Tutorial_1_.Asset, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  - Articy._8_Bit_Tutorial_1_.Condition, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  - Articy._8_Bit_Tutorial_1_.Instruction, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  - Articy._8_Bit_Tutorial_1_.LocationText, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  - Articy._8_Bit_Tutorial_1_.LocationImage, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  - Articy._8_Bit_Tutorial_1_.Document, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  - Articy._8_Bit_Tutorial_1_.TextObject, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  - Articy._8_Bit_Tutorial_1_.UserFolder, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  mFeatureProps:
+  - DefaultBasicCharacterFeature.Age
+  - DefaultBasicCharacterFeature.Species
+  - DefaultBasicCharacterFeature.BornIn
+  - DefaultBasicCharacterFeature.Sex
+  - DefaultBasicCharacterFeature.Occupation
+  - DefaultBasicCharacterFeature.Accent
+  - DefaultBasicCharacterFeature.Personality
+  - DefaultBasicCharacterFeature.Appearance
+  - DefaultExtendedCharacterFeature.Motivation
+  - DefaultExtendedCharacterFeature.InnerConflict
+  - DefaultExtendedCharacterFeature.Skills
+  - DefaultExtendedCharacterFeature.Fears
+  - DefaultExtendedCharacterFeature.Habits
+  - DefaultExtendedCharacterFeature.FurtherDetails
+  mFeaturePropInfos:
+  - mTechnicalName: DefaultBasicCharacterFeature.Age
+    mDisplayName: Age
+    mIsTemplateProperty: 1
+    mPropertyType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+    mConstraintValues:
+    - 
+    - 
+    - 
+    - False
+    - 
+    - False
+    - False
+    - 0
+    - 0
+    - 0
+    - 3.40282346638529E+38
+    - 0
+    - -3.40282346638529E+38
+    - 
+    - 0
+    - 
+    - 
+    - 
+  - mTechnicalName: DefaultBasicCharacterFeature.Species
+    mDisplayName: Species
+    mIsTemplateProperty: 1
+    mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+      Culture=neutral, PublicKeyToken=null
+    mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+    mConstraintValues:
+    - 
+    - 
+    - 
+    - False
+    - 
+    - False
+    - True
+    - 2048
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 
+    - 
+    - 
+  - mTechnicalName: DefaultBasicCharacterFeature.BornIn
+    mDisplayName: Born in
+    mIsTemplateProperty: 1
+    mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+      Culture=neutral, PublicKeyToken=null
+    mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+    mConstraintValues:
+    - 
+    - 
+    - 
+    - False
+    - 
+    - False
+    - True
+    - 2048
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 
+    - 
+    - 
+  - mTechnicalName: DefaultBasicCharacterFeature.Sex
+    mDisplayName: Sex
+    mIsTemplateProperty: 1
+    mPropertyType: Articy._8_Bit_Tutorial_1_.Sex, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+    mConstraintValues:
+    - 
+    - 
+    - 
+    - False
+    - 
+    - False
+    - True
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 
+    - BySortIndex
+    - 
+  - mTechnicalName: DefaultBasicCharacterFeature.Occupation
+    mDisplayName: Profession
+    mIsTemplateProperty: 1
+    mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+      Culture=neutral, PublicKeyToken=null
+    mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+    mConstraintValues:
+    - 
+    - 
+    - 
+    - False
+    - 
+    - False
+    - True
+    - 2048
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 
+    - 
+    - 
+  - mTechnicalName: DefaultBasicCharacterFeature.Accent
+    mDisplayName: Voice
+    mIsTemplateProperty: 1
+    mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+      Culture=neutral, PublicKeyToken=null
+    mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+    mConstraintValues:
+    - 
+    - 
+    - 
+    - False
+    - 
+    - False
+    - True
+    - 2048
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 
+    - 
+    - 
+  - mTechnicalName: DefaultBasicCharacterFeature.Personality
+    mDisplayName: Personality
+    mIsTemplateProperty: 1
+    mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+      Culture=neutral, PublicKeyToken=null
+    mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+    mConstraintValues:
+    - 
+    - 
+    - 
+    - True
+    - 
+    - False
+    - True
+    - 2048
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 
+    - 
+    - 
+  - mTechnicalName: DefaultBasicCharacterFeature.Appearance
+    mDisplayName: Appearance
+    mIsTemplateProperty: 1
+    mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+      Culture=neutral, PublicKeyToken=null
+    mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+    mConstraintValues:
+    - 
+    - 
+    - 
+    - True
+    - 
+    - False
+    - True
+    - 2048
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 
+    - 
+    - 
+  - mTechnicalName: DefaultExtendedCharacterFeature.Motivation
+    mDisplayName: Goals
+    mIsTemplateProperty: 1
+    mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+      Culture=neutral, PublicKeyToken=null
+    mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+    mConstraintValues:
+    - 
+    - 
+    - 
+    - True
+    - 
+    - False
+    - True
+    - 2048
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 
+    - 
+    - 
+  - mTechnicalName: DefaultExtendedCharacterFeature.InnerConflict
+    mDisplayName: Inner Conflict
+    mIsTemplateProperty: 1
+    mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+      Culture=neutral, PublicKeyToken=null
+    mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+    mConstraintValues:
+    - 
+    - 
+    - 
+    - True
+    - 
+    - False
+    - True
+    - 2048
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 
+    - 
+    - 
+  - mTechnicalName: DefaultExtendedCharacterFeature.Skills
+    mDisplayName: Skills
+    mIsTemplateProperty: 1
+    mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+      Culture=neutral, PublicKeyToken=null
+    mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+    mConstraintValues:
+    - 
+    - 
+    - 
+    - True
+    - 
+    - False
+    - True
+    - 2048
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 
+    - 
+    - 
+  - mTechnicalName: DefaultExtendedCharacterFeature.Fears
+    mDisplayName: Weaknesses
+    mIsTemplateProperty: 1
+    mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+      Culture=neutral, PublicKeyToken=null
+    mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+    mConstraintValues:
+    - 
+    - 
+    - 
+    - True
+    - 
+    - False
+    - True
+    - 2048
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 
+    - 
+    - 
+  - mTechnicalName: DefaultExtendedCharacterFeature.Habits
+    mDisplayName: Quirks / Habits
+    mIsTemplateProperty: 1
+    mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+      Culture=neutral, PublicKeyToken=null
+    mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+    mConstraintValues:
+    - 
+    - 
+    - 
+    - True
+    - 
+    - False
+    - True
+    - 2048
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 
+    - 
+    - 
+  - mTechnicalName: DefaultExtendedCharacterFeature.FurtherDetails
+    mDisplayName: Further Details
+    mIsTemplateProperty: 1
+    mPropertyType: Articy.Unity.ArticyMultiLanguageString, ArticyRuntime, Version=1.3.1.0,
+      Culture=neutral, PublicKeyToken=null
+    mConstraintNames: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
+    mConstraintValues:
+    - 
+    - 
+    - 
+    - True
+    - 
+    - False
+    - True
+    - 2048
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 
+    - 
+    - 
+  mFeatureTechnicalNames:
+  - DefaultBasicCharacterFeature
+  - DefaultExtendedCharacterFeature
+  mFeatureDisplayNames:
+  - Basic Character Properties
+  - Extended Character Properties

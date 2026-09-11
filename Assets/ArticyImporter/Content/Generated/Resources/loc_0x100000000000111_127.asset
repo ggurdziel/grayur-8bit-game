@@ -1,0 +1,487 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1080164415, guid: df2ec02f61e861546b9427c26ccacb8d, type: 3}
+  m_Name: loc_0x100000000000111_127
+  m_EditorClassIdentifier: 
+  mLocalizedStringsKeys:
+  - Dlg_A40F9C56.DisplayName
+  - Dlg_A40F9C56.Text
+  - Dlg_77621272.DisplayName
+  - Dlg_77621272.Text
+  - Dlg_977E426B.DisplayName
+  - Dlg_977E426B.Text
+  - Dlg_966A0239.DisplayName
+  - Dlg_966A0239.Text
+  - Dlg_1FC4438F.DisplayName
+  - Dlg_1FC4438F.Text
+  - Dlg_C922EC84.DisplayName
+  - Dlg_C922EC84.Text
+  - Dlg_B34D722D.DisplayName
+  - Dlg_B34D722D.Text
+  - Dlg_C10E682D.DisplayName
+  - Dlg_C10E682D.Text
+  - Dlg_57513DEA.DisplayName
+  - Dlg_F3F25C8C.DisplayName
+  - Dlg_F3F25C8C.Text
+  - Dlg_07522768.DisplayName
+  - DFr_C9B2D691.Text
+  - DFr_4A0E6510.Text
+  - DFr_5B26F394.Text
+  - DFr_98F731EA.Text
+  - DFr_F695C7AE.Text
+  - DFr_AF16311F.Text
+  - DFr_34BA271B.Text
+  - DFr_C11105CD.Text
+  - DFr_FAD7E7F1.Text
+  - DFr_97EC1B3F.Text
+  - DFr_134E88A4.Text
+  - DFr_7A5077E9.Text
+  - DFr_F3729180.Text
+  - DFr_E779FA9C.Text
+  - DFr_F0CC2E05.Text
+  - DFr_BA2832F6.Text
+  - DFr_D75E7685.Text
+  - DFr_F510393B.Text
+  - DFr_BFA552EC.Text
+  - DFr_2F4AE501.Text
+  - DFr_BB05CE37.Text
+  - DFr_CB2CE0E2.Text
+  - DFr_1111FBE7.Text
+  - DFr_E358D799.Text
+  - DFr_351ECB7E.Text
+  - DFr_76B7ABA1.Text
+  - DFr_635773BE.Text
+  - DFr_9B4ED6DB.Text
+  - DFr_5E9979FC.Text
+  - DFr_35F28D9A.Text
+  - DFr_7E9B3D80.Text
+  - DFr_6DC42D46.Text
+  - DFr_D3ABA858.Text
+  - DFr_EC7419F1.Text
+  - DFr_87F5897A.Text
+  - DFr_BBF6BF00.Text
+  - DFr_482274D2.Text
+  - DFr_E5E39012.Text
+  - DFr_CAA1ACD2.Text
+  - DFr_C537EBB7.Text
+  - DFr_1CA662ED.Text
+  - DFr_5E6AF5EE.Text
+  - DFr_BE6A1213.Text
+  - DFr_34B914C4.Text
+  - DFr_EAB744DE.Text
+  - DFr_297A99C5.Text
+  - DFr_20629E4F.Text
+  - DFr_C8855140.Text
+  - DFr_625F6A0B.Text
+  - DFr_98AC033E.Text
+  - DFr_1B4F4534.Text
+  - DFr_B25E5CAB.Text
+  - DFr_52685F47.Text
+  - DFr_3889500E.Text
+  - DFr_99F2A115.Text
+  - DFr_B5E5BE82.Text
+  - DFr_E7431CAE.Text
+  - DFr_2A793D08.Text
+  - DFr_CBA65250.Text
+  - DFr_10BE5A96.Text
+  - DFr_41848A91.Text
+  - DFr_D0A4986D.Text
+  - DFr_28663F06.Text
+  - DFr_48067A0A.Text
+  - DFr_6DCF4A07.Text
+  - DFr_17CACACB.Text
+  - DFr_12B1802F.Text
+  - DFr_F4778519.Text
+  - DFr_5CF8A9C7.Text
+  - DFr_4E329F6F.Text
+  - DFr_C2BACDD7.Text
+  - DFr_E1EB4433.Text
+  - DFr_A18917DF.Text
+  - DFr_D9D66DDD.Text
+  - DFr_679400CF.Text
+  - DFr_88AB54CA.Text
+  - DFr_33FE7075.Text
+  - DFr_87F1F9C1.Text
+  - DFr_1843B661.Text
+  - DFr_8A8EB2A7.Text
+  - DFr_F059E6A1.Text
+  - DFr_E7401CC3.Text
+  - DFr_D2878D21.Text
+  - DFr_08E96D1E.Text
+  - DFr_6C4EA61C.Text
+  - DFr_66C249B2.Text
+  - DFr_CC2E2057.Text
+  - DFr_EA994863.Text
+  - DFr_D86A9BE1.Text
+  - DFr_130EB1CC.Text
+  - DFr_6A054B58.Text
+  - DFr_B2058578.Text
+  - DFr_7A5FD62C.Text
+  - DFr_30CEE945.Text
+  - DFr_DB4D5F34.Text
+  - DFr_13DB9735.Text
+  - DFr_4818285C.Text
+  - DFr_50124D27.Text
+  - DFr_BC193920.Text
+  - DFr_0A40A9A4.Text
+  - DFr_2CF04EC0.Text
+  - DFr_99197941.Text
+  - DFr_5A570A32.Text
+  - DFr_B96CA5DC.Text
+  - DFr_90462BEE.Text
+  - DFr_B9E59DF0.Text
+  - DFr_74133A60.Text
+  - DFr_2D3A7271.Text
+  - DFr_033057AF.Text
+  - DFr_6ED76CC9.Text
+  - DFr_63E31247.Text
+  - DFr_0FF78512.Text
+  - DFr_CACB0A1A.Text
+  - DFr_5A86EF13.Text
+  - DFr_49466E0D.Text
+  - DFr_FC06FEAB.Text
+  - DFr_CBE0B7EF.Text
+  - DFr_7E9C2C36.Text
+  - DFr_169E5DB2.Text
+  - DFr_2B67BD96.Text
+  - DFr_AA9BC907.Text
+  - DFr_380A1D93.Text
+  - DFr_BA2A0CAC.Text
+  - DFr_6947E68F.Text
+  - DFr_FFBD79A6.Text
+  - DFr_A7E6F5EC.Text
+  - DFr_C1CE8236.Text
+  - DFr_6D5D2029.Text
+  - DFr_A0A5723C.Text
+  - DFr_A51A35A0.Text
+  - DFr_2637AC43.Text
+  - DFr_D420B709.Text
+  - DFr_94C7A783.Text
+  - DFr_33B561DC.Text
+  - DFr_9D7F5DF4.Text
+  - DFr_7818B182.Text
+  - DFr_10C203FC.Text
+  - DFr_8AB4E82A.Text
+  - DFr_D40D7EE5.Text
+  - DFr_B543632D.Text
+  - DFr_646559C7.Text
+  - DFr_9F1C750B.Text
+  - DFr_4E98B2B6.Text
+  - DFr_957F9B83.Text
+  - DFr_B32859ED.Text
+  - DFr_DBE7EA65.Text
+  - DFr_632A27AC.Text
+  - DFr_B23E6A1D.Text
+  - DFr_0612D087.Text
+  - DFr_6FDDE75A.Text
+  - DFr_EC863F45.Text
+  - DFr_94762F76.Text
+  - DFr_C4EEBB28.Text
+  - DFr_E1443598.Text
+  - DFr_D3442CD4.Text
+  - DFr_150FE9F4.Text
+  - DFr_CEEC3F75.Text
+  - DFr_A5E8C67C.Text
+  - DFr_6C5486D6.Text
+  - DFr_35E86E42.Text
+  - DFr_2DA16174.Text
+  - DFr_827B11C5.Text
+  - DFr_09CAA581.Text
+  - DFr_BD856EBB.Text
+  - DFr_8DDF1251.Text
+  - DFr_490EFE15.Text
+  - DFr_00231659.Text
+  - DFr_906B3B65.Text
+  - DFr_89F87215.Text
+  - DFr_93F51843.Text
+  - DFr_E6515577.Text
+  - DFr_6BDFB441.Text
+  - DFr_26B58139.Text
+  - DFr_23552115.Text
+  - Ntt_12489C3B.DisplayName
+  - Ntt_DB8FD32E.DisplayName
+  - Ntt_6339C985.DisplayName
+  - Ntt_D8AED529.DisplayName
+  - Ntt_9BA2459D.DisplayName
+  - Ntt_F148E78D.DisplayName
+  - Ntt_3D56F26C.DisplayName
+  - Ntt_646448C7.DisplayName
+  mLocalizedStringsValues:
+  - Main Quest
+  - All of the interactions that are a part of the main quest to get the objects
+    for the boat
+  - 'Scene 1: Intro to Quest'
+  - Marie wakes up in bed to Max bothering her, tutorial of movement, and introduction
+    to quest
+  - 'Scene 3: Boat Building Scene'
+  - Marie arrives to the beach with all the materials and tries to build it. Max
+    steps in and saves the day
+  - 'Scene 2: Collecting Items for Boat'
+  - Marie collects items to build the boat from Arrnold, Jane, and Grumpy Joe
+  - NPC Interactions
+  - All interactions with NPC that aren't a part of the main quest
+  - Interactions with Arrnold
+  - If you talk to him after the main quest interaction
+  - Interactions with Grumpy Joe
+  - If you talk to him after the main quest interaction
+  - Interactions with Jane
+  - If you talk to her after the main quest interaction
+  - Interactions with Joele
+  - Interactions with Rosei
+  - 
+  - Interactions with Viola
+  - Hey!! Mar-oh...of course you're still asleep...
+  - "Don\u2019t tell me you forgot!"
+  - Wake up, lazy bones!
+  - Forgot what?
+  - "Of course not! I\u2019d never forget that today is\u2026uh\u2026"
+  - "Marieeeeeeeeee\u2026"
+  - " I can\u2019t believe you sometimes. The ISLAND BOAT RACE! It\u2019s today!
+    They\u2019re giving a trophy to whoever wins - and it HAS to be us!"
+  - ' MARIE!!!'
+  - " Oh, yeah? Where\u2019s our boat?"
+  - "Good grief! It sure took you long enough to wake up. Don\u2019t you remember
+    what day it is?!"
+  - "\u2026That\u2019s what we\u2019re working on today. But I\u2019m not worried
+    about it! We\u2019ll make it happen. You and me, we make a great team."
+  - "Quick! Get on your feet! We\u2019ve gotta get to work!"
+  - "It won\u2019t take us very long! We just need to get stuff to build with. I\u2019m
+    thinking we\u2019ll need wood, string, and canvas. Can you ask around town to
+    see if anyone can help us out?"
+  - " I remember this day\u2026why am I back here?"
+  - "Well? What\u2019re you waiting for?"
+  - "whatdoweneedtogetprobablywoodmaybesomecanvasmaybesomeuhhhhh\u2026"
+  - "Wow, he\u2019s not here yet? I\u2019m the one doing the leg work too, ugh"
+  - ...!
+  - "Hmm, well Max isn\u2019t here to build the boat\u2026and I have the supplies
+    to build the boat\u2026and the tools to build the boat\u2026"
+  - Might as well give it a go!
+  - ' Marie? What are you doing?'
+  - AHH-
+  - OH MY GOD-
+  - WHEN DID YOU GET THERE?!?!
+  - Uh...just a second ago. Are you okay?
+  - YOU BROKE MY BOAT!!!
+  - Sorry... I think I ruined it.
+  - Well, I dunno why you tried to do it alone. It's a job for two people. We'll
+    rebuild it together.
+  - Hmph... you better.
+  - 
+  - What's that on the side of it?
+  - Ugh... Marie, did you have to carve a bird into it? It looks weird.
+  - Well I think it's cute!
+  - It's just to spite you.
+  - I mean... if you say so. It looks more like a rat to me.
+  - Oh whatever! I went and got all the materials, so I'll draw what I want on it.
+  - Whatever. It looks like a rat anyway.
+  - Fair enough... wanna take the rat boat for a spin?
+  - Let's do it!
+  - Uh, I'm not quite ready yet. Just give me a second.
+  - If you say so.
+  - Okay, I'm ready.
+  - Finally, let's do it!
+  - "Eh?? Who\u2019s that?? \u2026Oh, it\u2019s just you, Marie. Don\u2019t sneak
+    up on me like that, you\u2019ll give this old man a heart attack. Ah, no matter...are
+    you staying out of trouble today?"
+  - Ah, you again, Marie! What is it now?
+  - Max and I need wood to build a boat!
+  - "What\u2019s new, Grumpy Joe?"
+  - Nevermind.
+  - "Now, why would you ever want to build a boat? There\u2019s nothin\u2019 out
+    there in that cursed ocean. Nothin\u2019 worth seeing!"
+  - To win the Boat Racing Contest, of course!
+  - "What\u2019s it to you?!"
+  - "Contest? Bah! You kids and your silly games. ...Tell you what, though, this
+    might be your lucky day. I have some pieces of an old boat that have just been
+    sitting around in my shop. Haven\u2019t been put together in years. I\u2019ve
+    been looking for a chance to get rid of them. You and your brother can have them,
+    under one condition..."
+  - "What\u2019s that?"
+  - "You take the blasted things, and don\u2019t try to give them back! Now here,
+    take \u2018em and get to work!"
+  - " Well! Excuse an old man for being curious! You\u2019ll surely have rotten luck
+    getting any wood with that attitude!"
+  - " Eh? What\u2019s new? Not much around here, I\u2019ll tell you that! Business
+    at the shop is the slowest it\u2019s been in months. I\u2019m telling you, young
+    people these days just can\u2019t appreciate good craftsmanship."
+  - "Are you sure that\u2019s why?"
+  - "Of course! I don\u2019t see what else it could be!"
+  - "Bah, you kids. You think an old man\u2019s just got all the time in the world!"
+  - Ah, Marie! How goes it?
+  - Marie!
+  - Hey!
+  - "What\u2019s up?"
+  - Actually, I need your help with something...
+  - Sure! Whaddya need?
+  - ' Do you have any spare rope I could use?'
+  - "Hmm\u2026 depends what for. Ya building something?"
+  - Arthur and I are doing a sailboat competition.
+  - "Ah, I see. You seem uh\u2026 really excited about it."
+  - "Well\u2026 I guess it was more of his idea. I\u2019d honestly forgot about it
+    until this morning. But I\u2019m still going to help!"
+  - "Well there\u2019s the spirit! Let me see what I have for you\u2026"
+  - Alright, I found this in the attic. Is this the kinda rope you were looking for?
+  - " Yes! That\u2019s perfect. Thanks Jane!"
+  - Anytime. Let me know how it goes!
+  - Nevermind.
+  - Alrighty then!
+  - I am excited about it!
+  - What have you been up to today?
+  - What have I been up to? Hmmm... well this mornin' I was gonna try and catch some
+    fish up the north side of the beach, but...
+  - But what?
+  - Well, Arrnold was insisting I take Joele out on the water with me so he can "get
+    a taste of adventure" or somethin' like that... but the kid turned dead pale
+    at the mention of going out there. I couldn't do that to 'em! I dunno what Arrnold
+    was thinking...
+  - But he wasn't taking no for an answer, so I made up something about the weather
+    gettin' bad all of a sudden and walked off.
+  - But anyway... what're you up to?
+  - Anyhow... did ya need something?
+  - What's up with you, Arrnold?
+  - Well, Max and I are trying to build a boat for this sailing competition across
+    town... he asked me to get wood, string, and canvas?
+  - Nevermind.
+  - Well, I just finished feedin' the animals, and then I was just thinking...
+  - You know, Marie, you remind me a lot of myself when I was your age. Always determined
+    to win!
+  - "Oh, I can still see that rainbow trout now\u2026that was the biggest fish I
+    ever caught! \u2026It\u2019s too bad the judges were distracted by that other
+    kid who caught the shark\u2026Ack! Sorry, Marie. I\u2019m off daydreaming again\u2026"
+  - "Why, I remember like it was yesterday when I won the island fly-fishing tournament
+    as a wee lad\u2026"
+  - I'll see you around!
+  - Did you need something?
+  - Wow! I'm jealous... Rosei never lets me do stuff like that anymore, says it'll
+    hurt my back...
+  - But I do have some spare canvas for you! At least someone's putting it to use...
+  - I'd give you some wood too but Rosei wants me to build her a nice new wardrobe
+    this summer... hope this'll do.
+  - This'll work just fine! Thanks Arrnold.
+  - Hey Marie! Out for a stroll again? Weather's real nice today.
+  - Just finishing up some chores!
+  - Well you'd better finish quick! The day is still young...
+  - Oh, hey Marie. How's my favorite student doing?
+  - Good! Just finishing up that boat.
+  - REALLY? Well... I suppose I could lend a hand if you're asking.
+  - Um... I think it was more of a project for me and Max, but another helping hand
+    couldn't hurt!
+  - Sorry Arrnold, me and Max have to do this one just the two of us.
+  - Ah, you know what, nevermind... I'll leave you kids to it.
+  - Right, okay...
+  - Say, have you or your brother ever ridden before?
+  - A horse? I don't think so.
+  - Well, I'd say you could ride my horse Crunchy, but he's too old. His bones would
+    go crunchy the instant you got on! Ha ha!
+  - Actually, a really long time ago me and Crunchy got lost in the woods. It was
+    mega dark, and I was down to the last bow in my quiver.
+  - And we were trotting along in the dark when suddenly- BOOM! This humungous bear
+    shot out of the trees! Crunchy got scared real good, he bucked and knocked me
+    clean off!
+  - Nevermind.
+  - So then I get up, and the instant I stand up I'm eye-to-eye with this thing.
+    I slowly reached back and-
+  - -BAM!! Got him straight in the eye with my last arrow. The old sucker ROARED
+    and then turned tail and ran.
+  - Took a while to calm Crunchy down, not sure he'd even do too well with kids like
+    you and Max...
+  - But anyway, that's enough of that. You got things to get to, yeah? Come back
+    if you want to hear more of an old man's ramblings!
+  - " I hear you and Max finished that boat project of yours! I\u2019ll give you
+    kids some credit; once you\u2019ve put your mind to something, it\u2019s hard
+    to stop you. I like that about you, Marie."
+  - "You better get cracking to get to that contest thingamabob! It would be a shame
+    if you put in all that work just to be disqualified for being late! Bah, sometimes
+    you kids have no sense of urgency\u2026"
+  - "That boat was nothing but trouble for me. Couldn\u2019t withstand even the calmest
+    of water without sinking! Eventually I got fed up with it and just decided to
+    cut it up and put the thing out of its misery. Ha! Maybe you and your brother
+    will be able to build it into something better. Good luck! But be careful, y\u2019hear?"
+  - "Don\u2019t you have work to do? You won\u2019t get anything built sitting around
+    chatting to an old man all day! Hop to it!"
+  - "Well? Did ya build the boat yet? I\u2019d like to see it when it\u2019s done,
+    maybe I\u2019ll take it for a spin myself\u2026"
+  - " No\u2026"
+  - "Well what\u2019re you waiting for? You only got so much daylight left before
+    you\u2019re building this thing in the dark."
+  - "Oh, hey Marie! How\u2019d your boat turn out?"
+  - It was great! Thanks for the rope.
+  - "It was okay\u2026"
+  - Nevermind
+  - Glad to hear it! Let me know if you need anything else.
+  - "Hm. Well, wasn\u2019t on account of my rope, that\u2019s for sure."
+  - ...
+  - ...Hi?
+  - ...
+  - I heard you're making a boat... good luck.
+  - Thanks Mrs. Mille!
+  - And when will it be done?
+  - Uhh... tonight, I think.
+  - Right, well make sure you don't tell Arrnold, he'll want to take over the whole
+    project. He might even sail away on it himself....
+  - Ah, right.
+  - How was the boat contest?
+  - Oh, well we haven't done the actual contest yet, we just finished building it.
+  - Ah, I see. I heard Arrnold tried to get involved. What did I tell you?
+  - Well you were right after all, sorry I ever doubted it.
+  - ...
+  - It's alright Marie, I'm not actually mad. Not with you anyway...
+  - Hmph... well let me know how the contest goes.
+  - Oh, Marie! What are you up to? Going sailing with Arrnold?
+  - Nope, I'm just taking a walk.
+  - ...I wish Joele would take after you more. Two nomad parents, and he can't stand
+    a moment outside.
+  - ...
+  - Have you ever seen coral before?
+  - Yeah
+  - Nope
+  - Well, you've seen more than this old woman.
+  - I haven't either...
+  - I might've told you this before, but the whole reason Arrnold and I moved here...
+    was for the coral. I had this grand idea that everything beneath the water's
+    surface would be colorful.
+  - I thought you didn't like the water?
+  - I don't... but I sure don't mind looking at it.
+  - One time he bought me a rock and painted it, and then called it coral. Silly
+    man.
+  - That was before you could walk. Your brother was the one who found the rock,
+    actually. He was going to give it to you, but Arrnold beat him at rock-paper-scissors...
+  - Anyway, that's enough reminiscing from me. I'm going to head back to work, but
+    I'm sure I'll see you around again today.
+  - Marie? Ah, that is you. How are you dear? What have you been up to?
+  - Great! Max and I are building a boat.
+  - "Not so good\u2026"
+  - "You\u2019re building a boat? How come?"
+  - Max wanted to do a sailing competition on the other side of town.
+  - Nevermind.
+  - Um... alright honey
+  - "And you\u2019ll be doing it with him?"
+  - Of course!
+  - "Ah, Max. Such an adventurous spirit in such a small body. I worry for him you
+    know\u2026"
+  - "Don\u2019t worry Miss Earnest, I\u2019ll look out for him"
+  - "I know you will, you\u2019re a smart girl. Now go build that boat! I\u2019d
+    like to see it when it\u2019s done."
+  - "You know\u2026 I\u2019ve been worried about that Joe fellow. I have a hard time
+    telling whether his face is just frozen in an angry face, or if he\u2019s actually
+    just that angry all the time. That can\u2019t be good for anybody! Maybe you
+    can introduce me sometime\u2026"
+  - Marie
+  - Max
+  - Arrnold Mille
+  - Rosei Mille
+  - Joele Mille
+  - Grumpy Joe
+  - Jane
+  - Viola Earnest
+  mLocalizedAudioAssetsKeys: []
+  mLocalizedAudioAssetsValues: 
