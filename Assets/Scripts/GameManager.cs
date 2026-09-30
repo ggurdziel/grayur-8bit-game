@@ -21,17 +21,9 @@ public class GameManager : MonoBehaviour
 
     private void PlaySceneMusic(string sceneName)
     {
-        if (sceneName.StartsWith("House_"))
+        if (AudioManager.instance != null)
         {
-            AudioManager.instance.PlayMusic("HouseTheme");
-        }
-        else if (sceneName == "Hanalei")
-        {
-            AudioManager.instance.PlayMusic("MainTheme");
-        }
-        else
-        {
-            AudioManager.instance.PlayMusic("MainTheme");
+            AudioManager.instance.PlayMusicForScene(sceneName);
         }
     }
 

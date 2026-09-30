@@ -1123,12 +1123,12 @@ TextureImporter:
       name: TUT_AREA-Recovered2_36
       rect:
         serializedVersion: 2
-        x: 232
+        x: 233
         y: 414
-        width: 270
-        height: 211
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 269
+        height: 213
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []

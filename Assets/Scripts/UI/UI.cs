@@ -60,22 +60,25 @@ public class UI : MonoBehaviour
         }
     }
 
-    public void OpenDialogueUI(DialogueLineSO firstLine)
-    {
-        if (dialogueUI == null)
-        {
-            Debug.LogError("Dialogue UI reference is missing on UI_Manager.");
-            return;
-        }
-
-        StopPlayerControls(true);
-        dialogueUI.gameObject.SetActive(true);
-        dialogueUI.PlayDialogueLine(firstLine);
-    }
-
     public void CloseDialogueUI()
     {
         dialogueUI.gameObject.SetActive(false);
-        StopPlayerControls(false);
+        if (CutsceneManager.Instance == null ||
+            !CutsceneManager.Instance.IsInCutscene)
+        {
+            StopPlayerControls(false);
+        }
     }
+
+    public void OpenArticyDialogueUI()
+    {
+        if (CutsceneManager.Instance == null ||
+            !CutsceneManager.Instance.IsInCutscene)
+        {
+            StopPlayerControls(true);
+        }
+
+        dialogueUI.gameObject.SetActive(true);
+    }
+
 }

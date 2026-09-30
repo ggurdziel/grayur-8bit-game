@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
@@ -25,8 +26,15 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        Debug.Log("AudioManager Start running");
-        PlayMusic("MainTheme");
+        PlayMusicForScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void PlayMusicForScene(string sceneName)
+    {
+        if (sceneName.StartsWith("House_"))
+            PlayMusic("HouseTheme");
+        else
+            PlayMusic("MainTheme");
     }
 
     public void PlayMusic(string musicName)

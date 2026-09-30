@@ -7,16 +7,25 @@ public class QuestManager : MonoBehaviour
 
     private Dictionary<string, Quest> questLookup = new Dictionary<string, Quest>();
 
-    private void Awake()
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
+    private static void Bootstrap()
     {
         if (Instance == null)
         {
-            Instance = this;
+            new GameObject("QuestManager").AddComponent<QuestManager>();
         }
-        else
+    }
+
+    private void Awake()
+    {
+        if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
+            return;
         }
+
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
     }
 
 
@@ -32,6 +41,8 @@ public class QuestManager : MonoBehaviour
 
             Debug.Log($"Started quest: {questData.questName}");
         }
+
+        StoryFlags.Instance.Set("quest." + questData.name + ".started");
     }
 
 
@@ -70,6 +81,8 @@ public class QuestManager : MonoBehaviour
 
         quest.isCompleted = true;
         Debug.Log($"Completed quest: {questData.questName}");
+
+        StoryFlags.Instance.Set("quest." + questData.name + ".done");
 
         GiveRewards(questData);
     }

@@ -1,9 +1,10 @@
 using UnityEngine;
+using Articy.Unity;
 
 public class Object_NPC : MonoBehaviour, IInteractable
 {
     [Header("Dialogue")]
-    [SerializeField] private DialogueLineSO firstDialogueLine;
+    [SerializeField] private ArticyRef articyDialogue;
 
     [Header("Wandering")]
     [SerializeField] private bool canWander = true;
@@ -21,7 +22,7 @@ public class Object_NPC : MonoBehaviour, IInteractable
     [SerializeField] private LayerMask buildingLayer;
     [SerializeField] private float flipCooldown = 0.2f;
 
-    protected UI ui;
+    protected DialogueManager dialogueManager;
     protected Inventory_NPC npcInventory;
 
     private Rigidbody2D rb;
@@ -31,12 +32,13 @@ public class Object_NPC : MonoBehaviour, IInteractable
     private Vector2 moveDir;
     private float timer;
     private bool isIdle = true;
+    private bool isInCutscene = false;
     private int scheduleIndex = 0;
     private float lastFlipTime;
 
     protected virtual void Awake()
     {
-        ui = FindFirstObjectByType<UI>();
+        dialogueManager = FindFirstObjectByType<DialogueManager>();
         npcInventory = GetComponent<Inventory_NPC>();
 
         rb = GetComponent<Rigidbody2D>();
@@ -51,7 +53,7 @@ public class Object_NPC : MonoBehaviour, IInteractable
 
     private void Update()
     {
-        if (!canWander)
+        if (!canWander || isInCutscene)
             return;
 
         timer -= Time.deltaTime;
@@ -60,14 +62,6 @@ public class Object_NPC : MonoBehaviour, IInteractable
             NextScheduleStep();
 
         UpdateAnimation();
-    }
-
-    private void FixedUpdate()
-    {
-        if (!canWander || rb == null)
-            return;
-
-        rb.linearVelocity = moveDir * moveSpeed;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -188,6 +182,33 @@ public class Object_NPC : MonoBehaviour, IInteractable
         }
     }
 
+    public void EnterCutscene()
+    {
+        isInCutscene = true;
+
+        moveDir = Vector2.zero;
+        isIdle = true;
+
+        if (rb != null)
+            rb.linearVelocity = Vector2.zero;
+
+        UpdateAnimation();
+    }
+
+    public void ExitCutscene()
+    {
+        isInCutscene = false;
+        StartIdle();
+    }
+
+    private void FixedUpdate()
+    {
+        if (!canWander || isInCutscene || rb == null)
+            return;
+
+        rb.linearVelocity = moveDir * moveSpeed;
+    }
+
     public virtual void Interact(Player player)
     {
         Debug.Log("NPC interacted");
@@ -214,12 +235,20 @@ public class Object_NPC : MonoBehaviour, IInteractable
             }
         }
 
-        if (ui == null)
+        if (dialogueManager == null)
         {
-            Debug.LogError("UI not found in scene.");
+            Debug.LogError("DialogueManager not found in scene.");
             return;
         }
 
-        ui.OpenDialogueUI(firstDialogueLine);
+        ArticyObject dialogueStart = articyDialogue.GetObject();
+
+        if (dialogueStart == null)
+        {
+            Debug.LogWarning("No Articy dialogue assigned to this NPC.");
+            return;
+        }
+
+        dialogueManager.StartDialogue(dialogueStart);
     }
 }

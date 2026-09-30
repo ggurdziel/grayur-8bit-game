@@ -5,106 +5,80 @@ using UnityEngine.InputSystem;
 
 public class UI_Dialogue : MonoBehaviour
 {
-
+    [Header("Dialogue UI")]
     [SerializeField] private Image speakerPortrait;
     [SerializeField] private TextMeshProUGUI speakerName;
     [SerializeField] private TextMeshProUGUI dialogueText;
     [SerializeField] private TextMeshProUGUI dialogueChoices;
 
-    private DialogueLineSO currentDialogue;
-    private int currentTextIndex;
     private UI ui;
+    private DialogueManager dialogueManager;
 
     private void Awake()
     {
         ui = FindFirstObjectByType<UI>();
+        dialogueManager = FindFirstObjectByType<DialogueManager>();
     }
 
     private void Update()
     {
-        if (currentDialogue == null)
-            return;
-        if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
+        if (Mouse.current != null &&
+            Mouse.current.leftButton.wasPressedThisFrame)
         {
-            ShowNextLine();
+            ContinueDialogue();
         }
     }
 
-    public void PlayDialogueLine(DialogueLineSO line)
+    private void ContinueDialogue()
     {
-        Debug.Log("PlayDialogueLine called");
-
-        if (line == null)
+        if (dialogueManager == null)
         {
-            Debug.LogWarning("No dialogue line provided.");
+            Debug.LogError("DialogueManager not found.");
             return;
         }
 
-        if (line.textLine == null || line.textLine.Length == 0)
+        dialogueManager.ContinueDialogue();
+    }
+
+    public void ShowArticyLine(
+        string speaker,
+        Sprite portrait,
+        string text)
+    {
+        // Speaker name
+        speakerName.text = speaker ?? "";
+
+        // Speaker portrait
+        if (portrait != null)
         {
-            Debug.LogWarning("Dialogue has no text lines.");
-            return;
-        }
-
-        currentDialogue = line;
-        currentTextIndex = 0;
-
-        if (line.speaker != null)
-        {
-            speakerName.text = line.speaker.speakerName;
-
-            if (line.speaker.speakerPortrait != null)
-            {
-                speakerPortrait.enabled = true;
-                speakerPortrait.sprite = line.speaker.speakerPortrait;
-                speakerPortrait.color = Color.white;
-            }
-            else
-            {
-                speakerPortrait.enabled = false;
-            }
+            speakerPortrait.enabled = true;
+            speakerPortrait.sprite = portrait;
+            speakerPortrait.color = Color.white;
         }
         else
         {
-            speakerName.text = "";
             speakerPortrait.enabled = false;
         }
 
+        // Dialogue text
+        dialogueText.text = text ?? "";
+
+        // Temporary until choice UI is connected
         dialogueChoices.text = "Left click to continue";
-        ShowCurrentLine();
     }
 
-    private void ShowCurrentLine()
+    public void EndArticyDialogue()
     {
-        dialogueText.text = currentDialogue.textLine[currentTextIndex];
-    }
-
-    private void ShowNextLine()
-    {
-        if (currentDialogue == null)
-            return;
-        currentTextIndex++;
-
-        if (currentTextIndex >= currentDialogue.textLine.Length)
-        {
-            EndDialogue();
-            return;
-        }
-
-        ShowCurrentLine();
-    }
-
-    private void EndDialogue()
-    {
-        currentDialogue = null;
-        currentTextIndex = 0;
-
         dialogueText.text = "";
         dialogueChoices.text = "";
         speakerName.text = "";
+
+        speakerPortrait.sprite = null;
         speakerPortrait.enabled = false;
 
         if (ui != null)
+        {
             ui.CloseDialogueUI();
+        }
     }
 }

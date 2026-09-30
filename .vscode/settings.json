@@ -67,5 +67,5 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "grayur-8bit-game.slnx"
+    "dotnet.defaultSolution": "8-bit game.slnx"
 }
