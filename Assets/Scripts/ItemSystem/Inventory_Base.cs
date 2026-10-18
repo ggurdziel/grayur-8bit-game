@@ -26,6 +26,15 @@ public class Inventory_Base : MonoBehaviour
         }
     }
 
+    public bool GiveItem(Inventory_Item template)
+    {
+        if (!CanAddItem(template)) return false;
+
+        var copy = new Inventory_Item(template.itemData);
+        copy.stackSize = Mathf.Max(1, template.stackSize);
+        AddItem(copy);
+        return true;
+    }
 
     public bool CanAddItem(Inventory_Item itemToAdd)
     {
@@ -45,6 +54,7 @@ public class Inventory_Base : MonoBehaviour
             if (itemList[i] == null)
             {
                 itemList[i] = item;
+                Debug.Log($"AddItem: placed {item.itemData.itemName} at index {i} on {name} (id {GetInstanceID()}), subscribers={(OnInventoryChange == null ? 0 : OnInventoryChange.GetInvocationList().Length)}");
                 NotifyInventoryChanged();
                 return;
             }

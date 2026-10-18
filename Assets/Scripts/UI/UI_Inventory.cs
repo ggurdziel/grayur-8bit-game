@@ -1,5 +1,5 @@
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UI_Inventory : MonoBehaviour
 {
@@ -11,28 +11,54 @@ public class UI_Inventory : MonoBehaviour
         uiItemSlots = GetComponentsInChildren<UI_ItemSlot>(true);
     }
 
-    private void Start()
+    private void OnEnable()
     {
-        inventory = FindFirstObjectByType<Inventory_Player>();
-
-        if (inventory != null)
-        {
-            inventory.OnInventoryChange += UpdateInventoryUI;
-            UpdateInventoryUI();
-        }
+        SceneManager.sceneLoaded += OnSceneLoaded;
+        ConnectToInventory();
     }
 
-    private void OnDestroy()
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+        Disconnect();
+    }
+
+    private void OnSceneLoaded(Scene s, LoadSceneMode m)
+    {
+        StartCoroutine(ReconnectNextFrame());
+    }
+
+    // Waits a frame so the new scene's Player has finished Awake.
+    private System.Collections.IEnumerator ReconnectNextFrame()
+    {
+        yield return null;
+        ConnectToInventory();
+    }
+
+    private void Disconnect()
     {
         if (inventory != null)
-        {
             inventory.OnInventoryChange -= UpdateInventoryUI;
-        }
+    }
+
+    private void ConnectToInventory()
+    {
+        Disconnect();
+
+        inventory = Player.instance != null
+            ? Player.instance.GetComponent<Inventory_Player>()
+            : FindFirstObjectByType<Inventory_Player>();
+
+        if (inventory == null)
+            return;
+
+        inventory.OnInventoryChange += UpdateInventoryUI;
+        UpdateInventoryUI();
     }
 
     private void UpdateInventoryUI()
     {
-        if (inventory == null) 
+        if (inventory == null)
             return;
 
         int startIndex = inventory.GetHotbarSize();
@@ -40,17 +66,10 @@ public class UI_Inventory : MonoBehaviour
         for (int i = 0; i < uiItemSlots.Length; i++)
         {
             int inventoryIndex = startIndex + i;
-
-            Debug.Log(
-                "Inventory UI slot " + i +
-                " object=" + uiItemSlots[i].gameObject.name +
-                " inventoryIndex=" + inventoryIndex +
-                " item=" + (inventory.GetItemAtIndex(inventoryIndex) == null ? "null" : inventory.GetItemAtIndex(inventoryIndex).itemData.itemName)
-            );
+            Inventory_Item item = inventory.GetItemAtIndex(inventoryIndex);
 
             uiItemSlots[i].Setup(inventory, inventoryIndex);
-            uiItemSlots[i].UpdateSlot(inventory.GetItemAtIndex(inventoryIndex));
+            uiItemSlots[i].UpdateSlot(item);
         }
     }
 }
-

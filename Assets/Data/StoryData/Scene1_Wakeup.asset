@@ -15,77 +15,16 @@ MonoBehaviour:
   dialogue:
     instanceId: 0
     referencingMode: 0
-    lowId: 504
-    highId: 16777216
-  requiredFlags: []
-  forbiddenFlags: []
-  lineSequence:
-  - instanceId: 0
-    referencingMode: 0
     lowId: 426
     highId: 16777216
-  - instanceId: 0
-    referencingMode: 0
-    lowId: 432
-    highId: 16777216
-  - instanceId: 0
-    referencingMode: 0
-    lowId: 391
-    highId: 16777216
-  - instanceId: 0
-    referencingMode: 0
-    lowId: 438
-    highId: 16777216
-  - instanceId: 0
-    referencingMode: 0
-    lowId: 445
-    highId: 16777216
-  - instanceId: 0
-    referencingMode: 0
-    lowId: 381
-    highId: 16777216
-  - instanceId: 0
-    referencingMode: 0
-    lowId: 345
-    highId: 16777216
-  - instanceId: 0
-    referencingMode: 0
-    lowId: 467
-    highId: 16777216
-  - instanceId: 0
-    referencingMode: 0
-    lowId: 375
-    highId: 16777216
-  - instanceId: 0
-    referencingMode: 0
-    lowId: 399
-    highId: 16777216
-  - instanceId: 0
-    referencingMode: 0
-    lowId: 363
-    highId: 16777216
-  - instanceId: 0
-    referencingMode: 0
-    lowId: 549
-    highId: 16777216
-  - instanceId: 0
-    referencingMode: 0
-    lowId: 567
-    highId: 16777216
-  - instanceId: 0
-    referencingMode: 0
-    lowId: 460
-    highId: 16777216
-  - instanceId: 0
-    referencingMode: 0
-    lowId: 452
-    highId: 16777216
-  - instanceId: 0
-    referencingMode: 0
-    lowId: 406
-    highId: 16777216
-  turnInQuest: {fileID: 0}
+  lineSequence: []
+  isCutscene: 1
+  requiredFlags: []
+  forbiddenFlags: []
+  turnInItem: {fileID: 0}
   flagsToSet:
   - scene1.done
-  questToStart: {fileID: 0}
+  questToStart: {fileID: 11400000, guid: 93b257be46ea9654092b534c63167027, type: 2}
+  questToComplete: {fileID: 0}
+  itemsToGive: []
   repeatable: 0

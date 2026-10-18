@@ -1,7 +1,8 @@
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class UI_Dialogue : MonoBehaviour
 {
@@ -14,41 +15,68 @@ public class UI_Dialogue : MonoBehaviour
     private UI ui;
     private DialogueManager dialogueManager;
 
-    private void Awake()
+    private UI GetUI()
     {
-        ui = FindFirstObjectByType<UI>();
-        dialogueManager = FindFirstObjectByType<DialogueManager>();
+        if (ui == null)
+            ui = FindFirstObjectByType<UI>(FindObjectsInactive.Include);
+        return ui;
+    }
+
+    private DialogueManager GetDialogueManager()
+    {
+        if (dialogueManager == null)
+            dialogueManager = FindFirstObjectByType<DialogueManager>(FindObjectsInactive.Include);
+        return dialogueManager;
     }
 
     private void Update()
     {
-        if (Mouse.current != null &&
-            Mouse.current.leftButton.wasPressedThisFrame)
+        var dm = GetDialogueManager();
+        if (dm == null) return;
+
+        var kb = Keyboard.current;
+
+        if (kb != null)
         {
-            ContinueDialogue();
+            if (kb.upArrowKey.wasPressedThisFrame || kb.wKey.wasPressedThisFrame)
+                dm.MoveSelection(-1);
+
+            if (kb.downArrowKey.wasPressedThisFrame || kb.sKey.wasPressedThisFrame)
+                dm.MoveSelection(1);
+
+            if (kb.enterKey.wasPressedThisFrame || kb.numpadEnterKey.wasPressedThisFrame)
+                dm.ConfirmSelection();
+        }
+
+        if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
+        {
+            dm.ContinueDialogue();
         }
     }
 
     private void ContinueDialogue()
     {
-        if (dialogueManager == null)
+        var dm = GetDialogueManager();
+
+        if (dm == null)
         {
             Debug.LogError("DialogueManager not found.");
             return;
         }
 
-        dialogueManager.ContinueDialogue();
+        dm.ContinueDialogue();
     }
 
-    public void ShowArticyLine(
-        string speaker,
-        Sprite portrait,
-        string text)
+    public void SetPrompt(string text)
     {
-        // Speaker name
+        if (dialogueChoices != null)
+            dialogueChoices.text = text ?? "";
+    }
+
+    public void ShowArticyLine(string speaker, Sprite portrait, string text)
+    {
         speakerName.text = speaker ?? "";
 
-        // Speaker portrait
         if (portrait != null)
         {
             speakerPortrait.enabled = true;
@@ -60,25 +88,21 @@ public class UI_Dialogue : MonoBehaviour
             speakerPortrait.enabled = false;
         }
 
-        // Dialogue text
         dialogueText.text = text ?? "";
-
-        // Temporary until choice UI is connected
-        dialogueChoices.text = "Left click to continue";
+        SetPrompt("Left click to continue");
     }
 
     public void EndArticyDialogue()
     {
         dialogueText.text = "";
-        dialogueChoices.text = "";
+        SetPrompt("");
         speakerName.text = "";
 
         speakerPortrait.sprite = null;
         speakerPortrait.enabled = false;
 
-        if (ui != null)
-        {
-            ui.CloseDialogueUI();
-        }
+        var u = GetUI();
+        if (u != null)
+            u.CloseDialogueUI();
     }
 }

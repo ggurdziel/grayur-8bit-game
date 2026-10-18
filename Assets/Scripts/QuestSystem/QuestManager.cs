@@ -28,7 +28,6 @@ public class QuestManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-
     public void StartQuest(QuestDataSO questData)
     {
         if (questData == null) return;
@@ -104,7 +103,7 @@ public class QuestManager : MonoBehaviour
         {
             if (reward != null)
             {
-                inventory.AddItem(reward);
+                inventory.GiveItem(reward);
             }
         }
     }

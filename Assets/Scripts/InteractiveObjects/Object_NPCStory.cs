@@ -7,6 +7,7 @@ public class Object_NPCStory : Object_NPC
 
     public override void Interact(Player player)
     {
+        Debug.Log($"[{name}] Object_NPCStory.Interact, beats: {(beats == null ? 0 : beats.Length)}");
         var participants = new System.Collections.Generic.List<Object_NPC> { this };
         participants.AddRange(otherParticipants);
 

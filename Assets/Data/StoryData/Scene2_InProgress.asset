@@ -17,11 +17,19 @@ MonoBehaviour:
     referencingMode: 0
     lowId: 0
     highId: 0
+  lineSequence:
+  - instanceId: 0
+    referencingMode: 0
+    lowId: 0
+    highId: 0
+  isCutscene: 1
   requiredFlags:
   - quest.FindItems.started
   forbiddenFlags:
   - quest.FindItems.done
-  turnInQuest: {fileID: 0}
+  turnInItem: {fileID: 0}
   flagsToSet: []
   questToStart: {fileID: 0}
+  questToComplete: {fileID: 0}
+  itemsToGive: []
   repeatable: 1

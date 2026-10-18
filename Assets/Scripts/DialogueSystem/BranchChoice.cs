@@ -2,44 +2,44 @@ using Articy.Unity;
 using Articy.Unity.Interfaces;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BranchChoice : MonoBehaviour
 {
-    [SerializeField] private TMP_Text buttonText;
+    [SerializeField] private TMP_Text choiceText;
+    [SerializeField] private Image arrow;
 
-    private Branch branch;
-    private ArticyFlowPlayer flowPlayer;
+    public Branch Branch { get; private set; }
 
-    public void AssignBranch(
-        ArticyFlowPlayer aFlowPlayer,
-        Branch aBranch)
+    public void Assign(Branch aBranch)
     {
-        branch = aBranch;
-        flowPlayer = aFlowPlayer;
+        Branch = aBranch;
 
-        buttonText.text = "";
+        string t = "";
+        
+        try { t = (aBranch.Target as IObjectWithLocalizableMenuText)?.MenuText; }
+        catch { t = ""; }
 
-        // Get the choice text from Articy
-        var objectWithMenuText =
-            aBranch.Target as IObjectWithLocalizableMenuText;
+        if (string.IsNullOrEmpty(t))
+            try { t = (aBranch.Target as IObjectWithLocalizableText)?.Text; }
+            catch { t = ""; }
 
-        if (objectWithMenuText != null)
-        {
-            buttonText.text = objectWithMenuText.MenuText;
-        }
-
-        // Fallback if Articy does not have MenuText
-        if (string.IsNullOrEmpty(buttonText.text))
-        {
-            buttonText.text = "Continue";
-        }
+        choiceText.text = string.IsNullOrEmpty(t) ? "Continue" : t.Trim();
+        gameObject.SetActive(true);
+        SetSelected(false);
     }
 
-    public void OnBranchSelected()
+    public void Clear()
     {
-        if (flowPlayer == null)
-            return;
+        Branch = null;
+        choiceText.text = "";
+        SetSelected(false);
+        gameObject.SetActive(false);
+    }
 
-        flowPlayer.Play(branch);
+    public void SetSelected(bool selected)
+    {
+        if (arrow != null)
+            arrow.enabled = selected;
     }
 }

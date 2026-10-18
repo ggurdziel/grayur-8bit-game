@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class UI : MonoBehaviour
 {
@@ -21,32 +22,45 @@ public class UI : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            ToggleMenu();
-        }
+        var kb = Keyboard.current;
+        if (kb == null) return;
 
-        if (dialogueUI != null && dialogueUI.gameObject.activeSelf && Input.GetKeyDown(KeyCode.Escape))
+        if (kb.eKey.wasPressedThisFrame)
+            ToggleMenu();
+
+        if (dialogueUI != null && dialogueUI.gameObject.activeSelf && kb.escapeKey.wasPressedThisFrame)
         {
-            CloseDialogueUI();
+            var dm = FindFirstObjectByType<DialogueManager>(FindObjectsInactive.Include);
+            if (dm != null) dm.EndDialogue();
+            else CloseDialogueUI();
         }
+    }
+
+    private Player GetPlayer()
+    {
+        if (player == null)
+        {
+            player = Player.instance != null ? Player.instance
+                                             : FindFirstObjectByType<Player>();
+        }
+        return player;
     }
 
     private void StopPlayerControls(bool stopControls)
     {
-        if (player == null || player.input == null)
-            return;
+        var p = GetPlayer();
+        if (p == null || p.input == null) return;
 
-        if (stopControls)
-            player.input.Player.Disable();
-        else
-            player.input.Player.Enable();
+        if (stopControls) p.input.Player.Disable();
+        else p.input.Player.Enable();
     }
 
     public void ToggleMenu()
     {
         if (menuUI == null)
             return;
+
+        if (dialogueUI != null && dialogueUI.gameObject.activeSelf) return;
 
         if (menuUI.IsOpen())
         {

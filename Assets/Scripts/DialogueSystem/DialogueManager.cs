@@ -10,12 +10,6 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
 {
     public event Action DialogueEnded;
 
-    private IList<Branch> currentBranches;
-    private bool skipWhenBranchesArrive;
-
-    private Queue<ArticyObject> pendingLines;
-    private bool sequenceMode;
-
     [Header("UI")]
     [SerializeField] private UI_Dialogue dialogueUI;
 
@@ -23,59 +17,203 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
     [SerializeField] private ArticyFlowPlayer flowPlayer;
 
     [Header("Choices")]
-    [SerializeField] private Transform choiceContainer;
-    [SerializeField] private GameObject choiceButtonPrefab;
+    [SerializeField] private BranchChoice[] choiceRows;
+    private readonly List<BranchChoice> choiceItems = new List<BranchChoice>();
+    
+    [Header("Portraits")]
+    [SerializeField] private PortraitDatabaseSO portraitDatabase;
 
     private UI ui;
-    
+
+    private IList<Branch> currentBranches;
+    private bool skipWhenBranchesArrive;
+
+    private bool choicesShowing;
+    private int selectedIndex;
+
+    private Queue<ArticyObject> pendingLines;
+    private bool sequenceMode;
+    private bool dialogueActive;
 
     private void Awake()
     {
-        // Find Articy Flow Player
         if (flowPlayer == null)
             flowPlayer = GetComponent<ArticyFlowPlayer>();
 
-        // Find Dialogue UI
-        if (dialogueUI == null)
-            dialogueUI = FindFirstObjectByType<UI_Dialogue>(FindObjectsInactive.Include);
-
-        // Find main UI manager
-        ui = FindFirstObjectByType<UI>();
+        EnsureUI();
     }
 
-    // Called by an NPC when interaction starts
-    public void StartDialogue(ArticyObject dialogueStart)
+    private void EnsureUI()
     {
-        if (flowPlayer == null)
-        {
-            Debug.LogError("ArticyFlowPlayer not found.");
-            return;
-        }
-
-        if (dialogueStart == null)
-        {
-            Debug.LogWarning("No Articy dialogue assigned.");
-            return;
-        }
-
         if (ui == null)
-        {
-            Debug.LogError("UI manager not found.");
-            return;
-        }
+            ui = FindFirstObjectByType<UI>(FindObjectsInactive.Include);
 
-        Debug.Log("Starting Articy dialogue.");
+        if (dialogueUI == null)
+            dialogueUI = FindFirstObjectByType<UI_Dialogue>(FindObjectsInactive.Include);
+    }
 
+    private void ResetState()
+    {
         currentBranches = null;
         skipWhenBranchesArrive = false;
         sequenceMode = false;
         pendingLines = null;
+    }
 
-        // Open the existing dialogue UI and disable player controls
+    // ------------------------------------------------------------
+    // Starting dialogue
+    // ------------------------------------------------------------
+
+    public void StartDialogue(ArticyObject dialogueStart)
+    {
+        EnsureUI();
+
+        if (flowPlayer == null) { Debug.LogError("StartDialogue: no ArticyFlowPlayer"); return; }
+        if (ui == null)         { Debug.LogError("StartDialogue: no UI found"); return; }
+        if (dialogueStart == null) { Debug.LogWarning("StartDialogue: no Articy dialogue assigned."); return; }
+
+        RefreshChoiceRows();
+        ClearChoices();
+        ResetState();
+        dialogueActive = true;
+
         ui.OpenArticyDialogueUI();
-
-        // Start the Articy flow at the object supplied by the NPC
         flowPlayer.StartOn = dialogueStart;
+    }
+
+    public void StartSequence(IList<ArticyObject> lines)
+    {
+        EnsureUI();
+
+        if (flowPlayer == null) { Debug.LogError("StartSequence: no ArticyFlowPlayer"); return; }
+        if (ui == null)         { Debug.LogError("StartSequence: no UI found"); return; }
+        if (lines == null || lines.Count == 0) { Debug.LogError("StartSequence: no lines resolved"); return; }
+
+        RefreshChoiceRows();
+        ClearChoices();
+        ResetState();
+        dialogueActive = true;
+        sequenceMode = true;
+        pendingLines = new Queue<ArticyObject>(lines);
+
+        ui.OpenArticyDialogueUI();
+        PlayNextQueued();
+    }
+
+    private bool PlayNextQueued()
+    {
+        if (pendingLines == null || pendingLines.Count == 0)
+            return false;
+
+        flowPlayer.StartOn = pendingLines.Dequeue();
+        return true;
+    }
+
+    private void RefreshChoiceRows()
+    {
+        choiceRows = FindObjectsByType<BranchChoice>(
+            FindObjectsInactive.Include, FindObjectsSortMode.None);
+
+        System.Array.Sort(choiceRows, (a, b) =>
+            a.transform.GetSiblingIndex().CompareTo(b.transform.GetSiblingIndex()));
+    }
+
+    // ------------------------------------------------------------
+    // Articy callbacks
+    // ------------------------------------------------------------
+
+    public void OnFlowPlayerPaused(IFlowObject aObject)
+    {
+        if (!dialogueActive || aObject == null)
+            return;
+
+        var withText = aObject as IObjectWithLocalizableText;
+
+        if (withText == null || string.IsNullOrEmpty(withText.Text))
+        {
+            skipWhenBranchesArrive = true;
+            return;
+        }
+
+        skipWhenBranchesArrive = false;
+
+        string speakerName = "";
+        Sprite speakerPortrait = null;
+
+        var withSpeaker = aObject as IObjectWithSpeaker;
+        if (withSpeaker != null && withSpeaker.Speaker is Entity speaker)
+        {
+            speakerName = speaker.DisplayName;
+            speakerPortrait = portraitDatabase != null ? portraitDatabase.Get(speakerName) : null;
+        }
+
+        EnsureUI();
+
+        if (dialogueUI == null)
+        {
+            Debug.LogError("UI_Dialogue not found.");
+            return;
+        }
+
+        dialogueUI.ShowArticyLine(speakerName, speakerPortrait, withText.Text);
+    }
+
+    public void OnBranchesUpdated(IList<Branch> aBranches)
+    {
+        if (!dialogueActive)
+            return;
+
+        ClearChoices();
+        currentBranches = aBranches;
+
+        // Textless node: skip through it.
+        if (skipWhenBranchesArrive)
+        {
+            skipWhenBranchesArrive = false;
+
+            if (sequenceMode)
+            {
+                if (!PlayNextQueued())
+                    EndDialogue();
+            }
+            else if (HasValidBranch(aBranches))
+            {
+                flowPlayer.Play();
+            }
+            else
+            {
+                EndDialogue();
+            }
+
+            return;
+        }
+
+        // Several valid options after a line = player choice.
+        if (sequenceMode)
+            return;
+
+        var options = new List<Branch>();
+
+        foreach (Branch b in aBranches)
+            if (b.IsValid)
+                options.Add(b);
+
+        bool isChoice = options.Count > 1 ||
+            (options.Count == 1 && !string.IsNullOrEmpty(GetMenuText(options[0])));
+
+        if (isChoice)
+        {
+            foreach (Branch b in options)
+                CreateChoice(b);
+
+            if (choiceItems.Count > 0)
+            {
+                choicesShowing = true;
+                selectedIndex = 0;
+                RefreshSelection();
+                dialogueUI?.SetPrompt("");
+            }
+        }
     }
 
     private static bool HasValidBranch(IList<Branch> branches)
@@ -88,171 +226,27 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
         return false;
     }
 
-    // Called by Articy whenever the Flow Player pauses
-    public void OnFlowPlayerPaused(IFlowObject aObject)
+    private static string GetMenuText(Branch b)
     {
-        Debug.Log("Articy dialogue paused!");
-        if (aObject == null)
-        {
-            Debug.Log("Articy paused without a flow object. Continuing...");
-            return;
-        }
+        var m = b.Target as IObjectWithLocalizableMenuText;
+        if (m == null) return "";
 
-        string text = "";
-        string speakerName = "";
-        Sprite speakerPortrait = null;
-
-        // -------------------------
-        // Dialogue text
-        // -------------------------
-
-        var objectWithText =
-            aObject as IObjectWithLocalizableText;
-
-        if (objectWithText == null || string.IsNullOrEmpty(objectWithText.Text))
-        {
-            skipWhenBranchesArrive = true;
-
-            return;
-        }
-        
-        skipWhenBranchesArrive = false;
-
-        text = objectWithText.Text;
-
-        Debug.Log("Articy Text: " + text);
-
-        // -------------------------
-        // Speaker
-        // -------------------------
-
-        var objectWithSpeaker =
-            aObject as IObjectWithSpeaker;
-
-        if (objectWithSpeaker != null)
-        {
-            var speakerEntity =
-                objectWithSpeaker.Speaker as Entity;
-
-            if (speakerEntity != null)
-            {
-                speakerName = speakerEntity.DisplayName;
-
-                Debug.Log(
-                    "Articy Speaker: " + speakerName
-                );
-
-                // For now, log the preview image.
-                // We can connect this to the Sprite next.
-                if (speakerEntity.PreviewImage != null)
-                {
-                    Debug.Log(
-                        "Articy Preview Asset: " +
-                        speakerEntity.PreviewImage.Asset
-                    );
-
-                    Debug.Log(
-                        "Articy Preview Asset Type: " +
-                        speakerEntity.PreviewImage.Asset?.GetType()
-                    );
-                }
-            }
-        }
-
-        // -------------------------
-        // Update Dialogue UI
-        // -------------------------
-
-        if (dialogueUI != null)
-        {
-            dialogueUI.ShowArticyLine(
-                speakerName,
-                speakerPortrait,
-                text
-            );
-        }
-        else
-        {
-            Debug.LogError(
-                "UI_Dialogue reference not found."
-            );
-        }
+        try { return m.MenuText ?? ""; }
+        catch { return ""; }   // empty ArticyString throws on conversion
     }
 
-    // Called whenever Articy updates the available branches
-    public void OnBranchesUpdated(IList<Branch> aBranches)
-    {
-        ClearChoices();
-        currentBranches = aBranches;
+    // ------------------------------------------------------------
+    // Advancing, choosing, ending
+    // ------------------------------------------------------------
 
-        Debug.Log("Branches updated: " + aBranches.Count);
-        foreach (Branch b in aBranches)
-        {
-            Debug.Log($"Branch -> {b.Target?.GetType().Name}, valid: {b.IsValid}");
-        }
-
-        if (skipWhenBranchesArrive)
-        {
-            skipWhenBranchesArrive = false;
-
-            if (HasValidBranch(aBranches))
-                flowPlayer.Play();
-            else
-                EndDialogue();
-        }
-    }
-
-    private void CreateChoice(Branch branch)
-    {
-        if (choiceButtonPrefab == null ||
-            choiceContainer == null)
-        {
-            Debug.LogWarning(
-                "Choice button prefab or choice container is missing."
-            );
-
-            return;
-        }
-
-        GameObject choiceObject =
-            Instantiate(
-                choiceButtonPrefab,
-                choiceContainer
-            );
-
-        BranchChoice choice =
-            choiceObject.GetComponent<BranchChoice>();
-
-        if (choice != null)
-        {
-            choice.AssignBranch(
-                flowPlayer,
-                branch
-            );
-        }
-        else
-        {
-            Debug.LogWarning(
-                "Choice button prefab does not contain BranchChoice."
-            );
-        }
-    }
-
-    private void ClearChoices()
-    {
-        if (choiceContainer == null)
-            return;
-
-        foreach (Transform child in choiceContainer)
-        {
-            Destroy(child.gameObject);
-        }
-    }
-
-    // Called when the player advances normal dialogue
+    // Called when the player clicks to advance.
     public void ContinueDialogue()
     {
-        if (flowPlayer == null)
+        if (!dialogueActive || flowPlayer == null)
+            return;
+
+        // While choices are on screen, only Up/Down/Enter move things on.
+        if (choicesShowing)
             return;
 
         if (sequenceMode)
@@ -271,50 +265,95 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
         flowPlayer.Play();
     }
 
-    // Called when dialogue ends
-    public void EndDialogue()
+    // Moves the arrow. delta = -1 (up) or +1 (down).
+    public void MoveSelection(int delta)
     {
+        if (!choicesShowing || choiceItems.Count == 0)
+            return;
+
+        selectedIndex = (selectedIndex + delta + choiceItems.Count) % choiceItems.Count;
+        RefreshSelection();
+    }
+
+    // Picks the choice the arrow is on.
+    public void ConfirmSelection()
+    {
+        if (!choicesShowing || choiceItems.Count == 0)
+            return;
+
+        // Read the branch first: SelectBranch clears the list.
+        Branch chosen = choiceItems[selectedIndex].Branch;
+        SelectBranch(chosen);
+    }
+
+    private void SelectBranch(Branch branch)
+    {
+        if (!dialogueActive || branch == null || flowPlayer == null)
+            return;
+
         ClearChoices();
         currentBranches = null;
-        skipWhenBranchesArrive = false;
-        sequenceMode = false;
-        pendingLines = null;
-
-        if (flowPlayer != null)
-        {
-            flowPlayer.FinishCurrentPausedObject();
-        }
 
         if (dialogueUI != null)
-        {
+            dialogueUI.SetPrompt("Left click to continue");
+
+        flowPlayer.Play(branch);
+    }
+
+    public void EndDialogue()
+    {
+        if (!dialogueActive)
+            return;
+
+        dialogueActive = false;
+
+        ClearChoices();
+        ResetState();
+
+        if (flowPlayer != null)
+            flowPlayer.FinishCurrentPausedObject();
+
+        EnsureUI();
+
+        if (dialogueUI != null)
             dialogueUI.EndArticyDialogue();
-        }
 
         DialogueEnded?.Invoke();
     }
 
+    // ------------------------------------------------------------
+    // Choice list
+    // ------------------------------------------------------------
 
-    public void StartSequence(IList<ArticyObject> lines)
+    private void CreateChoice(Branch branch)
     {
-        if (flowPlayer == null || ui == null || lines == null || lines.Count == 0)
+        int slot = choiceItems.Count;
+
+        if (choiceRows == null || slot >= choiceRows.Length)
+        {
+            Debug.LogWarning("More choices than rows (max " + (choiceRows?.Length ?? 0) + ").");
             return;
+        }
 
-        currentBranches = null;
-        skipWhenBranchesArrive = false;
-        sequenceMode = true;
-        pendingLines = new Queue<ArticyObject>(lines);
-
-        ui.OpenArticyDialogueUI();
-        PlayNextQueued();
+        choiceRows[slot].Assign(branch);
+        choiceItems.Add(choiceRows[slot]);
     }
 
-    private bool PlayNextQueued()
+    private void RefreshSelection()
     {
-        if (pendingLines == null || pendingLines.Count == 0)
-            return false;
-
-        flowPlayer.StartOn = pendingLines.Dequeue();
-        return true;
+        for (int i = 0; i < choiceItems.Count; i++)
+            choiceItems[i].SetSelected(i == selectedIndex);
     }
 
+    private void ClearChoices()
+    {
+        choicesShowing = false;
+        choiceItems.Clear();
+        selectedIndex = 0;
+
+        if (choiceRows == null) return;
+
+        foreach (var row in choiceRows)
+            if (row != null) row.Clear();
+    }
 }

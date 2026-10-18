@@ -77,7 +77,7 @@ public class Player : MonoBehaviour
             }
         };
 
-        input.Player.Attack.performed += ctx => stateMachine.ChangeState(basicAttackState);
+        //input.Player.Attack.performed += ctx => stateMachine.ChangeState(basicAttackState);
 
         input.Player.Hotbar1.performed += ctx => inventory.SelectHotbarSlot(0);
         input.Player.Hotbar2.performed += ctx => inventory.SelectHotbarSlot(1);
@@ -239,6 +239,23 @@ public class Player : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        IInteractable interactable = collision.collider.GetComponentInParent<IInteractable>();
+        if (interactable != null)
+        {
+            currentInteractable = interactable;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        IInteractable interactable = collision.collider.GetComponentInParent<IInteractable>();
+        if (interactable != null && currentInteractable == interactable)
+        {
+            currentInteractable = null;
+        }
+    }
 
 
     private void DropSelectedItem()

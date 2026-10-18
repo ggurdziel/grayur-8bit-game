@@ -5,6 +5,9 @@ public class Object_NPC : MonoBehaviour, IInteractable
 {
     [Header("Dialogue")]
     [SerializeField] private ArticyRef articyDialogue;
+    [Tooltip("Other conversation starts. Each talk plays the next one.")]
+    [SerializeField] private ArticyRef[] extraDialogues;
+    [SerializeField] private bool randomOrder = false;
 
     [Header("Wandering")]
     [SerializeField] private bool canWander = true;
@@ -35,10 +38,10 @@ public class Object_NPC : MonoBehaviour, IInteractable
     private bool isInCutscene = false;
     private int scheduleIndex = 0;
     private float lastFlipTime;
+    private int nextDialogue;
 
     protected virtual void Awake()
     {
-        dialogueManager = FindFirstObjectByType<DialogueManager>();
         npcInventory = GetComponent<Inventory_NPC>();
 
         rb = GetComponent<Rigidbody2D>();
@@ -64,12 +67,27 @@ public class Object_NPC : MonoBehaviour, IInteractable
         UpdateAnimation();
     }
 
+    private void FixedUpdate()
+    {
+        if (!canWander || isInCutscene)
+            return;
+
+        SetVelocity(moveDir * moveSpeed);
+    }
+
+    // Safe for static bodies (no error spam).
+    private void SetVelocity(Vector2 v)
+    {
+        if (rb == null || rb.bodyType == RigidbodyType2D.Static)
+            return;
+
+        rb.linearVelocity = v;
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (IsInBuildingLayer(collision.gameObject))
-        {
             FlipDirection();
-        }
     }
 
     private bool IsInBuildingLayer(GameObject obj)
@@ -89,11 +107,10 @@ public class Object_NPC : MonoBehaviour, IInteractable
 
         moveDir = -moveDir;
 
-        if (rb != null)
-        {
-            rb.linearVelocity = moveDir * moveSpeed;
+        SetVelocity(moveDir * moveSpeed);
+
+        if (rb != null && rb.bodyType != RigidbodyType2D.Static)
             rb.MovePosition(rb.position + moveDir * 0.05f);
-        }
 
         UpdateAnimation();
     }
@@ -104,37 +121,14 @@ public class Object_NPC : MonoBehaviour, IInteractable
 
         switch (scheduleIndex % 8)
         {
-            case 0:
-                StartWalking(Vector2.right);
-                break;
-
-            case 1:
-                StartIdle();
-                break;
-
-            case 2:
-                StartWalking(Vector2.up);
-                break;
-
-            case 3:
-                StartIdle();
-                break;
-
-            case 4:
-                StartWalking(Vector2.left);
-                break;
-
-            case 5:
-                StartIdle();
-                break;
-
-            case 6:
-                StartWalking(Vector2.down);
-                break;
-
-            case 7:
-                StartIdle();
-                break;
+            case 0: StartWalking(Vector2.right); break;
+            case 1: StartIdle(); break;
+            case 2: StartWalking(Vector2.up); break;
+            case 3: StartIdle(); break;
+            case 4: StartWalking(Vector2.left); break;
+            case 5: StartIdle(); break;
+            case 6: StartWalking(Vector2.down); break;
+            case 7: StartIdle(); break;
         }
     }
 
@@ -144,8 +138,7 @@ public class Object_NPC : MonoBehaviour, IInteractable
         moveDir = Vector2.zero;
         timer = Random.Range(minIdleTime, maxIdleTime);
 
-        if (rb != null)
-            rb.linearVelocity = Vector2.zero;
+        SetVelocity(Vector2.zero);
     }
 
     private void StartWalking(Vector2 direction)
@@ -189,9 +182,7 @@ public class Object_NPC : MonoBehaviour, IInteractable
         moveDir = Vector2.zero;
         isIdle = true;
 
-        if (rb != null)
-            rb.linearVelocity = Vector2.zero;
-
+        SetVelocity(Vector2.zero);
         UpdateAnimation();
     }
 
@@ -201,12 +192,32 @@ public class Object_NPC : MonoBehaviour, IInteractable
         StartIdle();
     }
 
-    private void FixedUpdate()
+    // Picks which conversation start to use this time.
+    private ArticyObject PickDialogue()
     {
-        if (!canWander || isInCutscene || rb == null)
-            return;
+        int total = 1 + (extraDialogues != null ? extraDialogues.Length : 0);
 
-        rb.linearVelocity = moveDir * moveSpeed;
+        for (int tries = 0; tries < total; tries++)
+        {
+            int i;
+
+            if (randomOrder)
+            {
+                i = Random.Range(0, total);
+            }
+            else
+            {
+                i = nextDialogue % total;
+                nextDialogue++;
+            }
+
+            ArticyRef r = (i == 0) ? articyDialogue : extraDialogues[i - 1];
+
+            if (r.HasReference)
+                return r.GetObject();
+        }
+
+        return null;
     }
 
     public virtual void Interact(Player player)
@@ -235,13 +246,17 @@ public class Object_NPC : MonoBehaviour, IInteractable
             }
         }
 
+        // Looked up now, so it can never be a stale reference from another scene.
+        if (dialogueManager == null)
+            dialogueManager = FindFirstObjectByType<DialogueManager>(FindObjectsInactive.Include);
+
         if (dialogueManager == null)
         {
             Debug.LogError("DialogueManager not found in scene.");
             return;
         }
 
-        ArticyObject dialogueStart = articyDialogue.GetObject();
+        ArticyObject dialogueStart = PickDialogue();
 
         if (dialogueStart == null)
         {

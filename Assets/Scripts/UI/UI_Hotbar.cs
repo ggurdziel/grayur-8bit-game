@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UI_Hotbar : MonoBehaviour
 {
@@ -11,32 +12,37 @@ public class UI_Hotbar : MonoBehaviour
         uiItemSlots = GetComponentsInChildren<UI_ItemSlot>(true);
     }
 
-    private void Start()
+    private void OnEnable()
     {
+        SceneManager.sceneLoaded += OnSceneLoaded;
         ConnectToInventory();
     }
 
-    private void OnDestroy()
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+        Disconnect();
+    }
+
+    private void OnSceneLoaded(Scene s, LoadSceneMode m) => ConnectToInventory();
+
+    private void Disconnect()
     {
         if (inventory != null)
-        {
             inventory.OnInventoryChange -= UpdateInventorySlots;
-        }
     }
 
     private void ConnectToInventory()
     {
-        inventory = FindFirstObjectByType<Inventory_Player>();
+        Disconnect();
 
-        if (inventory == null)
-        {
-            Debug.LogError("UI_Inventory: Inventory_Player reference is missing.");
-            return;
-        }
+        inventory = Player.instance != null
+            ? Player.instance.GetComponent<Inventory_Player>()
+            : FindFirstObjectByType<Inventory_Player>();
 
-        inventory.OnInventoryChange -= UpdateInventorySlots;
+        if (inventory == null) return;
+
         inventory.OnInventoryChange += UpdateInventorySlots;
-
         UpdateInventorySlots();
     }
 
