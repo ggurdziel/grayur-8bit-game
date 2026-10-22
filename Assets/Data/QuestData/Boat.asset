@@ -14,11 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questSaveId: 93b257be46ea9654092b534c63167027
   questType: 3
-  questName: Boat
-  description: 
-  questGoal: 
+  questName: Building a Boat
+  description: Marie must collect items for the boat building competition.
+  questGoal: 'Retrieve 3 items: Canvas, Wood, and Rope from the villagers around
+    town and give them to Max at the beach.'
   questTargetId: 
   requiredAmount: 1
   itemToCollect: {fileID: 11400000, guid: fd4674b4041466a44adfb1e641957c07, type: 2}
   rewardType: 1
   rewardItems: []
+  turnInNpcId: boat
+  requiredItems:
+  - {fileID: 11400000, guid: fd4674b4041466a44adfb1e641957c07, type: 2}
+  - {fileID: 11400000, guid: 3a4973012121e2f4189d2aa002f0a8b1, type: 2}
+  - {fileID: 11400000, guid: 7e08ccaf087d4124b96960cf40a8e499, type: 2}

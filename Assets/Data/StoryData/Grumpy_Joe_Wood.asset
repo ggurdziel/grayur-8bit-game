@@ -10,21 +10,36 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a4cd20eaf2c0ffd458d7767207b35c3a, type: 3}
-  m_Name: Scene1_Wakeup
+  m_Name: Grumpy_Joe_Wood
   m_EditorClassIdentifier: 
   dialogue:
     instanceId: 0
     referencingMode: 0
-    lowId: 426
+    lowId: 676
     highId: 16777216
+  dialogueEnd:
+    instanceId: 0
+    referencingMode: 0
+    lowId: 0
+    highId: 0
   lineSequence: []
-  isCutscene: 1
-  requiredFlags: []
-  forbiddenFlags: []
+  isCutscene: 0
+  requiredFlags:
+  - quest.Boat.started
+  forbiddenFlags:
+  - quest.Boat.done
   turnInItem: {fileID: 0}
-  flagsToSet:
-  - scene1.done
-  questToStart: {fileID: 11400000, guid: 93b257be46ea9654092b534c63167027, type: 2}
+  turnInQuest: {fileID: 0}
+  flagsToSet: []
+  questToStart: {fileID: 0}
   questToComplete: {fileID: 0}
-  itemsToGive: []
+  itemsToGive:
+  - stackSize: 1
+    itemData: {fileID: 11400000, guid: 3a4973012121e2f4189d2aa002f0a8b1, type: 2}
   repeatable: 0
+  successNodes:
+  - instanceId: 0
+    referencingMode: 0
+    lowId: 738
+    highId: 16777216
+  flagsToSetAlways: []

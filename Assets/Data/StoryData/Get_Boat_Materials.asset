@@ -10,18 +10,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a4cd20eaf2c0ffd458d7767207b35c3a, type: 3}
-  m_Name: Scene3_Beach
+  m_Name: Get_Boat_Materials
   m_EditorClassIdentifier: 
   dialogue:
     instanceId: 0
     referencingMode: 0
-    lowId: 513
+    lowId: 426
     highId: 16777216
-  requiredFlags:
-  - quest.FindItems.done
+  dialogueEnd:
+    instanceId: 0
+    referencingMode: 0
+    lowId: 0
+    highId: 0
+  lineSequence: []
+  isCutscene: 1
+  requiredFlags: []
   forbiddenFlags: []
+  turnInItem: {fileID: 0}
   turnInQuest: {fileID: 0}
-  flagsToSet:
-  - scene3.done
-  questToStart: {fileID: 0}
+  flagsToSet: []
+  questToStart: {fileID: 11400000, guid: 93b257be46ea9654092b534c63167027, type: 2}
+  questToComplete: {fileID: 0}
+  itemsToGive: []
   repeatable: 0
+  successNodes: []
+  flagsToSetAlways: []

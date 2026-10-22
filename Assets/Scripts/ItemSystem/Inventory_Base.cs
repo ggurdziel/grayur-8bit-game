@@ -12,7 +12,6 @@ public class Inventory_Base : MonoBehaviour
     [SerializeField] private int hotbarSize = 5;
     public int SelectedHotbarIndex { get; private set; } = 0;
 
-
     private void Awake()
     {
         InitializeSlots();
@@ -21,11 +20,10 @@ public class Inventory_Base : MonoBehaviour
     private void InitializeSlots()
     {
         while (itemList.Count < maxInventorySize)
-        {
             itemList.Add(null);
-        }
     }
 
+    // Adds a fresh copy so the beat/quest asset's item is never shared.
     public bool GiveItem(Inventory_Item template)
     {
         if (!CanAddItem(template)) return false;
@@ -54,7 +52,51 @@ public class Inventory_Base : MonoBehaviour
             if (itemList[i] == null)
             {
                 itemList[i] = item;
-                Debug.Log($"AddItem: placed {item.itemData.itemName} at index {i} on {name} (id {GetInstanceID()}), subscribers={(OnInventoryChange == null ? 0 : OnInventoryChange.GetInvocationList().Length)}");
+                NotifyInventoryChanged();
+                return;
+            }
+        }
+    }
+
+    // True if every item in the list is held (one slot per entry).
+    public bool HasItems(ItemDataSO[] required)
+    {
+        if (required == null) return true;
+
+        var used = new HashSet<int>();
+
+        foreach (var data in required)
+        {
+            if (data == null) continue;
+
+            bool found = false;
+
+            for (int i = 0; i < itemList.Count; i++)
+            {
+                if (!used.Contains(i) && itemList[i] != null && itemList[i].itemData == data)
+                {
+                    used.Add(i);
+                    found = true;
+                    break;
+                }
+            }
+
+            if (!found) return false;
+        }
+
+        return true;
+    }
+
+    // Removes the first slot holding this item type.
+    public void RemoveItemData(ItemDataSO data)
+    {
+        if (data == null) return;
+
+        for (int i = 0; i < itemList.Count; i++)
+        {
+            if (itemList[i] != null && itemList[i].itemData == data)
+            {
+                itemList[i] = null;
                 NotifyInventoryChanged();
                 return;
             }
@@ -116,8 +158,6 @@ public class Inventory_Base : MonoBehaviour
 
     public void SwapItems(int fromIndex, int toIndex)
     {
-        Debug.Log("SwapItems called: " + fromIndex + " -> " + toIndex);
-
         if (fromIndex < 0 || toIndex < 0)
             return;
 
@@ -130,13 +170,6 @@ public class Inventory_Base : MonoBehaviour
         Inventory_Item temp = itemList[fromIndex];
         itemList[fromIndex] = itemList[toIndex];
         itemList[toIndex] = temp;
-
-        Debug.Log(
-            "After swap: index " + fromIndex + " = " +
-            (itemList[fromIndex] == null ? "null" : itemList[fromIndex].itemData.itemName) +
-            " | index " + toIndex + " = " +
-            (itemList[toIndex] == null ? "null" : itemList[toIndex].itemData.itemName)
-        );
 
         NotifyInventoryChanged();
     }

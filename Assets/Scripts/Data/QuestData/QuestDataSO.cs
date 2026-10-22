@@ -25,6 +25,10 @@ public class QuestDataSO : ScriptableObject
     public RewardType rewardType;
     public Inventory_Item[] rewardItems;
 
+    [Tooltip("Must match the Npc Id on the NPC who receives the items.")]
+    public string turnInNpcId;
+    public ItemDataSO[] requiredItems;
+
     private void OnValidate()
     {
 #if UNITY_EDITOR

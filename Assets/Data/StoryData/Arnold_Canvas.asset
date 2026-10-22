@@ -17,6 +17,11 @@ MonoBehaviour:
     referencingMode: 0
     lowId: 795
     highId: 16777216
+  dialogueEnd:
+    instanceId: 0
+    referencingMode: 0
+    lowId: 0
+    highId: 0
   lineSequence: []
   isCutscene: 0
   requiredFlags:
@@ -24,6 +29,7 @@ MonoBehaviour:
   forbiddenFlags:
   - quest.Boat.done
   turnInItem: {fileID: 0}
+  turnInQuest: {fileID: 0}
   flagsToSet: []
   questToStart: {fileID: 0}
   questToComplete: {fileID: 0}
@@ -31,3 +37,9 @@ MonoBehaviour:
   - stackSize: 1
     itemData: {fileID: 11400000, guid: fd4674b4041466a44adfb1e641957c07, type: 2}
   repeatable: 0
+  successNodes:
+  - instanceId: 0
+    referencingMode: 0
+    lowId: 1759
+    highId: 16777216
+  flagsToSetAlways: []

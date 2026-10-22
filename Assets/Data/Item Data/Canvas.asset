@@ -10,9 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d5639f7f703b1cb4b89f78aae671b8af, type: 3}
-  m_Name: Material data - Rock
+  m_Name: Canvas
   m_EditorClassIdentifier: 
-  itemName: Rock
-  itemIcon: {fileID: -7957652584325686945, guid: 0596f3c6f19d7444db8da1138713e035, type: 3}
+  minStackSizeToGive: 1
+  maxStackSizeToGive: 10
+  itemName: Canvas
+  itemIcon: {fileID: 5702301827914847618, guid: 0596f3c6f19d7444db8da1138713e035, type: 3}
   itemType: 0
-  worldPrefab: {fileID: 8990673208064962239, guid: 6a49783e39e34ff488b69dfa03188532, type: 3}
+  worldPrefab: {fileID: 0}

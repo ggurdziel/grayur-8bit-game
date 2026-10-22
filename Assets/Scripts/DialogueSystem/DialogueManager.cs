@@ -19,7 +19,7 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
     [Header("Choices")]
     [SerializeField] private BranchChoice[] choiceRows;
     private readonly List<BranchChoice> choiceItems = new List<BranchChoice>();
-    
+
     [Header("Portraits")]
     [SerializeField] private PortraitDatabaseSO portraitDatabase;
 
@@ -34,6 +34,10 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
     private Queue<ArticyObject> pendingLines;
     private bool sequenceMode;
     private bool dialogueActive;
+
+    private ArticyObject endNode;
+    private bool atEndNode;
+    private readonly HashSet<string> visited = new HashSet<string>();
 
     private void Awake()
     {
@@ -58,13 +62,17 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
         skipWhenBranchesArrive = false;
         sequenceMode = false;
         pendingLines = null;
+        atEndNode = false;
+        endNode = null;
     }
 
     // ------------------------------------------------------------
     // Starting dialogue
     // ------------------------------------------------------------
 
-    public void StartDialogue(ArticyObject dialogueStart)
+    // Plays an Articy flow from dialogueStart. If dialogueEnd is given,
+    // the flow stops after that line, even if the graph continues.
+    public void StartDialogue(ArticyObject dialogueStart, ArticyObject dialogueEnd = null)
     {
         EnsureUI();
 
@@ -75,6 +83,8 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
         RefreshChoiceRows();
         ClearChoices();
         ResetState();
+        visited.Clear();
+        endNode = dialogueEnd;
         dialogueActive = true;
 
         ui.OpenArticyDialogueUI();
@@ -92,6 +102,7 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
         RefreshChoiceRows();
         ClearChoices();
         ResetState();
+        visited.Clear();
         dialogueActive = true;
         sequenceMode = true;
         pendingLines = new Queue<ArticyObject>(lines);
@@ -118,6 +129,14 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
             a.transform.GetSiblingIndex().CompareTo(b.transform.GetSiblingIndex()));
     }
 
+    private bool IsEndNode(IFlowObject o)
+    {
+        if (endNode == null) return false;
+
+        var a = o as ArticyObject;
+        return a != null && a.Id == endNode.Id;   // use TechnicalName if Id doesn't compile
+    }
+
     // ------------------------------------------------------------
     // Articy callbacks
     // ------------------------------------------------------------
@@ -126,6 +145,11 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
     {
         if (!dialogueActive || aObject == null)
             return;
+
+        atEndNode = IsEndNode(aObject);
+
+        var node = aObject as ArticyObject;
+        if (node != null) visited.Add(node.Id.ToString());
 
         var withText = aObject as IObjectWithLocalizableText;
 
@@ -158,6 +182,22 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
         dialogueUI.ShowArticyLine(speakerName, speakerPortrait, withText.Text);
     }
 
+    public bool HasVisited(ArticyObject node)
+    {
+        return node != null && visited.Contains(node.Id.ToString());
+    }
+
+    public bool HasVisitedAny(IEnumerable<ArticyRef> nodes)
+    {
+        if (nodes == null) return false;
+
+        foreach (var r in nodes)
+            if (r.HasReference && HasVisited(r.GetObject()))
+                return true;
+
+        return false;
+    }
+
     public void OnBranchesUpdated(IList<Branch> aBranches)
     {
         if (!dialogueActive)
@@ -171,7 +211,11 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
         {
             skipWhenBranchesArrive = false;
 
-            if (sequenceMode)
+            if (atEndNode)
+            {
+                EndDialogue();
+            }
+            else if (sequenceMode)
             {
                 if (!PlayNextQueued())
                     EndDialogue();
@@ -188,7 +232,10 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
             return;
         }
 
-        // Several valid options after a line = player choice.
+        // The end line shows normally; the next click closes. No choices after it.
+        if (atEndNode)
+            return;
+
         if (sequenceMode)
             return;
 
@@ -239,15 +286,19 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
     // Advancing, choosing, ending
     // ------------------------------------------------------------
 
-    // Called when the player clicks to advance.
     public void ContinueDialogue()
     {
         if (!dialogueActive || flowPlayer == null)
             return;
 
-        // While choices are on screen, only Up/Down/Enter move things on.
         if (choicesShowing)
             return;
+
+        if (atEndNode)
+        {
+            EndDialogue();
+            return;
+        }
 
         if (sequenceMode)
         {
@@ -265,7 +316,6 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
         flowPlayer.Play();
     }
 
-    // Moves the arrow. delta = -1 (up) or +1 (down).
     public void MoveSelection(int delta)
     {
         if (!choicesShowing || choiceItems.Count == 0)
@@ -275,13 +325,11 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
         RefreshSelection();
     }
 
-    // Picks the choice the arrow is on.
     public void ConfirmSelection()
     {
         if (!choicesShowing || choiceItems.Count == 0)
             return;
 
-        // Read the branch first: SelectBranch clears the list.
         Branch chosen = choiceItems[selectedIndex].Branch;
         SelectBranch(chosen);
     }

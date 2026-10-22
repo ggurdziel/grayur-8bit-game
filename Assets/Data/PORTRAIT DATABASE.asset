@@ -21,11 +21,11 @@ MonoBehaviour:
     portrait: {fileID: -5789503757890599708, guid: 73e2e566f29495f4ba5615f82e360fee, type: 3}
   - speakerName: Rosei Mille
     portrait: {fileID: 3506360460897579692, guid: cccd93a14b91b304e85d99e732db03fd, type: 3}
-  - speakerName: Joele
+  - speakerName: Joele Mille
     portrait: {fileID: 2093778467355629460, guid: 2591b4e52ea63e941bd6bf76262e3de5, type: 3}
   - speakerName: Grumpy Joe
     portrait: {fileID: -860137533073028710, guid: bae8c16a4dd575343bf7a342117be5bb, type: 3}
   - speakerName: Jane
     portrait: {fileID: -1653010947859602299, guid: 4852f9148e0baf3488283ded951902ce, type: 3}
-  - speakerName: Viola
+  - speakerName: Viola Earnest
     portrait: {fileID: 758314470101569973, guid: aa25c247e6c749a4cb2e98aee925d48e, type: 3}

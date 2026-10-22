@@ -107,4 +107,23 @@ public class QuestManager : MonoBehaviour
             }
         }
     }
+
+    // True if an active quest wants this item.
+    public bool IsQuestItem(ItemDataSO data, out QuestDataSO quest)
+    {
+        foreach (var q in questLookup.Values)
+        {
+            if (q.isCompleted || q.questData.requiredItems == null) continue;
+
+            if (System.Array.IndexOf(q.questData.requiredItems, data) >= 0)
+            {
+                quest = q.questData;
+                return true;
+            }
+        }
+
+        quest = null;
+        return false;
+    }
+
 }

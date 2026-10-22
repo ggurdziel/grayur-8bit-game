@@ -1,13 +1,24 @@
 using UnityEngine;
 using Articy.Unity;
+using System.Collections;
 
 public class Object_NPC : MonoBehaviour, IInteractable
 {
+    [Header("Identity")]
+    [Tooltip("Unique id, e.g. max, arnold. Quests use it to name who receives their items.")]
+    [SerializeField] private string npcId;
+    public string NpcId => npcId;
+
     [Header("Dialogue")]
     [SerializeField] private ArticyRef articyDialogue;
+    [SerializeField] private ArticyRef articyDialogueEnd;      // optional: flow stops after this line
     [Tooltip("Other conversation starts. Each talk plays the next one.")]
     [SerializeField] private ArticyRef[] extraDialogues;
+    [SerializeField] private ArticyRef[] extraDialogueEnds;    // same order as Extra Dialogues
     [SerializeField] private bool randomOrder = false;
+
+    [Header("Gifts")]
+    [SerializeField] private bool acceptsGifts = false;
 
     [Header("Wandering")]
     [SerializeField] private bool canWander = true;
@@ -192,29 +203,26 @@ public class Object_NPC : MonoBehaviour, IInteractable
         StartIdle();
     }
 
-    // Picks which conversation start to use this time.
-    private ArticyObject PickDialogue()
+    private ArticyObject PickDialogue(out ArticyObject end)
     {
-        int total = 1 + (extraDialogues != null ? extraDialogues.Length : 0);
+        end = null;
+        int extraCount = extraDialogues != null ? extraDialogues.Length : 0;
+        int total = 1 + extraCount;
 
         for (int tries = 0; tries < total; tries++)
         {
-            int i;
+            int i = randomOrder ? Random.Range(0, total) : nextDialogue++ % total;
 
-            if (randomOrder)
-            {
-                i = Random.Range(0, total);
-            }
-            else
-            {
-                i = nextDialogue % total;
-                nextDialogue++;
-            }
+            ArticyRef start = (i == 0) ? articyDialogue : extraDialogues[i - 1];
+            if (start == null || !start.HasReference) continue;
 
-            ArticyRef r = (i == 0) ? articyDialogue : extraDialogues[i - 1];
+            ArticyRef endRef = null;
+            if (i == 0) endRef = articyDialogueEnd;
+            else if (extraDialogueEnds != null && i - 1 < extraDialogueEnds.Length)
+                endRef = extraDialogueEnds[i - 1];
 
-            if (r.HasReference)
-                return r.GetObject();
+            if (endRef != null && endRef.HasReference) end = endRef.GetObject();
+            return start.GetObject();
         }
 
         return null;
@@ -227,15 +235,26 @@ public class Object_NPC : MonoBehaviour, IInteractable
         if (player == null)
             return;
 
-        Inventory_Player playerInventory = player.GetComponent<Inventory_Player>();
-
-        if (playerInventory != null)
+        // Gifts: only NPCs with "Accepts Gifts" ticked take the selected item,
+        // and quest items only go to the NPC their quest names.
+        if (acceptsGifts && npcInventory != null)
         {
-            Inventory_Item selectedItem = playerInventory.GetSelectedItem();
+            Inventory_Player playerInventory = player.GetComponent<Inventory_Player>();
+            Inventory_Item selectedItem = playerInventory != null ? playerInventory.GetSelectedItem() : null;
 
             if (selectedItem != null && selectedItem.itemData != null)
             {
-                if (npcInventory != null && npcInventory.CanAddItem(selectedItem))
+                bool wrongNpcForQuestItem = false;
+
+                if (QuestManager.Instance != null &&
+                    QuestManager.Instance.IsQuestItem(selectedItem.itemData, out QuestDataSO quest))
+                {
+                    wrongNpcForQuestItem = quest.turnInNpcId != npcId;
+                }
+
+                if (!wrongNpcForQuestItem &&
+                    npcInventory.CanAcceptItem(selectedItem) &&
+                    npcInventory.CanAddItem(selectedItem))
                 {
                     npcInventory.AddItem(selectedItem);
                     playerInventory.RemoveSelectedItem();
@@ -246,7 +265,6 @@ public class Object_NPC : MonoBehaviour, IInteractable
             }
         }
 
-        // Looked up now, so it can never be a stale reference from another scene.
         if (dialogueManager == null)
             dialogueManager = FindFirstObjectByType<DialogueManager>(FindObjectsInactive.Include);
 
@@ -256,7 +274,7 @@ public class Object_NPC : MonoBehaviour, IInteractable
             return;
         }
 
-        ArticyObject dialogueStart = PickDialogue();
+        ArticyObject dialogueStart = PickDialogue(out ArticyObject dialogueEnd);
 
         if (dialogueStart == null)
         {
@@ -264,6 +282,31 @@ public class Object_NPC : MonoBehaviour, IInteractable
             return;
         }
 
-        dialogueManager.StartDialogue(dialogueStart);
+        dialogueManager.StartDialogue(dialogueStart, dialogueEnd);
+    }
+
+    // Walks to a point during a cutscene, using the normal walk animation.
+    public IEnumerator WalkTo(Vector2 target, float speed)
+    {
+        isInCutscene = true;               // stops the wander schedule
+        SetVelocity(Vector2.zero);
+
+        while (this != null && Vector2.Distance(transform.position, target) > 0.05f)
+        {
+            Vector2 pos = transform.position;
+
+            moveDir = (target - pos).normalized;
+            isIdle = false;
+            UpdateAnimation();
+
+            transform.position = Vector2.MoveTowards(pos, target, speed * Time.deltaTime);
+            yield return null;
+        }
+
+        if (this == null) yield break;
+
+        moveDir = Vector2.zero;
+        isIdle = true;
+        UpdateAnimation();
     }
 }

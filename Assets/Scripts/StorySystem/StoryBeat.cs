@@ -6,6 +6,8 @@ public class StoryBeat : ScriptableObject
 {
     [Header("Dialogue")]
     public ArticyRef dialogue;
+    [Tooltip("Optional. The flow stops after this line.")]
+    public ArticyRef dialogueEnd;
 
     [Tooltip("Optional. If filled, these lines play in order and the " +
              "Articy connections between them are ignored.")]
@@ -23,6 +25,10 @@ public class StoryBeat : ScriptableObject
     [Tooltip("Player must have this item selected in the hotbar. It is removed when the beat plays.")]
     public ItemDataSO turnInItem;
 
+    [Tooltip("Plays only on the quest's turn-in NPC, while the quest is active and the player " +
+             "holds all of its required items. The items are removed and the quest completes.")]
+    public QuestDataSO turnInQuest;
+
     [Header("Outcomes (when dialogue ends)")]
     public string[] flagsToSet;
     public QuestDataSO questToStart;
@@ -31,6 +37,13 @@ public class StoryBeat : ScriptableObject
 
     [Tooltip("If false, the beat plays once and never again.")]
     public bool repeatable = false;
+
+    [Header("Success (optional)")]
+    [Tooltip("Rewards only happen if the dialogue passed through ANY of these lines. Empty = always succeeds.")]
+    public ArticyRef[] successNodes;
+
+    [Tooltip("Set when the dialogue ends, whether or not it succeeded. e.g. max.asked")]
+    public string[] flagsToSetAlways;
 
     private string PlayedFlag => "beat." + name + ".played";
 
@@ -45,13 +58,24 @@ public class StoryBeat : ScriptableObject
             return false;
         }
     }
+
+    private bool quiet;
+
+    public bool IsAvailable(Player player, Object_NPC npc = null)
+    {
+        quiet = true;
+        bool ok = CanPlay(player, npc);
+        quiet = false;
+        return ok;
+    }
+
     private bool Fail(string reason)
     {
-        Debug.Log($"Beat '{name}' blocked: {reason}");
+        if (!quiet) Debug.Log($"Beat '{name}' blocked: {reason}");
         return false;
     }
 
-    public bool CanPlay(Player player)
+    public bool CanPlay(Player player, Object_NPC npc = null)
     {
         var flags = StoryFlags.Instance;
 
@@ -72,6 +96,21 @@ public class StoryBeat : ScriptableObject
             var inv = player != null ? player.GetComponent<Inventory_Player>() : null;
             var sel = inv != null ? inv.GetSelectedItem() : null;
             if (sel == null || sel.itemData != turnInItem) return Fail("turn-in item not selected");
+        }
+
+        if (turnInQuest != null)
+        {
+            var qm = QuestManager.Instance;
+            var inv = player != null ? player.GetComponent<Inventory_Base>() : null;
+
+            if (qm == null || !qm.HasQuest(turnInQuest) || qm.IsQuestCompleted(turnInQuest))
+                return Fail("quest not active");
+
+            if (npc == null || npc.NpcId != turnInQuest.turnInNpcId)
+                return Fail("wrong NPC for quest");
+
+            if (inv == null || !inv.HasItems(turnInQuest.requiredItems))
+                return Fail("missing quest items");
         }
 
         if (itemsToGive != null && itemsToGive.Length > 0)
@@ -99,9 +138,6 @@ public class StoryBeat : ScriptableObject
              CutsceneManager.Instance.IsInCutscene))
             return false;
 
-        if (turnInItem != null && player != null)
-            player.GetComponent<Inventory_Player>().RemoveSelectedItem();
-
         if (isCutscene)
         {
             CutsceneManager.Instance.StartCutscene(participants);
@@ -113,10 +149,18 @@ public class StoryBeat : ScriptableObject
         }
 
         System.Action onEnded = null;
-        onEnded = () =>
+        onEnded = () =>  
         {
             dialogueManager.DialogueEnded -= onEnded;
-            ApplyOutcomes();
+
+            bool hasNodes = false;
+            if (successNodes != null)
+                foreach (var r in successNodes)
+                    if (r.HasReference) { hasNodes = true; break; }
+
+            bool success = !hasNodes || dialogueManager.HasVisitedAny(successNodes);
+
+            ApplyOutcomes(success, player);
 
             if (isCutscene)
             {
@@ -141,15 +185,33 @@ public class StoryBeat : ScriptableObject
         }
         else
         {
-            dialogueManager.StartDialogue(dialogue.GetObject());
+            dialogueManager.StartDialogue(dialogue.GetObject(), dialogueEnd.HasReference ? dialogueEnd.GetObject() : null);
         }
 
         return true;
     }
 
-    private void ApplyOutcomes()
+    private void ApplyOutcomes(bool success, Player player)
     {
         var flags = StoryFlags.Instance;
+
+        foreach (string f in flagsToSetAlways)
+            flags.Set(f);
+
+        if (!success)
+        {
+            Debug.Log($"Beat '{name}' ended without success; it will play again.");
+            return;
+        }
+
+        var inv = player != null ? player.GetComponent<Inventory_Base>() : null;
+
+        if (turnInItem != null && player != null)
+            player.GetComponent<Inventory_Player>().RemoveSelectedItem();
+
+        if (turnInQuest != null && inv != null && turnInQuest.requiredItems != null)
+            foreach (var data in turnInQuest.requiredItems)
+                if (data != null) inv.RemoveItemData(data);
 
         if (!repeatable)
             flags.Set(PlayedFlag);
@@ -157,32 +219,17 @@ public class StoryBeat : ScriptableObject
         foreach (string f in flagsToSet)
             flags.Set(f);
 
-        Debug.Log($"[ApplyOutcomes] itemsToGive = {(itemsToGive == null ? "null" : itemsToGive.Length.ToString())}");
+        if (itemsToGive != null && inv != null)
+            foreach (var item in itemsToGive)
+                if (item != null) inv.GiveItem(item);
 
-        if (itemsToGive != null && itemsToGive.Length > 0)
-        {
-            var p = Object.FindFirstObjectByType<Player>();
-            var inv = p != null ? p.GetComponent<Inventory_Base>() : null;
-
-            Debug.Log($"[ApplyOutcomes] player={(p != null)}, inventory={(inv != null)}");
-
-            if (inv != null)
-            {
-                foreach (var item in itemsToGive)
-                {
-                    string name = item == null ? "NULL ENTRY" : item.itemData == null ? "NO ITEMDATA" : item.itemData.itemName;
-                    Debug.Log($"[ApplyOutcomes] giving: {name}, canAdd={(item != null && inv.CanAddItem(item))}");
-
-                    if (item != null) inv.AddItem(item);
-                }
-            }
-        }
-
-        if (questToStart != null &&
-            !QuestManager.Instance.HasQuest(questToStart))
+        if (questToStart != null && !QuestManager.Instance.HasQuest(questToStart))
             QuestManager.Instance.StartQuest(questToStart);
 
         if (questToComplete != null)
             QuestManager.Instance.CompleteQuest(questToComplete);
+
+        if (turnInQuest != null)
+            QuestManager.Instance.CompleteQuest(turnInQuest);
     }
 }

@@ -47,4 +47,10 @@ public class ScreenFader : MonoBehaviour
 
         fadeGroup.alpha = 0f;
     }
+
+    public void SetBlack()
+    {
+        StopAllCoroutines();
+        fadeGroup.alpha = 1f;
+    }
 }

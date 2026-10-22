@@ -5,22 +5,23 @@ public static class StoryDirector
     public static bool TryPlayFirst(
         IEnumerable<StoryBeat> beats,
         Player player,
-        Object_NPC[] participants)
+        Object_NPC[] participants,
+        Object_NPC npc = null)
     {
-        var dm = UnityEngine.Object.FindFirstObjectByType<DialogueManager>();
+        var dm = UnityEngine.Object.FindFirstObjectByType<DialogueManager>(
+            UnityEngine.FindObjectsInactive.Include);
+
+        if (beats == null)
+            return false;
 
         foreach (StoryBeat beat in beats)
         {
             if (beat == null) continue;
 
-            bool ok = beat.CanPlay(player);
-            UnityEngine.Debug.Log($"Beat '{beat.name}' can play: {ok}");
-
-            if (ok)
+            if (beat.CanPlay(player, npc))
                 return beat.Play(player, dm, participants);
         }
 
-        UnityEngine.Debug.Log("No beat matched, falling back to idle dialogue.");
         return false;
     }
 }
