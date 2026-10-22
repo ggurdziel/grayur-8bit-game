@@ -50,6 +50,7 @@ public class Object_NPC : MonoBehaviour, IInteractable
     private int scheduleIndex = 0;
     private float lastFlipTime;
     private int nextDialogue;
+    private bool frozenByDialogue;
 
     protected virtual void Awake()
     {
@@ -67,13 +68,37 @@ public class Object_NPC : MonoBehaviour, IInteractable
 
     private void Update()
     {
-        if (!canWander || isInCutscene)
+        if (isInCutscene)            // cutscenes move NPCs themselves via WalkTo
+            return;
+
+        if (DialogueManager.IsDialogueOpen)
+        {
+            if (!frozenByDialogue)
+            {
+                frozenByDialogue = true;
+                moveDir = Vector2.zero;
+                isIdle = true;
+                SetVelocity(Vector2.zero);
+                UpdateAnimation();
+            }
+            return;
+        }
+
+        if (frozenByDialogue)
+        {
+            frozenByDialogue = false;
+            StartIdle();             // resume with a short pause
+        }
+
+        if (!canWander)
             return;
 
         timer -= Time.deltaTime;
 
         if (timer <= 0)
+        {
             NextScheduleStep();
+        }
 
         UpdateAnimation();
     }
@@ -83,7 +108,15 @@ public class Object_NPC : MonoBehaviour, IInteractable
         if (!canWander || isInCutscene)
             return;
 
-        SetVelocity(moveDir * moveSpeed);
+        if (frozenByDialogue || DialogueManager.IsDialogueOpen)
+        {
+            return;
+        }
+
+        if (moveDir != Vector2.zero)
+        {
+            SetVelocity(moveDir * moveSpeed);
+        }
     }
 
     // Safe for static bodies (no error spam).

@@ -10,6 +10,9 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
 {
     public event Action DialogueEnded;
 
+    // True while any dialogue box is open. NPCs read this to stop wandering.
+    public static bool IsDialogueOpen { get; private set; }
+
     [Header("UI")]
     [SerializeField] private UI_Dialogue dialogueUI;
 
@@ -41,10 +44,18 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
 
     private void Awake()
     {
+        IsDialogueOpen = false;
+
         if (flowPlayer == null)
             flowPlayer = GetComponent<ArticyFlowPlayer>();
 
         EnsureUI();
+    }
+
+    private void OnDestroy()
+    {
+        // A scene change mid-dialogue must not leave NPCs frozen.
+        IsDialogueOpen = false;
     }
 
     private void EnsureUI()
@@ -86,6 +97,7 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
         visited.Clear();
         endNode = dialogueEnd;
         dialogueActive = true;
+        IsDialogueOpen = true;
 
         ui.OpenArticyDialogueUI();
         flowPlayer.StartOn = dialogueStart;
@@ -104,6 +116,7 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
         ResetState();
         visited.Clear();
         dialogueActive = true;
+        IsDialogueOpen = true;
         sequenceMode = true;
         pendingLines = new Queue<ArticyObject>(lines);
 
@@ -192,7 +205,7 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
         if (nodes == null) return false;
 
         foreach (var r in nodes)
-            if (r.HasReference && HasVisited(r.GetObject()))
+            if (r != null && r.HasReference && HasVisited(r.GetObject()))
                 return true;
 
         return false;
@@ -354,6 +367,7 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
             return;
 
         dialogueActive = false;
+        IsDialogueOpen = false;   // NPCs may move again
 
         ClearChoices();
         ResetState();
