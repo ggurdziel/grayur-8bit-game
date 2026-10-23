@@ -12,10 +12,11 @@ public class Player_MoveState : EntityState
     {
         base.Update();
 
+        // moveInput is always exactly up, down, left, right, or zero.
         Vector2 move = player.moveInput;
-        
+
         // If player is not moving at all, switch to idle
-        if (move.x == 0 && move.y == 0)
+        if (move == Vector2.zero)
         {
             player.SetVelocity(0, 0);
             stateMachine.ChangeState(player.idleState);
@@ -23,8 +24,6 @@ public class Player_MoveState : EntityState
         }
 
         player.UpdateAnimation(move);
-        
-        move = move.normalized;
 
         bool sprintingNow = player.isSprintHeld && player.canSprint;
         float currentSpeed = sprintingNow ? player.sprintSpeed : player.moveSpeed;

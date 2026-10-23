@@ -11,7 +11,7 @@ public class Player_IdleState : EntityState
     {
         base.Enter();
         
-        player.SetVelocity(0, rb.linearVelocity.y);
+        player.SetVelocity(0, 0);
     }
 
 

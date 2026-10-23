@@ -19,7 +19,11 @@ public class Player : MonoBehaviour
 
     private bool facingRight = false; // to keep track of which direction the player is facing
     public int facingDir { get; private set; } = -1; // 1 for right, -1 for left
+
+    // Always exactly up, down, left, right, or zero (never diagonal).
     public Vector2 moveInput { get; private set; }
+
+    private const float inputDeadzone = 0.3f;
 
 
     [Header ("Movement details")]
@@ -27,6 +31,8 @@ public class Player : MonoBehaviour
     public float sprintSpeed = 4f;
     public float maxSprintTime = 5f;
     public float sprintCooldown = 4f;
+    private static readonly string[] moveStates = { "playerMoveDown", "playerMoveSide", "playerMoveUp" };
+    private int lastAnimKey = -2;   // -1 = idle, 0/1/2 = direction
 
     public bool isSprintHeld { get; private set; }
     public bool canSprint => sprintCooldownTimer <= 0f && sprintTimeRemaining > 0f;
@@ -63,7 +69,7 @@ public class Player : MonoBehaviour
             return;
         input.Enable();
 
-        input.Player.Movement.performed += ctx => moveInput = ctx.ReadValue<Vector2>();
+        input.Player.Movement.performed += ctx => moveInput = ToCardinal(ctx.ReadValue<Vector2>());
         input.Player.Movement.canceled += ctx => moveInput = Vector2.zero;
         
         input.Player.Sprint.performed += ctx => isSprintHeld = true;
@@ -126,7 +132,39 @@ public class Player : MonoBehaviour
     {
         stateMachine.currentState.CallAnimationTrigger();
     }
-    
+
+
+    // Snaps any input to exactly one of: up, down, left, right, or zero.
+    // When two keys are held, the newer one wins, so you can turn without letting go.
+    private Vector2 ToCardinal(Vector2 raw)
+    {
+        float ax = Mathf.Abs(raw.x);
+        float ay = Mathf.Abs(raw.y);
+
+        if (ax < inputDeadzone && ay < inputDeadzone)
+            return Vector2.zero;
+
+        bool horizontal;
+
+        if (Mathf.Abs(ax - ay) < 0.1f)
+        {
+            // Diagonal: switch away from the axis we're already moving on.
+            bool wasHorizontal = Mathf.Abs(moveInput.x) > 0f;
+            bool wasVertical = Mathf.Abs(moveInput.y) > 0f;
+
+            if (wasHorizontal) horizontal = false;
+            else if (wasVertical) horizontal = true;
+            else horizontal = false;   // both pressed at once: prefer up/down
+        }
+        else
+        {
+            horizontal = ax > ay;
+        }
+
+        return horizontal
+            ? new Vector2(Mathf.Sign(raw.x), 0f)
+            : new Vector2(0f, Mathf.Sign(raw.y));
+    }
 
 
     public void SetVelocity(float xVelocity, float yVelocity)
@@ -201,22 +239,26 @@ public class Player : MonoBehaviour
         bool isMoving = move != Vector2.zero;
         anim.SetBool("move", isMoving);
 
-        if (!isMoving)
+        int dir = 1;                              // side
+        if (move.y > 0) dir = 2;                  // up
+        else if (move.y < 0) dir = 0;             // down
+
+        if (isMoving)
+        {
+            anim.SetInteger("direction", dir);
+        }
+
+        // Don't interrupt the throw clip.
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("playerThrow"))
             return;
 
-        // prioritize up/down over side
-        if (move.y > 0)
-        {
-            anim.SetInteger("direction", 2); // up
-        }
-        else if (move.y < 0)
-        {
-            anim.SetInteger("direction", 0); // down
-        }
-        else
-        {
-            anim.SetInteger("direction", 1); // side
-        }
+        // Only jump clips when what we should be showing actually changes.
+        int key = isMoving ? dir : -1;
+        if (key == lastAnimKey)
+            return;
+
+        lastAnimKey = key;
+        anim.Play(isMoving ? moveStates[dir] : "playerIdle", 0, 0f);
     }
 
 
