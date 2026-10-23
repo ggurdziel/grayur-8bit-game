@@ -1,6 +1,5 @@
 using TMPro;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
@@ -10,7 +9,7 @@ public class UI_Dialogue : MonoBehaviour
     [SerializeField] private Image speakerPortrait;
     [SerializeField] private TextMeshProUGUI speakerName;
     [SerializeField] private TextMeshProUGUI dialogueText;
-    [SerializeField] private TextMeshProUGUI dialogueChoices;
+    [SerializeField] private TMP_Text promptText;
 
     private UI ui;
     private DialogueManager dialogueManager;
@@ -36,41 +35,23 @@ public class UI_Dialogue : MonoBehaviour
 
         var kb = Keyboard.current;
 
-        if (kb != null)
+        if (kb == null) return;
+
+        if (kb.upArrowKey.wasPressedThisFrame || kb.wKey.wasPressedThisFrame)
+            dm.MoveSelection(-1);
+
+        if (kb.downArrowKey.wasPressedThisFrame || kb.sKey.wasPressedThisFrame)
         {
-            if (kb.upArrowKey.wasPressedThisFrame || kb.wKey.wasPressedThisFrame)
-                dm.MoveSelection(-1);
-
-            if (kb.downArrowKey.wasPressedThisFrame || kb.sKey.wasPressedThisFrame)
-                dm.MoveSelection(1);
-
-            if (kb.enterKey.wasPressedThisFrame || kb.numpadEnterKey.wasPressedThisFrame)
-                dm.ConfirmSelection();
+            dm.MoveSelection(1);
         }
-
-        if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
-        {
-            dm.ContinueDialogue();
-        }
-    }
-
-    private void ContinueDialogue()
-    {
-        var dm = GetDialogueManager();
-
-        if (dm == null)
-        {
-            Debug.LogError("DialogueManager not found.");
-            return;
-        }
-
-        dm.ContinueDialogue();
+        if (kb.spaceKey.wasPressedThisFrame)
+            dm.PressConfirm();
     }
 
     public void SetPrompt(string text)
     {
-        if (dialogueChoices != null)
-            dialogueChoices.text = text ?? "";
+        if (promptText != null)
+            promptText.text = text;
     }
 
     public void ShowArticyLine(string speaker, Sprite portrait, string text)
@@ -89,7 +70,6 @@ public class UI_Dialogue : MonoBehaviour
         }
 
         dialogueText.text = text ?? "";
-        SetPrompt("Left click to continue");
     }
 
     public void EndArticyDialogue()

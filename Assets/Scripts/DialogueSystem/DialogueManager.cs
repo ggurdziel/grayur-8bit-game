@@ -13,6 +13,10 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
     // True while any dialogue box is open. NPCs read this to stop wandering.
     public static bool IsDialogueOpen { get; private set; }
 
+    // When the last dialogue closed. Player.cs uses this so the press that
+    // closes a dialogue can't immediately start it again.
+    public static float LastClosedTime { get; private set; } = -10f;
+
     [Header("UI")]
     [SerializeField] private UI_Dialogue dialogueUI;
 
@@ -41,6 +45,22 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
     private ArticyObject endNode;
     private bool atEndNode;
     private readonly HashSet<string> visited = new HashSet<string>();
+
+    // Space is both "Interact" and "Confirm": ignore confirm right after opening.
+    private float openedTime = -10f;
+    private const float openGuardSeconds = 0.2f;
+
+    private const string EnterHintFlag = "tutorial.hint.enter";
+    private const string ChoiceHintFlag = "tutorial.hint.choices";
+
+    private static bool Seen(string flag) =>
+        StoryFlags.Instance != null && StoryFlags.Instance.Has(flag);
+
+    private static void MarkSeen(string flag)
+    {
+        if (StoryFlags.Instance != null && !StoryFlags.Instance.Has(flag))
+            StoryFlags.Instance.Set(flag);
+    }
 
     private void Awake()
     {
@@ -98,6 +118,7 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
         endNode = dialogueEnd;
         dialogueActive = true;
         IsDialogueOpen = true;
+        openedTime = Time.unscaledTime;
 
         ui.OpenArticyDialogueUI();
         flowPlayer.StartOn = dialogueStart;
@@ -117,6 +138,7 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
         visited.Clear();
         dialogueActive = true;
         IsDialogueOpen = true;
+        openedTime = Time.unscaledTime;
         sequenceMode = true;
         pendingLines = new Queue<ArticyObject>(lines);
 
@@ -135,11 +157,21 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
 
     private void RefreshChoiceRows()
     {
-        choiceRows = FindObjectsByType<BranchChoice>(
-            FindObjectsInactive.Include, FindObjectsSortMode.None);
+        EnsureUI();
 
-        System.Array.Sort(choiceRows, (a, b) =>
-            a.transform.GetSiblingIndex().CompareTo(b.transform.GetSiblingIndex()));
+        if (dialogueUI != null)
+        {
+            // Only the rows that belong to the dialogue box we're showing.
+            choiceRows = dialogueUI.GetComponentsInChildren<BranchChoice>(true);
+        }
+        else
+        {
+            choiceRows = FindObjectsByType<BranchChoice>(
+                FindObjectsInactive.Include, FindObjectsSortMode.None);
+
+            System.Array.Sort(choiceRows, (a, b) =>
+                a.transform.GetSiblingIndex().CompareTo(b.transform.GetSiblingIndex()));
+        }
     }
 
     private bool IsEndNode(IFlowObject o)
@@ -193,6 +225,7 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
         }
 
         dialogueUI.ShowArticyLine(speakerName, speakerPortrait, withText.Text);
+        dialogueUI.SetPrompt(Seen(EnterHintFlag) ? "" : "Press Space to continue");
     }
 
     public bool HasVisited(ArticyObject node)
@@ -245,7 +278,7 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
             return;
         }
 
-        // The end line shows normally; the next click closes. No choices after it.
+        // The end line shows normally; the next press closes. No choices after it.
         if (atEndNode)
             return;
 
@@ -261,19 +294,24 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
         bool isChoice = options.Count > 1 ||
             (options.Count == 1 && !string.IsNullOrEmpty(GetMenuText(options[0])));
 
-        if (isChoice)
-        {
-            foreach (Branch b in options)
-                CreateChoice(b);
+        if (!isChoice)
+            return;
 
-            if (choiceItems.Count > 0)
-            {
-                choicesShowing = true;
-                selectedIndex = 0;
-                RefreshSelection();
-                dialogueUI?.SetPrompt("");
-            }
+        foreach (Branch b in options)
+            CreateChoice(b);
+
+        if (choiceItems.Count == 0)
+        {
+            // Wait here instead of letting a press auto-pick a branch.
+            Debug.LogError("[Dialogue] A choice was expected but no choice rows were found. " +
+                           "Check the BranchChoice rows under UI_Dialogue.");
+            return;
         }
+
+        choicesShowing = true;
+        selectedIndex = 0;
+        RefreshSelection();
+        dialogueUI?.SetPrompt(Seen(ChoiceHintFlag) ? "" : "Up/Down to choose, Space to confirm");
     }
 
     private static bool HasValidBranch(IList<Branch> branches)
@@ -298,6 +336,24 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
     // ------------------------------------------------------------
     // Advancing, choosing, ending
     // ------------------------------------------------------------
+
+    // Space: picks the highlighted choice if choices are showing, otherwise advances.
+    public void PressConfirm()
+    {
+        // The press that opened the dialogue must not also act inside it.
+        if (Time.unscaledTime - openedTime < openGuardSeconds)
+            return;
+
+        if (choicesShowing)
+        {
+            ConfirmSelection();
+        }
+        else
+        {
+            MarkSeen(EnterHintFlag);
+            ContinueDialogue();
+        }
+    }
 
     public void ContinueDialogue()
     {
@@ -343,6 +399,8 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
         if (!choicesShowing || choiceItems.Count == 0)
             return;
 
+        MarkSeen(ChoiceHintFlag);
+
         Branch chosen = choiceItems[selectedIndex].Branch;
         SelectBranch(chosen);
     }
@@ -356,7 +414,7 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
         currentBranches = null;
 
         if (dialogueUI != null)
-            dialogueUI.SetPrompt("Left click to continue");
+            dialogueUI.SetPrompt("");
 
         flowPlayer.Play(branch);
     }
@@ -367,7 +425,8 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
             return;
 
         dialogueActive = false;
-        IsDialogueOpen = false;   // NPCs may move again
+        IsDialogueOpen = false;               // NPCs may move again
+        LastClosedTime = Time.unscaledTime;   // Player.cs ignores Interact for a moment
 
         ClearChoices();
         ResetState();
