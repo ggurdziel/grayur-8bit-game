@@ -1,10 +1,11 @@
+using Unity.Cinemachine;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using Articy.Unity;
 using UnityEngine;
 
-public enum CutsceneStepType { Dialogue, FadeOut, FadeIn, Wait, MoveActor, SetActive, SetFlag, SnapBlack, StartQuest, WaitForBackground, GiveItem }
+public enum CutsceneStepType { Dialogue, FadeOut, FadeIn, Wait, MoveActor, SetActive, SetFlag, SnapBlack, StartQuest, WaitForBackground, GiveItem, PanCamera, ResetCamera }
 
 public enum MoveDir { Left, Right, Up, Down }
 
@@ -44,6 +45,12 @@ public class CutsceneStep
     [Header("Wait")]
     public float seconds = 1f;
 
+    [Header("Fade (FadeOut / FadeIn / SnapBlack)")]
+    [Tooltip("Optional. FadeOut and SnapBlack show this picture over the black.")]
+    public Sprite fadePicture;
+    [Tooltip("0 = use the ScreenFader's default speed.")]
+    public float fadeSeconds = 0f;
+
     [Header("MoveActor (leave Npc empty to move the player)")]
     public Object_NPC npc;
     [Tooltip("Walked one after another. If empty, Destination is used instead.")]
@@ -66,6 +73,10 @@ public class CutsceneStep
     
     [Header("GiveItem")]
     public Inventory_Item[] items;
+
+    [Header("PanCamera")]
+    public Transform cameraDestination;
+    public float cameraSeconds = 2f;
 }
 
 public class CutsceneSequence : MonoBehaviour
@@ -99,7 +110,7 @@ public class CutsceneSequence : MonoBehaviour
         if (!playOnStart) yield break;
         if (HasPlayed) yield break;
 
-        // Cover the screen before the first rendered frame, then wait for the scene to settle.
+        Debug.Log($"[Cutscene] Start: fader={(ScreenFader.instance != null ? "OK" : "NULL")}");
         if (ScreenFader.instance != null) ScreenFader.instance.SetBlack();
         yield return null;
 
@@ -114,6 +125,52 @@ public class CutsceneSequence : MonoBehaviour
             StoryFlags.Instance.Set(Key);
 
         StartCoroutine(Run(player));
+    }
+
+    private CinemachineCamera vcam;
+    private Transform cameraProxy;
+    private Transform originalFollow;
+
+    private IEnumerator PanCamera(CutsceneStep s)
+    {
+        if (s.cameraDestination == null) yield break;
+
+        if (vcam == null) vcam = FindFirstObjectByType<CinemachineCamera>();
+        if (vcam == null) { Debug.LogWarning("[Cutscene] No CinemachineCamera found"); yield break; }
+
+        if (cameraProxy == null)
+        {
+            originalFollow = vcam.Follow;
+            cameraProxy = new GameObject("CutsceneCameraProxy").transform;
+            cameraProxy.position = originalFollow != null ? originalFollow.position : vcam.transform.position;
+            vcam.Follow = cameraProxy;
+        }
+
+        Transform proxy = cameraProxy;
+        Vector3 from = proxy.position;
+        Vector3 to = s.cameraDestination.position;
+        to.z = from.z;
+
+        float duration = Mathf.Max(0.01f, s.cameraSeconds);
+        float t = 0f;
+        while (t < 1f)
+        {
+            if (proxy == null) yield break;
+            t += Time.deltaTime / duration;
+            proxy.position = Vector3.Lerp(from, to, Mathf.SmoothStep(0f, 1f, t));
+            yield return null;
+        }
+        if (proxy != null) proxy.position = to;
+    }
+
+    private void ResetCamera()
+    {
+        if (vcam != null && cameraProxy != null)
+        {
+            vcam.Follow = originalFollow;
+            Destroy(cameraProxy.gameObject);
+            cameraProxy = null;
+        }
     }
 
     private IEnumerator Run(Player player)
@@ -161,13 +218,19 @@ public class CutsceneSequence : MonoBehaviour
                 break;
 
             case CutsceneStepType.FadeOut:
+                Debug.Log($"[Cutscene] FadeOut step picture={(s.fadePicture != null ? s.fadePicture.name : "NULL")}");
                 if (ScreenFader.instance != null)
-                    yield return ScreenFader.instance.FadeOut();
+                    yield return ScreenFader.instance.FadeOut(s.fadePicture, s.fadeSeconds);
                 break;
 
             case CutsceneStepType.FadeIn:
                 if (ScreenFader.instance != null)
-                    yield return ScreenFader.instance.FadeIn();
+                    yield return ScreenFader.instance.FadeIn(s.fadeSeconds);
+                break;
+
+            case CutsceneStepType.SnapBlack:
+                if (ScreenFader.instance != null)
+                    ScreenFader.instance.SetBlack(s.fadePicture);
                 break;
 
             case CutsceneStepType.Wait:
@@ -194,11 +257,6 @@ public class CutsceneSequence : MonoBehaviour
                 if (StoryFlags.Instance != null) StoryFlags.Instance.Set(s.flag);
                 break;
 
-            case CutsceneStepType.SnapBlack:
-                if (ScreenFader.instance != null)
-                    ScreenFader.instance.SetBlack();
-                break;
-
             case CutsceneStepType.StartQuest:
                 if (s.quest != null && QuestManager.Instance != null &&
                     !QuestManager.Instance.HasQuest(s.quest))
@@ -218,6 +276,14 @@ public class CutsceneSequence : MonoBehaviour
 
             case CutsceneStepType.WaitForBackground:
                 yield return new WaitUntil(() => activeSteps == 0);
+                break;
+
+            case CutsceneStepType.PanCamera:
+                yield return PanCamera(s);
+                break;
+
+            case CutsceneStepType.ResetCamera:
+                ResetCamera();
                 break;
         }
     }
