@@ -6,6 +6,8 @@ using UnityEngine;
 public class GameData
 {
     public List<InventoryEntry> inventory = new List<InventoryEntry>();
+    public string sceneName;
+    public string lastSaved;
 }
 
 [Serializable]

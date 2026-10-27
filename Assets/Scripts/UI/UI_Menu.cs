@@ -6,6 +6,7 @@ public class UI_Menu : MonoBehaviour
     [SerializeField] private GameObject menuPanel;
     [SerializeField] private GameObject inventorySection;
     [SerializeField] private GameObject settingsSection;
+    [SerializeField] private GameObject saveSection;
 
     private bool isOpen;
 
@@ -18,6 +19,7 @@ public class UI_Menu : MonoBehaviour
 
         if (inventorySection != null) inventorySection.SetActive(true);
         if (settingsSection != null)  settingsSection.SetActive(true);
+        if (saveSection != null) saveSection.SetActive(false);
     }
 
     public void CloseMenu()

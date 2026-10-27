@@ -10,7 +10,12 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioSource bgmSource;
     [SerializeField] private float fadeDuration = 0.75f;
 
+    private const string VolumeKey = "MasterVolume";
+
     private Coroutine musicFadeCoroutine;
+
+    // Master volume for the whole game (0 to 1). Music fades still work underneath it.
+    public float MasterVolume => AudioListener.volume;
 
     private void Awake()
     {
@@ -22,11 +27,20 @@ public class AudioManager : MonoBehaviour
 
         instance = this;
         DontDestroyOnLoad(gameObject);
+
+        AudioListener.volume = PlayerPrefs.GetFloat(VolumeKey, 1f);
     }
 
     private void Start()
     {
         PlayMusicForScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void SetMasterVolume(float value)
+    {
+        value = Mathf.Clamp01(value);
+        AudioListener.volume = value;
+        PlayerPrefs.SetFloat(VolumeKey, value);
     }
 
     public void PlayMusicForScene(string sceneName)

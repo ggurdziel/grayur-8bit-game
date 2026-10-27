@@ -31,6 +31,7 @@ public class Object_Waypoint : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (GameManager.IsChangingScene) return;
         Debug.Log("Something entered waypoint: " + collision.name);
 
         if (!canBeTriggered)
