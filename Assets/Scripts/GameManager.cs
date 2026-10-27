@@ -87,7 +87,9 @@ public class GameManager : MonoBehaviour
         // that never finishes can't block every scene change after it.
         IsChangingScene = false;
 
-        if (ScreenFader.instance != null)
+        // If the new scene took over the black screen (e.g. the opening cutscene called
+        // SetBlack), let it fade in when it's ready instead of fading in here.
+        if (ScreenFader.instance != null && !ScreenFader.instance.IsHeldBlack)
         {
             yield return ScreenFader.instance.FadeIn();
         }

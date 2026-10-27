@@ -13,6 +13,7 @@ public class ScreenFader : MonoBehaviour
 
     private Color baseColor = Color.black;
     private float alpha;
+    public bool IsHeldBlack { get; private set; }
 
     private void Awake()
     {
@@ -36,6 +37,7 @@ public class ScreenFader : MonoBehaviour
     // Fades to black, or to a picture if one is given. seconds <= 0 uses fadeSpeed.
     public IEnumerator FadeOut(Sprite picture = null, float seconds = 0f)
     {
+        IsHeldBlack = false;
         if (picture != null) SetLook(picture);
         else if (alpha <= 0.001f) SetLook(null);   // fresh plain fade: no old picture left over
 
@@ -49,6 +51,7 @@ public class ScreenFader : MonoBehaviour
 
     public IEnumerator FadeIn(float seconds = 0f)
     {
+        IsHeldBlack = false;
         float speed = SpeedFor(seconds);
         while (alpha > 0f)
         {
@@ -62,6 +65,7 @@ public class ScreenFader : MonoBehaviour
     {
         Debug.Log($"[ScreenFader] SetBlack done alpha={alpha} color={fadeImage.color} imgEnabled={fadeImage.enabled} active={fadeImage.gameObject.activeInHierarchy}");
         StopAllCoroutines();
+        IsHeldBlack = true;
         SetLook(picture);
         SetAlpha(1f);
     }
