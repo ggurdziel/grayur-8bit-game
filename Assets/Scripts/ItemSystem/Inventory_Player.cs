@@ -30,64 +30,48 @@ public class Inventory_Player : Inventory_Base, ISaveable
     {
         data.inventory.Clear();
 
-        foreach (var item in itemList)
+        for (int i = 0; i < itemList.Count; i++)
         {
-            if (item != null && item.itemData != null)
+            Inventory_Item item = itemList[i];
+            if (item == null || item.itemData == null)
+                continue;
+
+            data.inventory.Add(new InventoryEntry
             {
-                string saveID = item.itemData.saveID;
-
-                InventoryEntry existing = data.inventory
-                    .Find(x => x.saveID == saveID);
-
-                if (existing != null)
-                {
-                    existing.stackSize += item.stackSize;
-                }
-                else
-                {
-                    data.inventory.Add(new InventoryEntry
-                    {
-                        saveID = saveID,
-                        stackSize = item.stackSize
-                    });
-                }
-            }
+                saveID = item.itemData.saveID,
+                stackSize = item.stackSize,
+                slotIndex = i
+            });
         }
     }
-
 
     public void LoadData(GameData data)
     {
         itemList.Clear();
-
         while (itemList.Count < maxInventorySize)
-        {
             itemList.Add(null);
-        }
-
-        int index = 0;
 
         foreach (var savedItem in data.inventory)
         {
-            if (index >= itemList.Count)
-                break;
-
-            string saveId = savedItem.saveID;
-            int stackSize = savedItem.stackSize;
-
-            ItemDataSO itemData = itemListData.GetItemData(saveId);
-
+            ItemDataSO itemData = itemListData.GetItemData(savedItem.saveID);
             if (itemData == null)
             {
-                Debug.Log("Item not found: " + saveId);
+                Debug.Log("Item not found: " + savedItem.saveID);
                 continue;
             }
 
             Inventory_Item itemToLoad = new Inventory_Item(itemData);
-            itemToLoad.stackSize = stackSize;
+            itemToLoad.stackSize = savedItem.stackSize;
+
+            int index = savedItem.slotIndex;
+
+            if (index < 0 || index >= itemList.Count || itemList[index] != null)
+                index = itemList.IndexOf(null);
+
+            if (index == -1)
+                break; 
 
             itemList[index] = itemToLoad;
-            index++;
         }
 
         NotifyInventoryChanged();

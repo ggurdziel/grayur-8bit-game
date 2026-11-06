@@ -15,4 +15,5 @@ public class InventoryEntry
 {
     public string saveID;
     public int stackSize;
+    public int slotIndex = -1;
 }
