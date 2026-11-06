@@ -1,10 +1,13 @@
 using UnityEngine;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 
 [CreateAssetMenu(menuName = "RPG Setup/Item Data/Material item ", fileName = "Material data - ")]
 public class ItemDataSO : ScriptableObject
 {
-    public string saveID { get; private set; }
+    [SerializeField, HideInInspector] private string _saveID;
+    public string saveID => _saveID;
 
     [Header("NPC details")]
     public int minStackSizeToGive = 1;
@@ -16,12 +19,15 @@ public class ItemDataSO : ScriptableObject
 
     public GameObject worldPrefab;
 
+#if UNITY_EDITOR
     private void OnValidate()
     {
-#if UNITY_EDITOR
-        string path = AssetDatabase.GetAssetPath(this);
-        saveID = AssetDatabase.AssetPathToGUID(path);
-#endif
+        string id = AssetDatabase.AssetPathToGUID(AssetDatabase.GetAssetPath(this));
+        if (!string.IsNullOrEmpty(id) && _saveID != id)
+        {
+            _saveID = id;
+            EditorUtility.SetDirty(this);
+        }
     }
-
+#endif
 }

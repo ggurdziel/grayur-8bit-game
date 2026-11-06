@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5639f7f703b1cb4b89f78aae671b8af, type: 3}
   m_Name: Wood
   m_EditorClassIdentifier: 
+  _saveID: 3a4973012121e2f4189d2aa002f0a8b1
   minStackSizeToGive: 1
   maxStackSizeToGive: 10
   itemName: Wood

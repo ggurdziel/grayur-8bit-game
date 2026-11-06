@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5639f7f703b1cb4b89f78aae671b8af, type: 3}
   m_Name: Rope
   m_EditorClassIdentifier: 
+  _saveID: 7e08ccaf087d4124b96960cf40a8e499
   minStackSizeToGive: 1
   maxStackSizeToGive: 10
   itemName: Rope
