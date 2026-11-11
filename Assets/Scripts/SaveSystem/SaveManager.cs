@@ -18,6 +18,7 @@ public class SaveManager : MonoBehaviour
     private FileDataHandler dataHandler;
     private GameData gameData;
     private List<ISaveable> allSaveables;
+    private bool loaded;
 
     [SerializeField] private bool encryptData = true;
     [SerializeField] private string mainMenuSceneName = "MainMenu";
@@ -100,11 +101,14 @@ public class SaveManager : MonoBehaviour
         if (allSaveables == null) allSaveables = FindISaveables();
 
         gameData = dataHandler.LoadData();
+        Debug.Log($"[Load] slot {CurrentSlot + 1} found={(gameData != null)} flags={gameData?.storyFlags?.Count}");
 
         if (gameData == null)
         {
             Debug.Log($"No data in slot {CurrentSlot + 1}. Starting a new save.");
             gameData = new GameData();
+            StoryFlags.Instance?.LoadData(gameData);   // new game: wipe flags left over from a previous slot
+            loaded = true;
             return;
         }
 
@@ -113,13 +117,12 @@ public class SaveManager : MonoBehaviour
             if (saveable != null)
                 saveable.LoadData(gameData);
         }
+        loaded = true;
     }
 
     public void SaveGame()
     {
-        // Never save from the main menu: it would overwrite the slot with an empty game.
-        if (CurrentSlot < 0 || IsMainMenu) return;
-
+        if (CurrentSlot < 0 || IsMainMenu || !loaded) return;
         if (dataHandler == null) dataHandler = HandlerFor(CurrentSlot);
         if (allSaveables == null) allSaveables = FindISaveables();
         if (gameData == null) gameData = new GameData();
@@ -135,6 +138,24 @@ public class SaveManager : MonoBehaviour
         gameData.lastSaved = DateTime.Now.ToString("MMM d, yyyy  h:mm tt");
 
         dataHandler.SaveData(gameData);
+        Debug.Log($"[Save] slot {CurrentSlot + 1} scene={gameData.sceneName} flags={gameData.storyFlags?.Count}");
+    }
+
+    // Queues one save for the end of this frame. Safe to call many times per frame
+    // (flags, inventory changes); ignored until the slot has finished loading.
+    private bool saveQueued;
+
+    public void RequestSave()
+    {
+        if (!saveQueued) StartCoroutine(SaveNextFrame());
+    }
+
+    private IEnumerator SaveNextFrame()
+    {
+        saveQueued = true;
+        yield return null;
+        saveQueued = false;
+        SaveGame();
     }
 
     // Save the current game into a chosen slot. It can differ from the slot the

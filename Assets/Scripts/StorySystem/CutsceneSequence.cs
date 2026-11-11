@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using Articy.Unity;
 using UnityEngine;
 
-public enum CutsceneStepType { Dialogue, FadeOut, FadeIn, Wait, MoveActor, SetActive, SetFlag, SnapBlack, StartQuest, WaitForBackground, GiveItem, PanCamera, ResetCamera }
+public enum CutsceneStepType { Dialogue, FadeOut, FadeIn, Wait, MoveActor, SetActive, SetFlag, SnapBlack, StartQuest, WaitForBackground, GiveItem, PanCamera, ResetCamera, CustomDialogue }
 
 public enum MoveDir { Left, Right, Up, Down }
 
@@ -28,6 +28,9 @@ public class CutsceneStep
     [Header("Timing")]
     [Tooltip("Start this step and immediately go on to the next one, without waiting for it to finish. Never tick this on WaitForBackground.")]
     public bool runWithNext;
+
+    [Header("CustomDialogue (typed here, no Articy)")]
+    public CustomLine[] customLines;
 
     [Header("Dialogue (use Lines OR Flow Start/End)")]
     public ArticyRef[] lines;
@@ -110,7 +113,6 @@ public class CutsceneSequence : MonoBehaviour
         if (!playOnStart) yield break;
         if (HasPlayed) yield break;
 
-        Debug.Log($"[Cutscene] Start: fader={(ScreenFader.instance != null ? "OK" : "NULL")}");
         if (ScreenFader.instance != null) ScreenFader.instance.SetBlack();
         yield return null;
 
@@ -218,7 +220,6 @@ public class CutsceneSequence : MonoBehaviour
                 break;
 
             case CutsceneStepType.FadeOut:
-                Debug.Log($"[Cutscene] FadeOut step picture={(s.fadePicture != null ? s.fadePicture.name : "NULL")}");
                 if (ScreenFader.instance != null)
                     yield return ScreenFader.instance.FadeOut(s.fadePicture, s.fadeSeconds);
                 break;
@@ -284,6 +285,10 @@ public class CutsceneSequence : MonoBehaviour
 
             case CutsceneStepType.ResetCamera:
                 ResetCamera();
+                break;
+
+            case CutsceneStepType.CustomDialogue:
+                yield return PlayCustomDialogue(s);
                 break;
         }
     }
@@ -400,6 +405,16 @@ public class CutsceneSequence : MonoBehaviour
             attempt++;
             yield return null;
         }
+    }
+
+    private IEnumerator PlayCustomDialogue(CutsceneStep s)
+    {
+        if (s.customLines == null || s.customLines.Length == 0) yield break;
+
+        var dm = FindFirstObjectByType<DialogueManager>(FindObjectsInactive.Include);
+        if (dm == null) yield break;
+
+        yield return RunAndWait(dm, () => dm.StartCustom(s.customLines));
     }
 
     private IEnumerator RunAndWait(DialogueManager dm, Action start)

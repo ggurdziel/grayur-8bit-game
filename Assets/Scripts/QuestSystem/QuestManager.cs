@@ -28,11 +28,31 @@ public class QuestManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
+    // Returns the quest, rebuilding it from the saved story flags after a reload.
+    private Quest Find(QuestDataSO data)
+    {
+        if (data == null) return null;
+
+        if (questLookup.TryGetValue(data.questSaveId, out Quest quest)) return quest;
+
+        var flags = StoryFlags.Instance;
+        if (flags != null && flags.Has("quest." + data.name + ".started"))
+        {
+            quest = new Quest(data);
+            quest.isStarted = true;
+            quest.isCompleted = flags.Has("quest." + data.name + ".done");
+            questLookup.Add(data.questSaveId, quest);
+            return quest;
+        }
+
+        return null;
+    }
+
     public void StartQuest(QuestDataSO questData)
     {
         if (questData == null) return;
 
-        if (!questLookup.ContainsKey(questData.questSaveId))
+        if (Find(questData) == null)
         {
             Quest newQuest = new Quest(questData);
             newQuest.isStarted = true;
@@ -45,38 +65,23 @@ public class QuestManager : MonoBehaviour
     }
 
 
-    public bool HasQuest(QuestDataSO questData)
-    {
-        return questData != null && questLookup.ContainsKey(questData.questSaveId);
-    }
+    public bool HasQuest(QuestDataSO questData) => Find(questData) != null;
 
 
     public bool IsQuestCompleted(QuestDataSO questData)
     {
-        if (questData == null) return false;
-        if (!questLookup.ContainsKey(questData.questSaveId)) return false;
-
-        return questLookup[questData.questSaveId].isCompleted;
+        Quest quest = Find(questData);
+        return quest != null && quest.isCompleted;
     }
 
 
-    public Quest GetQuest(QuestDataSO questData)
-    {
-        if (questData == null) return null;
-        if (!questLookup.ContainsKey(questData.questSaveId)) return null;
-
-        return questLookup[questData.questSaveId];
-    }
+    public Quest GetQuest(QuestDataSO questData) => Find(questData);
 
 
     public void CompleteQuest(QuestDataSO questData)
     {
-        if (questData == null) return;
-        if (!questLookup.ContainsKey(questData.questSaveId)) return;
-
-        Quest quest = questLookup[questData.questSaveId];
-
-        if (quest.isCompleted) return;
+        Quest quest = Find(questData);
+        if (quest == null || quest.isCompleted) return;
 
         quest.isCompleted = true;
         Debug.Log($"Completed quest: {questData.questName}");

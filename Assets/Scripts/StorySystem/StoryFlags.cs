@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StoryFlags : MonoBehaviour
+public class StoryFlags : MonoBehaviour, ISaveable
 {
     public static StoryFlags Instance { get; private set; }
 
@@ -41,16 +41,24 @@ public class StoryFlags : MonoBehaviour
         {
             Debug.Log("Story flag set: " + flag);
             FlagSet?.Invoke(flag);
+
+            // Autosave so a passed flag can't be redone.
+            if (SaveManager.instance != null) SaveManager.instance.RequestSave();
         }
     }
 
-    // For saving/loading later
     public IReadOnlyCollection<string> All => flags;
 
-    public void Load(IEnumerable<string> saved)
+    public void SaveData(ref GameData data)
+    {
+        data.storyFlags = new List<string>(flags);
+    }
+
+    // Fills the set directly (not through Set) so loading doesn't log, fire events or save.
+    public void LoadData(GameData data)
     {
         flags.Clear();
-        foreach (string f in saved)
-            flags.Add(f);
+        if (data.storyFlags != null)
+            foreach (string f in data.storyFlags) flags.Add(f);
     }
 }

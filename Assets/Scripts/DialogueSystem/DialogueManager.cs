@@ -6,6 +6,13 @@ using Articy.Unity.Interfaces;
 using Articy._8_Bit_Tutorial_1_;
 using Action = System.Action;
 
+[System.Serializable]
+public class CustomLine
+{
+    public string speaker;
+    [TextArea(2, 5)] public string text;
+}
+
 public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
 {
     public event Action DialogueEnded;
@@ -40,6 +47,8 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
 
     private Queue<ArticyObject> pendingLines;
     private bool sequenceMode;
+    private Queue<CustomLine> pendingCustom;
+    private bool customMode;
     private bool dialogueActive;
 
     private ArticyObject endNode;
@@ -93,6 +102,8 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
         skipWhenBranchesArrive = false;
         sequenceMode = false;
         pendingLines = null;
+        customMode = false;
+        pendingCustom = null;
         atEndNode = false;
         endNode = null;
     }
@@ -146,6 +157,43 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
         PlayNextQueued();
     }
 
+    public void StartCustom(IList<CustomLine> lines)
+    {
+        EnsureUI();
+
+        if (ui == null)         { Debug.LogError("StartCustom: no UI found"); return; }
+        if (dialogueUI == null) { Debug.LogError("StartCustom: no UI_Dialogue found"); return; }
+        if (lines == null || lines.Count == 0) { Debug.LogError("StartCustom: no lines"); return; }
+
+        RefreshChoiceRows();
+        ClearChoices();
+        ResetState();
+        visited.Clear();
+        dialogueActive = true;
+        IsDialogueOpen = true;
+        openedTime = Time.unscaledTime;
+        customMode = true;
+        pendingCustom = new Queue<CustomLine>(lines);
+
+        ui.OpenArticyDialogueUI();
+        ShowNextCustom();
+    }
+
+    private void ShowNextCustom()
+    {
+        if (pendingCustom == null || pendingCustom.Count == 0)
+        {
+            EndDialogue();
+            return;
+        }
+
+        CustomLine line = pendingCustom.Dequeue();
+        Sprite portrait = portraitDatabase != null ? portraitDatabase.Get(line.speaker) : null;
+
+        dialogueUI.ShowArticyLine(line.speaker, portrait, line.text);
+        dialogueUI.SetPrompt(Seen(EnterHintFlag) ? "" : "Press Space to continue");
+    }
+
     private bool PlayNextQueued()
     {
         if (pendingLines == null || pendingLines.Count == 0)
@@ -188,6 +236,7 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
 
     public void OnFlowPlayerPaused(IFlowObject aObject)
     {
+        if (customMode) return;
         if (!dialogueActive || aObject == null)
             return;
 
@@ -246,6 +295,7 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
 
     public void OnBranchesUpdated(IList<Branch> aBranches)
     {
+        if (customMode) return;
         if (!dialogueActive)
             return;
 
@@ -357,10 +407,19 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
 
     public void ContinueDialogue()
     {
-        if (!dialogueActive || flowPlayer == null)
+        if (!dialogueActive)
             return;
 
         if (choicesShowing)
+            return;
+
+        if (customMode)
+        {
+            ShowNextCustom();
+            return;
+        }
+
+        if (flowPlayer == null)
             return;
 
         if (atEndNode)
@@ -425,13 +484,14 @@ public class DialogueManager : MonoBehaviour, IArticyFlowPlayerCallbacks
             return;
 
         dialogueActive = false;
-        IsDialogueOpen = false;               // NPCs may move again
-        LastClosedTime = Time.unscaledTime;   // Player.cs ignores Interact for a moment
+        IsDialogueOpen = false;
+        LastClosedTime = Time.unscaledTime; 
+        bool wasCustom = customMode;
 
         ClearChoices();
         ResetState();
 
-        if (flowPlayer != null)
+        if (!wasCustom && flowPlayer != null)
             flowPlayer.FinishCurrentPausedObject();
 
         EnsureUI();

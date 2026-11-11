@@ -13,7 +13,6 @@ public class Object_CheckStatus : MonoBehaviour, IInteractable
 
     [Header("Flags (optional)")]
     [Tooltip("Set when this plays. Empty = can play every time.")]
-    [SerializeField] private string playedFlag;
     [SerializeField] private string[] requiredFlags;
     [SerializeField] private string[] forbiddenFlags;
 
@@ -33,12 +32,7 @@ public class Object_CheckStatus : MonoBehaviour, IInteractable
             indicatorStart = indicator.transform.localPosition;
     }
 
-    private bool Played()
-    {
-        return !string.IsNullOrEmpty(playedFlag) &&
-               StoryFlags.Instance != null &&
-               StoryFlags.Instance.Has(playedFlag);
-    }
+    private bool Played() => sequence != null && sequence.HasPlayed;
 
     private bool QuestOk()
     {
@@ -88,7 +82,6 @@ public class Object_CheckStatus : MonoBehaviour, IInteractable
 
     public void Interact(Player player)
     {
-        Debug.Log($"CheckStatus.Interact played={Played()} questOk={QuestOk()} flagsOk={FlagsOk()}");
 
         if (player == null || !CanInteract()) return;
 
@@ -108,9 +101,6 @@ public class Object_CheckStatus : MonoBehaviour, IInteractable
 
             QuestManager.Instance.CompleteQuest(quest);
         }
-
-        if (!string.IsNullOrEmpty(playedFlag) && StoryFlags.Instance != null)
-            StoryFlags.Instance.Set(playedFlag);
 
         if (sequence != null)
             sequence.Play(player);

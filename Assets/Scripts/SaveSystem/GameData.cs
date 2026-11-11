@@ -8,6 +8,7 @@ public class GameData
     public List<InventoryEntry> inventory = new List<InventoryEntry>();
     public string sceneName;
     public string lastSaved;
+    public List<string> storyFlags = new List<string>();
 }
 
 [Serializable]
